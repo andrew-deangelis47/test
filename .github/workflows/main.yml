@@ -11,41 +11,63 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Dependencies
+        shell: powershell
         run: |
-          choco install visualstudio2019buildtools cmake nasm perl -y
-          choco install strawberryperl -y  # Needed for OpenSSL build
+          choco install visualstudio2019buildtools cmake nasm strawberryperl -y
+          echo "Installed dependencies"
 
-      - name: Download and Build FIPS-Compliant OpenSSL
+      - name: Verify `nmake` is Installed
+        shell: powershell
         run: |
-          Invoke-WebRequest -Uri "https://www.openssl.org/source/openssl-3.0.8.tar.gz" -OutFile "openssl-3.0.8.tar.gz"
-          tar -xf openssl-3.0.8.tar.gz
+          Get-Command nmake -ErrorAction Stop
+        continue-on-error: true
+
+      - name: Download and Extract OpenSSL
+        shell: powershell
+        run: |
+          $openssl_url = "https://www.openssl.org/source/openssl-3.0.8.tar.gz"
+          $openssl_file = "openssl-3.0.8.tar.gz"
+          Write-Host "Downloading OpenSSL..."
+          Invoke-WebRequest -Uri $openssl_url -OutFile $openssl_file
+          
+          Write-Host "Extracting OpenSSL..."
+          tar -xf $openssl_file
+          cd openssl-3.0.8
+          Write-Host "Extracted OpenSSL successfully"
+
+      - name: Build OpenSSL with FIPS Mode
+        shell: cmd
+        run: |
           cd openssl-3.0.8
           perl Configure VC-WIN64A fips
+          call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
           nmake
           nmake install
-        shell: cmd
+          echo "OpenSSL Build Completed"
 
       - name: Download Python Source
+        shell: powershell
         run: |
           Invoke-WebRequest -Uri "https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tgz" -OutFile "Python-3.11.5.tgz"
           tar -xf Python-3.11.5.tgz
-        shell: cmd
 
       - name: Build Python with FIPS OpenSSL
+        shell: cmd
         run: |
           cd Python-3.11.5
           PCbuild\build.bat -e -p x64 --openssl-dir="C:\Program Files\OpenSSL"
-        shell: cmd
 
-      - name: Verify Python Build is Using FIPS OpenSSL
+      - name: Verify Python Build Uses FIPS OpenSSL
+        shell: cmd
         run: |
           python -c "import ssl; print(ssl.OPENSSL_VERSION)"
-        shell: cmd
 
       - name: Install PyInstaller
+        shell: cmd
         run: python -m pip install pyinstaller
 
       - name: Build Executable
+        shell: cmd
         run: pyinstaller --onefile my_script.py
 
       - name: Upload Executable
