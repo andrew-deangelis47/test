@@ -13,7 +13,7 @@ jobs:
       - name: Install Perl & NASM
         shell: powershell
         run: |
-          choco install nasm -y
+          choco install nasm --force --debug -y
           echo "Installed NASM"
 
       - name: Check NASM Installation
