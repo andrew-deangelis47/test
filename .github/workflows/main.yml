@@ -19,7 +19,6 @@ jobs:
       - name: Add NASM to PATH
         shell: cmd
         run: |
-          setx PATH "%PATH%;C:\Program Files\NASM"
           set PATH=%PATH%;C:\Program Files\NASM
           where nasm
 
