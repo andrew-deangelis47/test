@@ -22,6 +22,11 @@ jobs:
           choco install strawberryperl nasm -y
           echo "Installed Perl and NASM"
 
+      - name: Check NASM Installation
+        shell: powershell
+        run: |
+          Get-ChildItem -Path "C:\ProgramData\chocolatey\lib\nasm" -Recurse
+
       - name: Add Perl & NASM to PATH
         shell: cmd
         run: |
