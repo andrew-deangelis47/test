@@ -1,3 +1,6 @@
+name: Build Python Executable
+run-name: builder
+on: [push]
 jobs:
 
   build:
