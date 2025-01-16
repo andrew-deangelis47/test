@@ -13,7 +13,7 @@ jobs:
       - name: Install Perl & NASM
         shell: powershell
         run: |
-          choco install nasm --force --debug -y
+          choco install nasm --force -y
           echo "Installed NASM"
 
       - name: Add NASM to PATH
@@ -23,8 +23,7 @@ jobs:
           set PATH=%PATH%;C:\Program Files\NASM
           where nasm
 
-      - name: Verify NASM Installation
+      - name: Verify NASM Version
         shell: cmd
-        run: |
-          where nasm || echo "NASM still missing"
-          dir C:\Program Files\NASM\nasm.exe
+        run: nasm -v
+
