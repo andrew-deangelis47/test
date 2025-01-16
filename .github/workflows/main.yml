@@ -16,17 +16,12 @@ jobs:
           choco install nasm --force --debug -y
           echo "Installed NASM"
 
-      - name: Manually Locate NASM
+      - name: Add NASM to PATH
         shell: cmd
         run: |
-          dir "C:\Program Files\NASM" /s /b
-          dir "C:\ProgramData\chocolatey\bin" /s /b
-          dir "C:\ProgramData\chocolatey\lib\nasm" /s /b
-
-      - name: Check NASM Installation
-        shell: powershell
-        run: |
-          Get-ChildItem -Path "C:\ProgramData\chocolatey\lib\nasm" -Recurse
+          setx PATH "%PATH%;C:\Program Files\NASM"
+          set PATH=%PATH%;C:\Program Files\NASM
+          where nasm
 
       - name: Verify NASM Installation
         shell: cmd
