@@ -13,13 +13,25 @@ jobs:
       - name: Install Visual Studio Build Tools (Includes nmake)
         shell: powershell
         run: |
-          choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK.19041"
+          choco install visualstudio2022buildtools --package-parameters `
+          "--add Microsoft.VisualStudio.Component.VC.CoreBuildTools `
+          --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 `
+          --add Microsoft.VisualStudio.Component.Windows10SDK.19041 `
+          --add Microsoft.VisualStudio.Component.Windows11SDK.22621 `
+          --add Microsoft.VisualStudio.Component.VC.CMake.Project"`
           echo "Installed Visual Studio Build Tools"
+
+      - name: Debug Visual Studio Install
+        shell: cmd
+        run: |
+          dir "C:\Program Files\Microsoft Visual Studio\2022"
 
       - name: Verify `nmake` is Installed
         shell: cmd
         run: |
-          call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+          for /d %%X in ("C:\Program Files\Microsoft Visual Studio\2022\*") do set VS_PATH=%%X
+          echo Found Visual Studio Path: %VS_PATH%
+          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
           where nmake
 
       - name: Download and Extract OpenSSL
@@ -36,7 +48,8 @@ jobs:
         shell: cmd
         run: |
           cd openssl-3.0.8
-          call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+          for /d %%X in ("C:\Program Files\Microsoft Visual Studio\2022\*") do set VS_PATH=%%X
+          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
           perl Configure VC-WIN64A fips
           nmake
           nmake install
@@ -52,7 +65,8 @@ jobs:
         shell: cmd
         run: |
           cd Python-3.11.5
-          call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+          for /d %%X in ("C:\Program Files\Microsoft Visual Studio\2022\*") do set VS_PATH=%%X
+          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
           PCbuild\build.bat -e -p x64 --openssl-dir="C:\Program Files\OpenSSL"
 
       - name: Verify Python Build Uses FIPS OpenSSL
