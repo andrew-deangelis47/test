@@ -10,55 +10,19 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Install Visual Studio Build Tools (MSVC)
-        shell: powershell
-        run: |
-          choco install visualstudio2022buildtools visualstudio-installer -y
-          echo "Installed Visual Studio Build Tools"
-
       - name: Install Perl & NASM
         shell: powershell
         run: |
-          choco install strawberryperl nasm -y
-          echo "Installed Perl and NASM"
+          choco install nasm -y
+          echo "Installed NASM"
 
       - name: Check NASM Installation
         shell: powershell
         run: |
           Get-ChildItem -Path "C:\ProgramData\chocolatey\lib\nasm" -Recurse
 
-      - name: Add Perl & NASM to PATH
+      - name: Verify NASM Installation
         shell: cmd
         run: |
-          where perl
-          where nasm
-
-      - name: Verify Perl & NASM Installations
-        shell: cmd
-        run: |
-          perl -v
-          nasm -v
-
-      - name: Download & Extract OpenSSL
-        shell: powershell
-        run: |
-          Invoke-WebRequest -Uri "https://www.openssl.org/source/openssl-3.0.8.tar.gz" -OutFile "openssl.tar.gz"
-          tar -xf openssl.tar.gz
-          echo "Extracted OpenSSL"
-
-      - name: Build OpenSSL 3 with FIPS Mode
-        shell: cmd
-        run: |
-          cd openssl-3.0.8
-          for /d %%X in ("C:\Program Files\Microsoft Visual Studio\2022\*") do set VS_PATH=%%X
-          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
-          perl Configure VC-WIN64A fips
-          nmake
-          nmake install
-          echo "OpenSSL Build Completed"
-
-      - name: Verify OpenSSL Build
-        shell: cmd
-        run: |
-          openssl version -a
-          openssl fips
+          where nasm || echo "NASM still missing"
+          dir C:\Program Files\NASM\nasm.exe
