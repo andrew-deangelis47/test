@@ -10,16 +10,21 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Install Perl & NASM
+      - name: Download NASM Installer
         shell: powershell
         run: |
-          choco install nasm --force -y
-          echo "Installed NASM"
+          Invoke-WebRequest -Uri "https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/win64/nasm-2.16.03-installer-x64.exe" -OutFile "nasm-installer.exe"
+          echo "Downloaded NASM installer"
 
-      - name: Add NASM to PATH
+      - name: Install NASM Manually
         shell: cmd
         run: |
-          set PATH=%PATH%;C:\Program Files\NASM
+          start /wait nasm-installer.exe /S
+          echo "NASM installed successfully"
+
+      - name: Check NASM
+        shell: cmd
+        run: |
           where nasm
 
       - name: Verify NASM Version
