@@ -1,8 +1,8 @@
 name: Build Python Executable
 run-name: builder
 on: [push]
-jobs:
 
+jobs:
   build:
     runs-on: windows-latest
 
@@ -10,28 +10,57 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Install Visual Studio Build Tools (Includes nmake)
+      - name: Install Chocolatey Packages (Perl, NASM, CMake)
         shell: powershell
         run: |
-          choco install visualstudio2022buildtools --package-parameters `
-          "--add Microsoft.VisualStudio.Component.VC.CoreBuildTools `
+          choco install strawberryperl nasm cmake ninja -y
+          echo "Installed Perl, NASM, and CMake"
+
+      - name: Install Visual Studio Build Tools
+        shell: cmd
+        run: |
+          echo "Installing Visual Studio Build Tools..."
+          choco install visualstudio2022buildtools visualstudio-installer -y
+          echo "Visual Studio installation complete."
+
+      - name: Install Required MSVC Components Using `vs_installer`
+        shell: cmd
+        run: |
+          "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" `
+          modify --installPath "C:\Program Files\Microsoft Visual Studio\2022\BuildTools" `
+          --add Microsoft.VisualStudio.Component.VC.CoreBuildTools `
           --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 `
           --add Microsoft.VisualStudio.Component.Windows10SDK.19041 `
           --add Microsoft.VisualStudio.Component.Windows11SDK.22621 `
-          --add Microsoft.VisualStudio.Component.VC.CMake.Project"`
-          echo "Installed Visual Studio Build Tools"
+          --add Microsoft.VisualStudio.Component.VC.CMake.Project `
+          --quiet --norestart
+          echo "Installed required Visual Studio components."
 
-      - name: Debug Visual Studio Install
+      - name: Add Perl, NASM, and nmake to PATH
         shell: cmd
         run: |
-          dir "C:\Program Files\Microsoft Visual Studio\2022"
+          echo "Adding Perl, NASM, and nmake to PATH"
+          
+          REM Add Perl and NASM
+          setx PATH "%PATH%;C:\Strawberry\perl\bin;C:\ProgramData\chocolatey\bin"
 
-      - name: Verify `nmake` is Installed
-        shell: cmd
-        run: |
+          REM Locate Visual Studio installation
           for /d %%X in ("C:\Program Files\Microsoft Visual Studio\2022\*") do set VS_PATH=%%X
           echo Found Visual Studio Path: %VS_PATH%
-          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
+
+          REM Find MSVC version folder
+          for /d %%Y in ("%VS_PATH%\VC\Tools\MSVC\*") do set MSVC_PATH=%%Y
+          echo Found MSVC Path: %MSVC_PATH%
+
+          REM Add `nmake` directory to PATH
+          setx PATH "%PATH%;%MSVC_PATH%\bin\Hostx64\x64"
+
+          REM Reload PATH for this session
+          set PATH=%PATH%;%MSVC_PATH%\bin\Hostx64\x64
+
+          REM Verify installations
+          where perl
+          where nasm
           where nmake
 
       - name: Download and Extract OpenSSL
@@ -48,7 +77,6 @@ jobs:
         shell: cmd
         run: |
           cd openssl-3.0.8
-          for /d %%X in ("C:\Program Files\Microsoft Visual Studio\2022\*") do set VS_PATH=%%X
           call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
           perl Configure VC-WIN64A fips
           nmake
@@ -65,7 +93,6 @@ jobs:
         shell: cmd
         run: |
           cd Python-3.11.5
-          for /d %%X in ("C:\Program Files\Microsoft Visual Studio\2022\*") do set VS_PATH=%%X
           call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
           PCbuild\build.bat -e -p x64 --openssl-dir="C:\Program Files\OpenSSL"
 
