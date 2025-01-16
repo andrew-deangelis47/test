@@ -22,12 +22,8 @@ jobs:
           start /wait nasm-installer.exe /S
           echo "NASM installed successfully"
 
-      - name: Check NASM
+      - name: Manually Run NASM Without `PATH`
         shell: cmd
         run: |
-          where nasm
-
-      - name: Verify NASM Version
-        shell: cmd
-        run: nasm -v
+          "C:\Program Files\NASM\nasm.exe" -v
 
