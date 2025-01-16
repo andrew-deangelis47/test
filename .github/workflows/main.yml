@@ -16,6 +16,13 @@ jobs:
           choco install nasm --force --debug -y
           echo "Installed NASM"
 
+      - name: Manually Locate NASM
+        shell: cmd
+        run: |
+          dir "C:\Program Files\NASM" /s /b
+          dir "C:\ProgramData\chocolatey\bin" /s /b
+          dir "C:\ProgramData\chocolatey\lib\nasm" /s /b
+
       - name: Check NASM Installation
         shell: powershell
         run: |
