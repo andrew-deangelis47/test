@@ -10,37 +10,34 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Install Dependencies
+      - name: Install Visual Studio Build Tools (Includes nmake)
         shell: powershell
         run: |
-          choco install visualstudio2019buildtools cmake nasm strawberryperl -y
-          echo "Installed dependencies"
+          choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK.19041"
+          echo "Installed Visual Studio Build Tools"
 
       - name: Verify `nmake` is Installed
-        shell: powershell
+        shell: cmd
         run: |
-          Get-Command nmake -ErrorAction Stop
-        continue-on-error: true
+          call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+          where nmake
 
       - name: Download and Extract OpenSSL
         shell: powershell
         run: |
           $openssl_url = "https://www.openssl.org/source/openssl-3.0.8.tar.gz"
           $openssl_file = "openssl-3.0.8.tar.gz"
-          Write-Host "Downloading OpenSSL..."
           Invoke-WebRequest -Uri $openssl_url -OutFile $openssl_file
-          
-          Write-Host "Extracting OpenSSL..."
           tar -xf $openssl_file
           cd openssl-3.0.8
-          Write-Host "Extracted OpenSSL successfully"
+          echo "Extracted OpenSSL"
 
       - name: Build OpenSSL with FIPS Mode
         shell: cmd
         run: |
           cd openssl-3.0.8
-          perl Configure VC-WIN64A fips
           call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+          perl Configure VC-WIN64A fips
           nmake
           nmake install
           echo "OpenSSL Build Completed"
@@ -55,6 +52,7 @@ jobs:
         shell: cmd
         run: |
           cd Python-3.11.5
+          call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
           PCbuild\build.bat -e -p x64 --openssl-dir="C:\Program Files\OpenSSL"
 
       - name: Verify Python Build Uses FIPS OpenSSL
