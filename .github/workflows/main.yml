@@ -1,4 +1,4 @@
-name: Build Python Executable
+name: Build FIPS-Compliant OpenSSL
 run-name: builder
 on: [push]
 
@@ -10,107 +10,52 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Install Chocolatey Packages (Perl, NASM, CMake)
+      - name: Install Visual Studio Build Tools (MSVC)
         shell: powershell
         run: |
-          choco install strawberryperl nasm cmake ninja -y
-          echo "Installed Perl, NASM, and CMake"
-
-      - name: Install Visual Studio Build Tools
-        shell: cmd
-        run: |
-          echo "Installing Visual Studio Build Tools..."
           choco install visualstudio2022buildtools visualstudio-installer -y
-          echo "Visual Studio installation complete."
+          echo "Installed Visual Studio Build Tools"
 
-      - name: Install Required MSVC Components Using `vs_installer`
+      - name: Install Perl & NASM
+        shell: powershell
+        run: |
+          choco install strawberryperl nasm -y
+          echo "Installed Perl and NASM"
+
+      - name: Add Perl & NASM to PATH
         shell: cmd
         run: |
-          "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" `
-          modify --installPath "C:\Program Files\Microsoft Visual Studio\2022\BuildTools" `
-          --add Microsoft.VisualStudio.Component.VC.CoreBuildTools `
-          --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 `
-          --add Microsoft.VisualStudio.Component.Windows10SDK.19041 `
-          --add Microsoft.VisualStudio.Component.Windows11SDK.22621 `
-          --add Microsoft.VisualStudio.Component.VC.CMake.Project `
-          --quiet --norestart
-          echo "Installed required Visual Studio components."
-
-      - name: Add Perl, NASM, and nmake to PATH
-        shell: cmd
-        run: |
-          echo "Adding Perl, NASM, and nmake to PATH"
-          
-          REM Add Perl and NASM
           setx PATH "%PATH%;C:\Strawberry\perl\bin;C:\ProgramData\chocolatey\bin"
-
-          REM Locate Visual Studio installation
-          for /d %%X in ("C:\Program Files\Microsoft Visual Studio\2022\*") do set VS_PATH=%%X
-          echo Found Visual Studio Path: %VS_PATH%
-
-          REM Find MSVC version folder
-          for /d %%Y in ("%VS_PATH%\VC\Tools\MSVC\*") do set MSVC_PATH=%%Y
-          echo Found MSVC Path: %MSVC_PATH%
-
-          REM Add `nmake` directory to PATH
-          setx PATH "%PATH%;%MSVC_PATH%\bin\Hostx64\x64"
-
-          REM Reload PATH for this session
-          set PATH=%PATH%;%MSVC_PATH%\bin\Hostx64\x64
-
-          REM Verify installations
+          set PATH=%PATH%;C:\Strawberry\perl\bin;C:\ProgramData\chocolatey\bin"
           where perl
           where nasm
-          where nmake
 
-      - name: Download and Extract OpenSSL
+      - name: Verify Perl & NASM Installations
+        shell: cmd
+        run: |
+          perl -v
+          nasm -v
+
+      - name: Download & Extract OpenSSL
         shell: powershell
         run: |
-          $openssl_url = "https://www.openssl.org/source/openssl-3.0.8.tar.gz"
-          $openssl_file = "openssl-3.0.8.tar.gz"
-          Invoke-WebRequest -Uri $openssl_url -OutFile $openssl_file
-          tar -xf $openssl_file
-          cd openssl-3.0.8
+          Invoke-WebRequest -Uri "https://www.openssl.org/source/openssl-3.0.8.tar.gz" -OutFile "openssl.tar.gz"
+          tar -xf openssl.tar.gz
           echo "Extracted OpenSSL"
 
-      - name: Build OpenSSL with FIPS Mode
+      - name: Build OpenSSL 3 with FIPS Mode
         shell: cmd
         run: |
           cd openssl-3.0.8
+          for /d %%X in ("C:\Program Files\Microsoft Visual Studio\2022\*") do set VS_PATH=%%X
           call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
           perl Configure VC-WIN64A fips
           nmake
           nmake install
           echo "OpenSSL Build Completed"
 
-      - name: Download Python Source
-        shell: powershell
-        run: |
-          Invoke-WebRequest -Uri "https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tgz" -OutFile "Python-3.11.5.tgz"
-          tar -xf Python-3.11.5.tgz
-
-      - name: Build Python with FIPS OpenSSL
+      - name: Verify OpenSSL Build
         shell: cmd
         run: |
-          cd Python-3.11.5
-          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
-          PCbuild\build.bat -e -p x64 --openssl-dir="C:\Program Files\OpenSSL"
-
-      - name: Verify Python Build Uses FIPS OpenSSL
-        shell: cmd
-        run: |
-          python -c "import ssl; print(ssl.OPENSSL_VERSION)"
-
-      - name: Install PyInstaller
-        shell: cmd
-        run: python -m pip install pyinstaller
-
-      - name: Build Executable
-        shell: cmd
-        run: pyinstaller --onefile my_script.py
-
-      - name: Upload Executable
-        uses: actions/upload-artifact@v3
-        with:
-          name: fips-python-executable
-          path: dist/my_script.exe
+          openssl version -a
+          openssl fips
