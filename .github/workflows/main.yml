@@ -31,6 +31,13 @@ jobs:
           where nasm || echo "NASM not found"
           nasm -v
 
+      - name: Reload Environment Variables
+        shell: cmd
+        run: |
+          refreshenv
+          where nasm
+          nasm -v
+
       - name: Download & Extract OpenSSL
         shell: powershell
         run: |
