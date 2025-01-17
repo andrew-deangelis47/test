@@ -30,20 +30,19 @@ jobs:
           REM 5️⃣ Persist PATH for Future Steps
           echo PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools;%PATH%>> %GITHUB_ENV%
 
-          echo "Detecting Visual Studio Installation..."
+          REM 1️⃣ Detect Visual Studio Build Tools Path
           for /f "usebackq tokens=*" %%i in (`vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set VS_PATH=%%i
           echo "Visual Studio Path: %VS_PATH%"
-          dir "%VS_PATH%\VC\Tools\MSVC" /b
-
-          echo "Searching for `nmake.exe`..."
-          dir "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools" /s /b | findstr nmake.exe
-          dir "C:\Program Files\Microsoft Visual Studio\2022\BuildTools" /s /b | findstr nmake.exe
       
-          REM 6️⃣ Verify Everything is Installed Correctly
-          echo "Final PATH:"
-          echo %PATH%
+          REM 2️⃣ Run `vcvars64.bat` to set environment variables
+          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
+      
+          REM 3️⃣ Manually Add `nmake` to PATH
+          set PATH=%VS_PATH%\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%
+          echo PATH=%VS_PATH%\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%>> %GITHUB_ENV%
+      
+          REM 4️⃣ Verify `nmake` is available
           where nasm
           nasm -v
           where nmake
           nmake /?
-
