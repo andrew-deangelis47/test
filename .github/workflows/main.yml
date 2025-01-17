@@ -10,6 +10,8 @@ jobs:
       - name: Install Visual Studio Build Tools & Persist PATH
         shell: cmd
         run: |
+          echo %PATH%
+        
           REM 1️⃣ Install Visual Studio Build Tools (`nmake`)
           choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK.19041" -y
           echo "Installed Visual Studio Build Tools."
@@ -32,6 +34,10 @@ jobs:
           for /f "usebackq tokens=*" %%i in (`vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set VS_PATH=%%i
           echo "Visual Studio Path: %VS_PATH%"
           dir "%VS_PATH%\VC\Tools\MSVC" /b
+
+          echo "Searching for `nmake.exe`..."
+          dir "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools" /s /b | findstr nmake.exe
+          dir "C:\Program Files\Microsoft Visual Studio\2022\BuildTools" /s /b | findstr nmake.exe
       
           REM 6️⃣ Verify Everything is Installed Correctly
           echo "Final PATH:"
