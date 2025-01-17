@@ -22,6 +22,14 @@ jobs:
           set PATH=C:\Program Files\NASM;%PATH%
           where nasm
           nasm -v
+
+          REM 3️⃣ Install Visual Studio Build Tools (`nmake`)
+          choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK.19041" -y
+          echo "Installed Visual Studio Build Tools"
+      
+          REM 4️⃣ Load MSVC Environment
+          call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+          where nmake
       
           REM 5️⃣ Download and Extract OpenSSL
           powershell -Command "Invoke-WebRequest -Uri 'https://www.openssl.org/source/openssl-3.0.8.tar.gz' -OutFile 'openssl.tar.gz'"
