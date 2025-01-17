@@ -7,24 +7,36 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Persist `PATH` for NASM & MSVC
+      - name: Install Visual Studio Build Tools & Persist PATH
         shell: cmd
         run: |
-          echo "Setting up PATH for NASM and MSVC..."
-      
-          REM 1️⃣ Ensure NASM and MSVC are both in PATH (single command)
-          set PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%
+          echo "Installing Visual Studio Build Tools..."
           
-          REM 2️⃣ Persist the updated PATH to be used in all future steps
+          REM 1️⃣ Install Visual Studio Build Tools (`nmake`)
+          choco install visualstudio2022buildtools --package-parameters `
+            "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 `
+            --add Microsoft.VisualStudio.Component.Windows10SDK.19041" -y
+          echo "Installed Visual Studio Build Tools."
+      
+          REM 2️⃣ Install NASM
+          powershell -Command "Invoke-WebRequest -Uri 'https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/win64/nasm-2.16.03-installer-x64.exe' -OutFile 'nasm-installer.exe'"
+          start /wait nasm-installer.exe /S
+          echo "Installed NASM"
+      
+          REM 3️⃣ Load MSVC Environment & Add `nmake` to PATH
+          call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+      
+          REM 4️⃣ Ensure NASM and MSVC Tools are in PATH
+          set PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%
+      
+          REM 5️⃣ Persist PATH for Future Steps
           echo PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%>> %GITHUB_ENV%
       
-          REM 3️⃣ Verify the PATH update
+          REM 6️⃣ Verify Everything is Installed Correctly
           echo "Final PATH:"
           echo %PATH%
           where nasm
+          nasm -v
           where nmake
           nmake /?
 
