@@ -14,6 +14,7 @@ jobs:
         
           REM 1️⃣ Install Visual Studio Build Tools (`nmake`)
           choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.CoreBuildTools --add Microsoft.VisualStudio.Component.Windows10SDK.19041" -y
+          choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.CoreBuildTools --add Microsoft.VisualStudio.Component.Windows10SDK.19041" -y
           echo "Installed Visual Studio Build Tools."
       
           REM 2️⃣ Install NASM
@@ -47,24 +48,18 @@ jobs:
           where nmake
           nmake /?
 
-      - name: Download and Extract OpenSSL
-        shell: cmd
-        run: |
+          echo "Download OpenSSL"
           powershell -Command "Invoke-WebRequest -Uri 'https://www.openssl.org/source/openssl-3.0.8.tar.gz' -OutFile 'openssl.tar.gz'"
           tar -xf openssl.tar.gz
           echo "Extracted OpenSSL"
 
-      - name: Build OpenSSL with FIPS Mode
-        shell: cmd
-        run: |
+          echo "Build OpenSSL"
           cd openssl-3.0.8
           perl Configure VC-WIN64A fips
           nmake
           nmake install
           echo "OpenSSL Build Completed"
 
-      - name: Verify OpenSSL Build
-        shell: cmd
-        run: |
+          echo "Verify OpenSSL"
           openssl version -a
           openssl fips
