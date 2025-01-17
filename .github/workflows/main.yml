@@ -13,6 +13,12 @@ jobs:
       - name: Setup Environment & Build OpenSSL
         shell: cmd
         run: |
+          Invoke-WebRequest -Uri "https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/win64/nasm-2.16.03-installer-x64.exe" -OutFile "nasm-installer.exe"
+          echo "Downloaded NASM installer"
+
+          start /wait nasm-installer.exe /S
+          echo "NASM installed successfully"
+        
           REM 1️⃣ Ensure NASM is Installed and in PATH
           set PATH=C:\Program Files\NASM;%PATH%
           where nasm
