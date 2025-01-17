@@ -48,8 +48,9 @@ jobs:
       - name: Build OpenSSL 3 with FIPS Mode
         shell: cmd
         run: |
+          echo %PATH%
           cd openssl-3.0.8
-          "C:\Program Files\NASM\nasm.exe" -v
+          nasm -v
           perl Configure VC-WIN64A enable-fips
           nmake
           nmake install
