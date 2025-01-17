@@ -7,6 +7,9 @@ jobs:
     runs-on: windows-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+    
       - name: Install Visual Studio Build Tools & Persist PATH
         shell: cmd
         run: |
