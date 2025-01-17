@@ -22,8 +22,11 @@ jobs:
           start /wait nasm-installer.exe /S
           echo "NASM installed successfully"
 
-      - name: Manually Run NASM Without `PATH`
+      - name: Add NASM to PATH
         shell: cmd
         run: |
-          "C:\Program Files\NASM\nasm.exe" -v
+          setx PATH "%PATH%;C:\Program Files\NASM"
+          set PATH=%PATH%;C:\Program Files\NASM
+          echo "$PATH"
+          where nasm || echo "NASM not found"
 
