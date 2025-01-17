@@ -55,7 +55,7 @@ jobs:
 
           echo "Build OpenSSL"
           cd openssl-3.0.8
-          perl Configure VC-WIN64A fips
+          perl Configure VC-WIN64A fips --with-fipsdir="C:\Program Files\OpenSSL"
           nmake
           nmake install
           echo "OpenSSL Build Completed"
@@ -67,4 +67,5 @@ jobs:
 
           echo "Verify OpenSSL"
           openssl version -a
+          openssl list -providers
           openssl fips
