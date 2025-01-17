@@ -60,6 +60,11 @@ jobs:
           nmake install
           echo "OpenSSL Build Completed"
 
+          echo "Install OpenSSL FIPS"
+          openssl fipsinstall -module C:\Program Files\OpenSSL\lib\ossl-modules\fips.dll -out C:\Program Files\OpenSSL\ssl\fipsmodule.cnf
+          set OPENSSL_CONF=C:\Program Files\OpenSSL\ssl\fipsmodule.cnf
+          echo "Installed OpenSSL FIPS"
+
           echo "Verify OpenSSL"
           openssl version -a
           openssl fips
