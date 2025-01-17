@@ -10,43 +10,21 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup Environment & Build OpenSSL
+      - name: Persist `PATH` for NASM & MSVC
         shell: cmd
         run: |
-          REM 1️⃣ Download and Install NASM
-          powershell -Command "Invoke-WebRequest -Uri 'https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/win64/nasm-2.16.03-installer-x64.exe' -OutFile 'nasm-installer.exe'"
-          start /wait nasm-installer.exe /S
-          echo "Installed NASM"
+          echo "Setting up PATH for NASM and MSVC..."
       
-          REM 2️⃣ Ensure NASM is in PATH
-          set PATH=C:\ProgramData\Chocolatey\bin;C:\Program Files\NASM;%PATH%
+          REM 1️⃣ Ensure NASM and MSVC are both in PATH (single command)
+          set PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%
+          
+          REM 2️⃣ Persist the updated PATH to be used in all future steps
+          echo PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%>> %GITHUB_ENV%
+      
+          REM 3️⃣ Verify the PATH update
+          echo "Final PATH:"
+          echo %PATH%
           where nasm
-          nasm -v
-          echo %PATH%
-
-          REM 3️⃣ Install Visual Studio Build Tools (`nmake`)
-          choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK.19041" -y
-          echo "Installed Visual Studio Build Tools"
-      
-          REM 4️⃣ Load MSVC Environment & Add `nmake` to PATH
-          call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
-          echo %PATH%
           where nmake
           nmake /?
-      
-          REM 5️⃣ Download and Extract OpenSSL
-          powershell -Command "Invoke-WebRequest -Uri 'https://www.openssl.org/source/openssl-3.0.8.tar.gz' -OutFile 'openssl.tar.gz'"
-          tar -xf openssl.tar.gz
-          echo "Extracted OpenSSL"
-      
-          REM 6️⃣ Build OpenSSL with FIPS Mode
-          cd openssl-3.0.8
-          perl Configure VC-WIN64A fips --with-nasm="C:\Program Files\NASM\nasm.exe"
-          nmake
-          nmake install
-          echo "OpenSSL Build Completed"
-      
-          REM 7️⃣ Verify OpenSSL Installation
-          openssl version -a
-          openssl fips
 
