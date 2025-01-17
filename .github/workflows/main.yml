@@ -27,6 +27,11 @@ jobs:
       
           REM 5️⃣ Persist PATH for Future Steps
           echo PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%>> %GITHUB_ENV%
+
+          echo "Detecting Visual Studio Installation..."
+          for /f "usebackq tokens=*" %%i in (`vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set VS_PATH=%%i
+          echo "Visual Studio Path: %VS_PATH%"
+          dir "%VS_PATH%\VC\Tools\MSVC" /b
       
           REM 6️⃣ Verify Everything is Installed Correctly
           echo "Final PATH:"
