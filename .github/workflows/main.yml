@@ -10,12 +10,8 @@ jobs:
       - name: Install Visual Studio Build Tools & Persist PATH
         shell: cmd
         run: |
-          echo "Installing Visual Studio Build Tools..."
-          
           REM 1️⃣ Install Visual Studio Build Tools (`nmake`)
-          choco install visualstudio2022buildtools --package-parameters `
-            "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 `
-            --add Microsoft.VisualStudio.Component.Windows10SDK.19041" -y
+          choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK.19041" -y
           echo "Installed Visual Studio Build Tools."
       
           REM 2️⃣ Install NASM
