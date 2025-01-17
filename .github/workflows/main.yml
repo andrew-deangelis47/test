@@ -7,33 +7,45 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      # ✅ Use Microsoft's official MSBuild setup instead of Chocolatey
-      - name: Setup MSBuild (Includes `nmake` and `cl.exe`)
-        uses: microsoft/setup-msbuild@v1.3.1
-
-      - name: Verify MSBuild & nmake
+      - name: Install Visual Studio Build Tools & Persist PATH
         shell: cmd
         run: |
-          echo "Checking MSBuild setup..."
-          where msbuild
-          where nmake
-          where cl
-          nmake /?
-          cl
-
-      - name: Install NASM
-        shell: cmd
-        run: |
+          echo %PATH%
+        
+          REM 1️⃣ Install Visual Studio Build Tools (`nmake`)
+          choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows10SDK.19041" -y
+          echo "Installed Visual Studio Build Tools."
+      
+          REM 2️⃣ Install NASM
           powershell -Command "Invoke-WebRequest -Uri 'https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/win64/nasm-2.16.03-installer-x64.exe' -OutFile 'nasm-installer.exe'"
           start /wait nasm-installer.exe /S
           echo "Installed NASM"
-          set PATH=C:\Program Files\NASM;%PATH%
-          echo PATH=C:\Program Files\NASM;%PATH%>> %GITHUB_ENV%
+      
+          REM 3️⃣ Load MSVC Environment & Add `nmake` to PATH
+          call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
+      
+          REM 4️⃣ Ensure NASM and MSVC Tools are in PATH
+          set PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools;%PATH%
+      
+          REM 5️⃣ Persist PATH for Future Steps
+          echo PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools;%PATH%>> %GITHUB_ENV%
+
+          REM 1️⃣ Detect Visual Studio Build Tools Path
+          for /f "usebackq tokens=*" %%i in (`vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set VS_PATH=%%i
+          echo "Visual Studio Path: %VS_PATH%"
+      
+          REM 2️⃣ Run `vcvars64.bat` to set environment variables
+          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
+      
+          REM 3️⃣ Manually Add `nmake` to PATH
+          set PATH=%VS_PATH%\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%
+          echo PATH=%VS_PATH%\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%>> %GITHUB_ENV%
+      
+          REM 4️⃣ Verify `nmake` is available
           where nasm
           nasm -v
+          where nmake
+          nmake /?
 
       - name: Download and Extract OpenSSL
         shell: cmd
