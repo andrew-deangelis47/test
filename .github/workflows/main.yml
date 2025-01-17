@@ -27,8 +27,9 @@ jobs:
         run: |
           setx PATH "%PATH%;C:\Program Files\NASM"
           set PATH=%PATH%;C:\Program Files\NASM
-          echo "$PATH"
+          echo %PATH%
           where nasm || echo "NASM not found"
+          nasm -v
 
       - name: Download & Extract OpenSSL
         shell: powershell
