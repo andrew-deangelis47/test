@@ -61,9 +61,9 @@ jobs:
           echo "OpenSSL Build Completed"
 
           echo "Install OpenSSL FIPS"
-          dir "C:\Program Files\OpenSSL\lib\ossl-modules"
-          dir "C:\Program Files\OpenSSL\ssl"
           openssl fipsinstall -module C:\Program Files\OpenSSL\lib\ossl-modules\fips.dll -out C:\Program Files\OpenSSL\ssl\fipsmodule.cnf
+          mkdir -p "C:/Program Files/OpenSSL/ssl"
+          cp .github/openssl/openssl.cnf "C:/Program Files/OpenSSL/openssl.cnf"
           set OPENSSL_CONF=C:\Program Files\OpenSSL\ssl\openssl.cnf
           echo "Installed OpenSSL FIPS"
 
