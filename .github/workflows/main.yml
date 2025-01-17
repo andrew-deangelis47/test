@@ -10,6 +10,9 @@ jobs:
       - name: Install Visual Studio Build Tools & Persist PATH
         shell: cmd
         run: |
+          ls -R ${{ github.workspace }}
+          cat ${{ github.workspace }}/.github/openssl.cnf
+        
           echo %PATH%
         
           REM 1️⃣ Install Visual Studio Build Tools (`nmake`)
@@ -63,7 +66,7 @@ jobs:
           echo "Install OpenSSL FIPS"
           openssl fipsinstall -module C:\Program Files\OpenSSL\lib\ossl-modules\fips.dll -out C:\Program Files\OpenSSL\ssl\fipsmodule.cnf
           mkdir -p "C:\Program Files\OpenSSL\ssl"
-          cp .github/openssl.cnf "C:\Program Files\OpenSSL\ssl\openssl.cnf"
+          cp ${{ github.workspace }}/.github/openssl.cnf "C:\Program Files\OpenSSL\ssl\openssl.cnf"
           set OPENSSL_CONF=C:\Program Files\OpenSSL\ssl\openssl.cnf
           echo "Installed OpenSSL FIPS"
 
