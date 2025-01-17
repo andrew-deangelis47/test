@@ -23,10 +23,10 @@ jobs:
           call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
       
           REM 4️⃣ Ensure NASM and MSVC Tools are in PATH
-          set PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%
+          set PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools;%PATH%
       
           REM 5️⃣ Persist PATH for Future Steps
-          echo PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%>> %GITHUB_ENV%
+          echo PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools;%PATH%>> %GITHUB_ENV%
 
           echo "Detecting Visual Studio Installation..."
           for /f "usebackq tokens=*" %%i in (`vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set VS_PATH=%%i
