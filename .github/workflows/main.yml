@@ -55,17 +55,20 @@ jobs:
 
           echo "Build OpenSSL"
           cd openssl-3.0.8
-          perl Configure VC-WIN64A fips --with-fipsdir="C:\Program Files\OpenSSL"
+          perl Configure VC-WIN64A fips
           nmake
           nmake install
           echo "OpenSSL Build Completed"
 
           echo "Install OpenSSL FIPS"
+          dir "C:\Program Files\OpenSSL\lib\ossl-modules"
+          dir "C:\Program Files\OpenSSL\ssl"
           openssl fipsinstall -module C:\Program Files\OpenSSL\lib\ossl-modules\fips.dll -out C:\Program Files\OpenSSL\ssl\fipsmodule.cnf
-          set OPENSSL_CONF=C:\Program Files\OpenSSL\ssl\fipsmodule.cnf
+          set OPENSSL_CONF=C:\Program Files\OpenSSL\ssl\openssl.cnf
           echo "Installed OpenSSL FIPS"
 
           echo "Verify OpenSSL"
+          echo %OPENSSL_CONF%
           openssl version -a
           openssl list -providers
           openssl fips
