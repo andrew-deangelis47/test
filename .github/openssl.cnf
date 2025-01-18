@@ -8,7 +8,7 @@ fips = fips_sect
 
 [fips_sect]
 activate = 1
-module = C:/Program Files/OpenSSL/ssl/fipsmodule.cnf
+module = C:\Program Files\Common Files\SSL\fipsmodule.cnf
 
 [evp_settings]
 fips_mode = on 
