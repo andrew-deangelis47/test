@@ -89,5 +89,6 @@ jobs:
           cd Python-3.10.13
           PCbuild\build.bat -e -p x64
 
+          echo "Check Python OPENSSL Version"
           python -c "import ssl; print(ssl.OPENSSL_VERSION)"
           python -c "import hashlib; hashlib.md5().hexdigest()" 
