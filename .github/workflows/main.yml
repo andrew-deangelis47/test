@@ -78,7 +78,10 @@ jobs:
           echo %OPENSSL_CONF%
           openssl version -a
           openssl list -providers
-          openssl provider-load fips
-          openssl list -providers
           echo "Hello FIPS" > test.txt
-          openssl md5 test.txt
+          openssl dgst -sha256 test.txt
+
+          powershell -Command "Invoke-WebRequest -Uri 'https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz' -OutFile 'Python-3.10.13.tgz'"
+          tar -xf Python-3.10.13.tgz
+          cd Python-3.10.13
+          PCbuild\build.bat -e -p x64 --openssl-dir="C:\Program Files\OpenSSL"
