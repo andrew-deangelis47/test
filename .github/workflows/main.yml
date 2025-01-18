@@ -67,19 +67,16 @@ jobs:
           echo "OpenSSL Build Completed"
 
           echo "Install OpenSSL FIPS"
-          mkdir -p "C:\Program Files\OpenSSL\ssl"
           dir "C:\Program Files\OpenSSL\lib\ossl-modules"
           openssl fipsinstall -module "C:\Program Files\OpenSSL\lib\ossl-modules\fips.dll" -provider_name fips -out "C:\Program Files\OpenSSL\ssl\fipsmodule.cnf"
-          cp ${{ github.workspace }}/.github/openssl.cnf "C:\Program Files\OpenSSL\ssl\openssl.cnf"
-          cat "C:\Program Files\OpenSSL\ssl\openssl.cnf"
-          set OPENSSL_CONF="C:\Program Files\OpenSSL\ssl\openssl.cnf"
+          cp ${{ github.workspace }}/.github/openssl.cnf "C:\Program Files\Common Files\SSL\openssl.cnf"
+          dir "C:\Program Files\Common Files\SSL"
+          set OPENSSL_CONF="C:\Program Files\Common Files\SSL\openssl.cnf"
           echo "Installed OpenSSL FIPS"
 
           echo "Verify OpenSSL"
           echo %OPENSSL_CONF%
           openssl version -a
-          openssl list -providers
-          openssl provider-load fips
           openssl list -providers
           echo "Hello FIPS" > test.txt
           openssl md5 test.txt
