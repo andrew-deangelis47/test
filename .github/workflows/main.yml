@@ -89,6 +89,9 @@ jobs:
           cd Python-3.10.13
           PCbuild\build.bat -e -p x64
 
+      - name: Run Python
+        shell: cmd
+        run: |
           echo "Check Python OPENSSL Version"
           set PATH=%CD%\PCbuild\amd64;%PATH%
           python -c "import ssl; print(ssl.OPENSSL_VERSION)"
