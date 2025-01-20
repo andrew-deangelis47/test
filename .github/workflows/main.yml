@@ -83,8 +83,12 @@ jobs:
 
           set INCLUDE="C:\Program Files\OpenSSL\include;%INCLUDE%"
           set LIB="C:\Program Files\OpenSSL\lib;%LIB%"
+          set "OPENSSL_DIR=C:\Program Files\OpenSSL\"
           dir "C:\Program Files\OpenSSL\bin"
           echo "PATH=C:\Program Files\OpenSSL\bin;%PATH%" >> %GITHUB_ENV%
+
+          echo "Check OpenSSL Location"
+          where openssl
 
           powershell -Command "Invoke-WebRequest -Uri 'https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz' -OutFile 'Python-3.10.13.tgz'"
           tar -xf Python-3.10.13.tgz
@@ -95,7 +99,7 @@ jobs:
         shell: cmd
         run: |
           echo "Check Python OPENSSL Version"
-          set PATH=%CD%\PCbuild\amd64;%PATH%
+          set "PATH=C:\Program Files\OpenSSL\bin;%PATH%"
           D:\a\test\test\openssl-3.0.8\Python-3.10.13\PCbuild\amd64\python.exe -c "import ssl; print(ssl.OPENSSL_VERSION)"
           python -c "import ssl; print(ssl.OPENSSL_VERSION)"
           python -c "import hashlib; hashlib.md5().hexdigest()" 
