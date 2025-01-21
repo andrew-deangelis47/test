@@ -96,6 +96,9 @@ jobs:
           powershell -Command "Invoke-WebRequest -Uri 'https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz' -OutFile 'Python-3.10.13.tgz'"
           tar -xf Python-3.10.13.tgz
           cd Python-3.10.13
+          dir
+          dir PCbuild
+          
           
           echo "Check Modules Setup"
           cat Modules/Setup
