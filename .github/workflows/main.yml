@@ -61,6 +61,7 @@ jobs:
 
           echo "Build OpenSSL"
           cd openssl-3.0.8
+          dir
           perl Configure VC-WIN64A fips
           nmake
           nmake install
@@ -73,6 +74,7 @@ jobs:
           cp ${{ github.workspace }}/.github/openssl.cnf "C:\Program Files\Common Files\SSL\openssl.cnf"
           cat "C:\Program Files\Common Files\SSL\openssl.cnf"
           echo "Installed OpenSSL FIPS"
+          dir "C:\Program Files\Common Files\SSL\"
           dir "C:\Program Files\OpenSSL\
           dir "C:\Program Files\OpenSSL\lib\
 
