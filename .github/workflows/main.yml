@@ -73,6 +73,8 @@ jobs:
           cp ${{ github.workspace }}/.github/openssl.cnf "C:\Program Files\Common Files\SSL\openssl.cnf"
           cat "C:\Program Files\Common Files\SSL\openssl.cnf"
           echo "Installed OpenSSL FIPS"
+          dir "C:\Program Files\OpenSSL\
+          dir "C:\Program Files\OpenSSL\lib\
 
           echo "Verify OpenSSL"
           echo %OPENSSL_CONF%
