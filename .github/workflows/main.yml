@@ -96,13 +96,12 @@ jobs:
           powershell -Command "Invoke-WebRequest -Uri 'https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz' -OutFile 'Python-3.10.13.tgz'"
           tar -xf Python-3.10.13.tgz
           cd Python-3.10.13
-          echo "SSL=C:/Program Files/OpenSSL" >> Modules/Setup
-          echo "_ssl _ssl.c -DUSE_SSL -I$(SSL)/include -I$(SSL)/include/openssl -L$(SSL)/lib -lssl -lcrypto" >> Modules/Setup
+          
           echo "Check Modules Setup"
           cat Modules/Setup
 
           echo "Modify the Modules/Setup"
-          cp ${{ github.workspace }}/.github/Setup Python-3.10.13/Modules/Setup
+          cp ${{ github.workspace }}/.github/Setup Modules/Setup
 
           echo "Check Modules Setup Changes"
           cat Modules/Setup
