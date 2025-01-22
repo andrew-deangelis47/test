@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Executable
         run: |
-          python -m nuitka --onefile --noinclude-dlls=openssl hello_world.py
+          python -m nuitka --onefile --assume-yes-for-downloads --noinclude-dlls=openssl hello_world.py
 
       # Uploads artifact
       - name: Upload Artifact
