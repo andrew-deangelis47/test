@@ -1,124 +1,37 @@
-name: Build FIPS-Compliant OpenSSL
+name: Build Python Executable
 run-name: builder
 on: [push]
-
 jobs:
+
   build:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-    
-      - name: Install Visual Studio Build Tools & Persist PATH
-        shell: cmd
-        run: |
-          ls -R ${{ github.workspace }}
-          cat ${{ github.workspace }}/.github/openssl.cnf
-        
-          echo %PATH%
-        
-          REM 1️⃣ Install Visual Studio Build Tools (`nmake`)
-          choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.CoreBuildTools --add Microsoft.VisualStudio.Component.Windows10SDK.19041" -y
-          choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.CoreBuildTools --add Microsoft.VisualStudio.Component.Windows10SDK.19041" -y
-          echo "Installed Visual Studio Build Tools."
-      
-          REM 2️⃣ Install NASM
-          powershell -Command "Invoke-WebRequest -Uri 'https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/win64/nasm-2.16.03-installer-x64.exe' -OutFile 'nasm-installer.exe'"
-          start /wait nasm-installer.exe /S
-          echo "Installed NASM"
-      
-          REM 3️⃣ Load MSVC Environment & Add `nmake` to PATH
-          call "C:\Program Files\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat"
-      
-          REM 4️⃣ Ensure NASM and MSVC Tools are in PATH
-          set PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools;%PATH%
-      
-          REM 5️⃣ Persist PATH for Future Steps
-          echo PATH=C:\Program Files\NASM;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools;%PATH%>> %GITHUB_ENV%
 
-          REM 1️⃣ Detect Visual Studio Build Tools Path
-          for /f "usebackq tokens=*" %%i in (`vswhere -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set VS_PATH=%%i
-          echo "Visual Studio Path: %VS_PATH%"
-      
-          REM 2️⃣ Run `vcvars64.bat` to set environment variables
-          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
-      
-          REM 3️⃣ Manually Add `nmake` to PATH
-          set PATH=%VS_PATH%\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%
-          echo PATH=%VS_PATH%\VC\Tools\MSVC\*\bin\Hostx64\x64;%PATH%>> %GITHUB_ENV%
-      
-          REM 4️⃣ Verify `nmake` is available
-          where nasm
-          nasm -v
-          where nmake
-          nmake /?
+      # Check-out repository
+      - uses: actions/checkout@v4
 
-          echo "Download OpenSSL"
-          powershell -Command "Invoke-WebRequest -Uri 'https://www.openssl.org/source/openssl-3.0.8.tar.gz' -OutFile 'openssl.tar.gz'"
-          tar -xf openssl.tar.gz
-          echo "Extracted OpenSSL"
+      # Setup Python
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
 
-          echo "Build OpenSSL"
-          cd openssl-3.0.8
-          dir
-          perl Configure VC-WIN64A fips
-          nmake
-          nmake install
-          echo "OpenSSL Build Completed"
+     - name: Install Dependencies
+     run: |
+       pip install -r integrations/requirements.txt
 
-          echo "Install OpenSSL FIPS"
-          mkdir -p "C:\Program Files\OpenSSL\ssl"
-          dir "C:\Program Files\OpenSSL\lib\ossl-modules"
-          openssl fipsinstall -module "C:\Program Files\OpenSSL\lib\ossl-modules\fips.dll" -provider_name fips -out "C:\Program Files\Common Files\SSL\fipsmodule.cnf"
-          cp ${{ github.workspace }}/.github/openssl.cnf "C:\Program Files\Common Files\SSL\openssl.cnf"
-          cat "C:\Program Files\Common Files\SSL\openssl.cnf"
-          echo "Installed OpenSSL FIPS"
-          dir "C:\Program Files\Common Files\SSL\"
-          dir "C:\Program Files\OpenSSL\
-          dir "C:\Program Files\OpenSSL\lib\
+      # Build python script into a single execute or app folder (macOS)
+      - uses: Nuitka/Nuitka-Action@main
+        with:
+          nuitka-version: main
+          script-name: hello_world.py
+          mode: app
 
-          echo "Verify OpenSSL"
-          echo %OPENSSL_CONF%
-          openssl version -a
-          openssl list -providers
-          echo "Hello FIPS" > test.txt
-          openssl dgst -sha256 test.txt
-
-          set INCLUDE="C:\Program Files\OpenSSL\include;%INCLUDE%"
-          set LIB="C:\Program Files\OpenSSL\lib;%LIB%"
-          set "OPENSSL_DIR=C:\Program Files\OpenSSL\"
-          dir "C:\Program Files\OpenSSL\bin"
-          echo "PATH=C:\Program Files\OpenSSL\bin;%PATH%" >> %GITHUB_ENV%
-
-          echo "Check OpenSSL Location"
-          where openssl
-          where libcrypto-3-x64.dll
-
-          echo "Install Python"
-          cd ..
-          powershell -Command "Invoke-WebRequest -Uri 'https://www.python.org/ftp/python/3.10.13/Python-3.10.13.tgz' -OutFile 'Python-3.10.13.tgz'"
-          tar -xf Python-3.10.13.tgz
-          cd Python-3.10.13
-          dir
-          dir PCbuild
-          
-          
-          echo "Check Modules Setup"
-          cat Modules/Setup
-
-          echo "Modify the Modules/Setup"
-          cp ${{ github.workspace }}/.github/Setup Modules/Setup
-
-          echo "Check Modules Setup Changes"
-          cat Modules/Setup
-          PCbuild\build.bat -e -p x64
-
-      - name: Run Python
-        shell: cmd
-        run: |
-          echo "Check Python OPENSSL Version"
-          set "PATH=C:\Program Files\OpenSSL\bin;%PATH%"
-          D:\a\test\test\Python-3.10.13\PCbuild\amd64\python.exe -c "import ssl; print(ssl.OPENSSL_VERSION)"
-          python -c "import ssl; print(ssl.OPENSSL_VERSION)"
-          python -c "import hashlib; hashlib.md5().hexdigest()" 
+      # Uploads artifact
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: exe
+          path: build/hello_world.exe
+          include-hidden-files: true
