@@ -1,0 +1,23 @@
+{
+  "returnObj": {
+    "ContactList": [
+      {
+        "Company": "OPI",
+        "FirstName": "Chris",
+        "LastName": "Buch",
+        "ContactName": "Chris Buch",
+        "CustNum": 977,
+        "CustID": "BUCH001",
+        "CustomerName": "Buch Plastics",
+        "CustNumList": "",
+        "SysRowID": "b5ab3f50-d5fe-4fc5-8726-bc9a282e644f",
+        "RowMod": "",
+        "ConNum": 123
+      }
+    ],
+    "ExtensionTables": []
+  },
+  "parameters": {
+    "morePages": false
+  }
+}

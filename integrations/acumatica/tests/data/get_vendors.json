@@ -1,0 +1,1162 @@
+[
+    {
+        "id": "cb5821ed-1ab3-ed11-9900-0050560201fd",
+        "rowNumber": 1,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "APAccount": {
+            "value": "2000"
+        },
+        "APSubaccount": {
+            "value": "000000"
+        },
+        "CashAccount": {
+            "value": "CCTC-NYAP"
+        },
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:39:12.26-05:00"
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "F1099Box": {},
+        "F1099Vendor": {
+            "value": false
+        },
+        "FATCA": {},
+        "FOBPoint": {},
+        "ForeignEntity": {
+            "value": false
+        },
+        "LandedCostVendor": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-22T21:39:12.26-05:00"
+        },
+        "LeadTimedays": {},
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MaxReceipt": {
+            "value": 100.000000
+        },
+        "MinReceipt": {
+            "value": 0.000000
+        },
+        "ParentAccount": {},
+        "PaymentBy": {
+            "value": "Due Date"
+        },
+        "PaymentLeadTimedays": {
+            "value": 0
+        },
+        "PaymentMethod": {
+            "value": "CHECK"
+        },
+        "PaySeparately": {
+            "value": false
+        },
+        "PrintOrders": {
+            "value": false
+        },
+        "ReceiptAction": {
+            "value": "Accept but Warn"
+        },
+        "ReceivingBranch": {},
+        "RemittanceAddressOverride": {},
+        "RemittanceContactOverride": {},
+        "SendOrdersbyEmail": {
+            "value": true
+        },
+        "ShippingAddressOverride": {},
+        "ShippingContactOverride": {},
+        "ShippingTerms": {},
+        "ShipVia": {},
+        "Status": {
+            "value": "Active"
+        },
+        "TaxRegistrationID": {},
+        "TaxZone": {},
+        "Terms": {
+            "value": "ONRECEIPT"
+        },
+        "ThresholdReceipt": {
+            "value": 100.000000
+        },
+        "VendorClass": {
+            "value": "GENERAL"
+        },
+        "VendorID": {
+            "value": "V100001"
+        },
+        "VendorIsLaborUnion": {
+            "value": false
+        },
+        "VendorIsTaxAgency": {
+            "value": false
+        },
+        "VendorName": {
+            "value": "123BEARING.COM"
+        },
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Vendor/cb5821ed-1ab3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AP.VendorMaint/BAccount/cb5821ed-1ab3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "df5821ed-1ab3-ed11-9900-0050560201fd",
+        "rowNumber": 2,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "APAccount": {
+            "value": "2000"
+        },
+        "APSubaccount": {
+            "value": "000000"
+        },
+        "CashAccount": {
+            "value": "CCTC-NYAP"
+        },
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:39:12.5-05:00"
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "F1099Box": {},
+        "F1099Vendor": {
+            "value": false
+        },
+        "FATCA": {},
+        "FOBPoint": {},
+        "ForeignEntity": {
+            "value": false
+        },
+        "LandedCostVendor": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-22T21:39:12.5-05:00"
+        },
+        "LeadTimedays": {},
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MaxReceipt": {
+            "value": 100.000000
+        },
+        "MinReceipt": {
+            "value": 0.000000
+        },
+        "ParentAccount": {},
+        "PaymentBy": {
+            "value": "Due Date"
+        },
+        "PaymentLeadTimedays": {
+            "value": 0
+        },
+        "PaymentMethod": {
+            "value": "CHECK"
+        },
+        "PaySeparately": {
+            "value": false
+        },
+        "PrintOrders": {
+            "value": false
+        },
+        "ReceiptAction": {
+            "value": "Accept but Warn"
+        },
+        "ReceivingBranch": {},
+        "RemittanceAddressOverride": {},
+        "RemittanceContactOverride": {},
+        "SendOrdersbyEmail": {
+            "value": true
+        },
+        "ShippingAddressOverride": {},
+        "ShippingContactOverride": {},
+        "ShippingTerms": {},
+        "ShipVia": {},
+        "Status": {
+            "value": "Active"
+        },
+        "TaxRegistrationID": {},
+        "TaxZone": {},
+        "Terms": {
+            "value": "NET15"
+        },
+        "ThresholdReceipt": {
+            "value": 100.000000
+        },
+        "VendorClass": {
+            "value": "GENERAL"
+        },
+        "VendorID": {
+            "value": "V100002"
+        },
+        "VendorIsLaborUnion": {
+            "value": false
+        },
+        "VendorIsTaxAgency": {
+            "value": false
+        },
+        "VendorName": {
+            "value": "A.DUIE PYLE, INC"
+        },
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Vendor/df5821ed-1ab3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AP.VendorMaint/BAccount/df5821ed-1ab3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "f35821ed-1ab3-ed11-9900-0050560201fd",
+        "rowNumber": 3,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "APAccount": {
+            "value": "2000"
+        },
+        "APSubaccount": {
+            "value": "000000"
+        },
+        "CashAccount": {
+            "value": "CCTC-NYAP"
+        },
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:39:12.72-05:00"
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "F1099Box": {},
+        "F1099Vendor": {
+            "value": false
+        },
+        "FATCA": {},
+        "FOBPoint": {},
+        "ForeignEntity": {
+            "value": false
+        },
+        "LandedCostVendor": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-22T21:39:12.72-05:00"
+        },
+        "LeadTimedays": {},
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MaxReceipt": {
+            "value": 100.000000
+        },
+        "MinReceipt": {
+            "value": 0.000000
+        },
+        "ParentAccount": {},
+        "PaymentBy": {
+            "value": "Due Date"
+        },
+        "PaymentLeadTimedays": {
+            "value": 0
+        },
+        "PaymentMethod": {
+            "value": "CHECK"
+        },
+        "PaySeparately": {
+            "value": false
+        },
+        "PrintOrders": {
+            "value": false
+        },
+        "ReceiptAction": {
+            "value": "Accept but Warn"
+        },
+        "ReceivingBranch": {},
+        "RemittanceAddressOverride": {},
+        "RemittanceContactOverride": {},
+        "SendOrdersbyEmail": {
+            "value": true
+        },
+        "ShippingAddressOverride": {},
+        "ShippingContactOverride": {},
+        "ShippingTerms": {},
+        "ShipVia": {},
+        "Status": {
+            "value": "Active"
+        },
+        "TaxRegistrationID": {},
+        "TaxZone": {},
+        "Terms": {
+            "value": "ONRECEIPT"
+        },
+        "ThresholdReceipt": {
+            "value": 100.000000
+        },
+        "VendorClass": {
+            "value": "GENERAL"
+        },
+        "VendorID": {
+            "value": "V100003"
+        },
+        "VendorIsLaborUnion": {
+            "value": false
+        },
+        "VendorIsTaxAgency": {
+            "value": false
+        },
+        "VendorName": {
+            "value": "A.L. SEALING INC."
+        },
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Vendor/f35821ed-1ab3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AP.VendorMaint/BAccount/f35821ed-1ab3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "075921ed-1ab3-ed11-9900-0050560201fd",
+        "rowNumber": 4,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "APAccount": {
+            "value": "2000"
+        },
+        "APSubaccount": {
+            "value": "000000"
+        },
+        "CashAccount": {
+            "value": "CCTC-NYAP"
+        },
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:39:12.927-05:00"
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "F1099Box": {},
+        "F1099Vendor": {
+            "value": false
+        },
+        "FATCA": {},
+        "FOBPoint": {},
+        "ForeignEntity": {
+            "value": false
+        },
+        "LandedCostVendor": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-22T21:39:12.927-05:00"
+        },
+        "LeadTimedays": {},
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MaxReceipt": {
+            "value": 100.000000
+        },
+        "MinReceipt": {
+            "value": 0.000000
+        },
+        "ParentAccount": {},
+        "PaymentBy": {
+            "value": "Due Date"
+        },
+        "PaymentLeadTimedays": {
+            "value": 0
+        },
+        "PaymentMethod": {
+            "value": "CHECK"
+        },
+        "PaySeparately": {
+            "value": false
+        },
+        "PrintOrders": {
+            "value": false
+        },
+        "ReceiptAction": {
+            "value": "Accept but Warn"
+        },
+        "ReceivingBranch": {},
+        "RemittanceAddressOverride": {},
+        "RemittanceContactOverride": {},
+        "SendOrdersbyEmail": {
+            "value": true
+        },
+        "ShippingAddressOverride": {},
+        "ShippingContactOverride": {},
+        "ShippingTerms": {},
+        "ShipVia": {},
+        "Status": {
+            "value": "Active"
+        },
+        "TaxRegistrationID": {},
+        "TaxZone": {},
+        "Terms": {
+            "value": "NET60"
+        },
+        "ThresholdReceipt": {
+            "value": 100.000000
+        },
+        "VendorClass": {
+            "value": "GENERAL"
+        },
+        "VendorID": {
+            "value": "V100004"
+        },
+        "VendorIsLaborUnion": {
+            "value": false
+        },
+        "VendorIsTaxAgency": {
+            "value": false
+        },
+        "VendorName": {
+            "value": "A588 & A572 STEEL COMPANY"
+        },
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Vendor/075921ed-1ab3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AP.VendorMaint/BAccount/075921ed-1ab3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "1b5921ed-1ab3-ed11-9900-0050560201fd",
+        "rowNumber": 5,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "APAccount": {
+            "value": "2000"
+        },
+        "APSubaccount": {
+            "value": "000000"
+        },
+        "CashAccount": {
+            "value": "CCTC-NYAP"
+        },
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:39:13.157-05:00"
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "F1099Box": {},
+        "F1099Vendor": {
+            "value": false
+        },
+        "FATCA": {},
+        "FOBPoint": {},
+        "ForeignEntity": {
+            "value": false
+        },
+        "LandedCostVendor": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-22T21:39:13.157-05:00"
+        },
+        "LeadTimedays": {},
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MaxReceipt": {
+            "value": 100.000000
+        },
+        "MinReceipt": {
+            "value": 0.000000
+        },
+        "ParentAccount": {},
+        "PaymentBy": {
+            "value": "Due Date"
+        },
+        "PaymentLeadTimedays": {
+            "value": 0
+        },
+        "PaymentMethod": {
+            "value": "CHECK"
+        },
+        "PaySeparately": {
+            "value": false
+        },
+        "PrintOrders": {
+            "value": false
+        },
+        "ReceiptAction": {
+            "value": "Accept but Warn"
+        },
+        "ReceivingBranch": {},
+        "RemittanceAddressOverride": {},
+        "RemittanceContactOverride": {},
+        "SendOrdersbyEmail": {
+            "value": true
+        },
+        "ShippingAddressOverride": {},
+        "ShippingContactOverride": {},
+        "ShippingTerms": {},
+        "ShipVia": {},
+        "Status": {
+            "value": "Active"
+        },
+        "TaxRegistrationID": {},
+        "TaxZone": {},
+        "Terms": {
+            "value": "ONRECEIPT"
+        },
+        "ThresholdReceipt": {
+            "value": 100.000000
+        },
+        "VendorClass": {
+            "value": "GENERAL"
+        },
+        "VendorID": {
+            "value": "V100005"
+        },
+        "VendorIsLaborUnion": {
+            "value": false
+        },
+        "VendorIsTaxAgency": {
+            "value": false
+        },
+        "VendorName": {
+            "value": "AAA METALS COMPANY INC"
+        },
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Vendor/1b5921ed-1ab3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AP.VendorMaint/BAccount/1b5921ed-1ab3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "2f5921ed-1ab3-ed11-9900-0050560201fd",
+        "rowNumber": 6,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "APAccount": {
+            "value": "2000"
+        },
+        "APSubaccount": {
+            "value": "000000"
+        },
+        "CashAccount": {
+            "value": "CCTC-NYAP"
+        },
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:39:13.373-05:00"
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "F1099Box": {},
+        "F1099Vendor": {
+            "value": false
+        },
+        "FATCA": {},
+        "FOBPoint": {},
+        "ForeignEntity": {
+            "value": false
+        },
+        "LandedCostVendor": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-22T21:39:13.373-05:00"
+        },
+        "LeadTimedays": {},
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MaxReceipt": {
+            "value": 100.000000
+        },
+        "MinReceipt": {
+            "value": 0.000000
+        },
+        "ParentAccount": {},
+        "PaymentBy": {
+            "value": "Due Date"
+        },
+        "PaymentLeadTimedays": {
+            "value": 0
+        },
+        "PaymentMethod": {
+            "value": "CHECK"
+        },
+        "PaySeparately": {
+            "value": false
+        },
+        "PrintOrders": {
+            "value": false
+        },
+        "ReceiptAction": {
+            "value": "Accept but Warn"
+        },
+        "ReceivingBranch": {},
+        "RemittanceAddressOverride": {},
+        "RemittanceContactOverride": {},
+        "SendOrdersbyEmail": {
+            "value": true
+        },
+        "ShippingAddressOverride": {},
+        "ShippingContactOverride": {},
+        "ShippingTerms": {},
+        "ShipVia": {},
+        "Status": {
+            "value": "Active"
+        },
+        "TaxRegistrationID": {},
+        "TaxZone": {},
+        "Terms": {
+            "value": "ONRECEIPT"
+        },
+        "ThresholdReceipt": {
+            "value": 100.000000
+        },
+        "VendorClass": {
+            "value": "GENERAL"
+        },
+        "VendorID": {
+            "value": "V100006"
+        },
+        "VendorIsLaborUnion": {
+            "value": false
+        },
+        "VendorIsTaxAgency": {
+            "value": false
+        },
+        "VendorName": {
+            "value": "ABLE 2"
+        },
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Vendor/2f5921ed-1ab3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AP.VendorMaint/BAccount/2f5921ed-1ab3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "435921ed-1ab3-ed11-9900-0050560201fd",
+        "rowNumber": 7,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "APAccount": {
+            "value": "2000"
+        },
+        "APSubaccount": {
+            "value": "000000"
+        },
+        "CashAccount": {
+            "value": "CCTC-NYAP"
+        },
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:39:13.693-05:00"
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "F1099Box": {},
+        "F1099Vendor": {
+            "value": false
+        },
+        "FATCA": {},
+        "FOBPoint": {},
+        "ForeignEntity": {
+            "value": false
+        },
+        "LandedCostVendor": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-22T21:39:13.693-05:00"
+        },
+        "LeadTimedays": {},
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MaxReceipt": {
+            "value": 100.000000
+        },
+        "MinReceipt": {
+            "value": 0.000000
+        },
+        "ParentAccount": {},
+        "PaymentBy": {
+            "value": "Due Date"
+        },
+        "PaymentLeadTimedays": {
+            "value": 0
+        },
+        "PaymentMethod": {
+            "value": "CHECK"
+        },
+        "PaySeparately": {
+            "value": false
+        },
+        "PrintOrders": {
+            "value": false
+        },
+        "ReceiptAction": {
+            "value": "Accept but Warn"
+        },
+        "ReceivingBranch": {},
+        "RemittanceAddressOverride": {},
+        "RemittanceContactOverride": {},
+        "SendOrdersbyEmail": {
+            "value": true
+        },
+        "ShippingAddressOverride": {},
+        "ShippingContactOverride": {},
+        "ShippingTerms": {},
+        "ShipVia": {},
+        "Status": {
+            "value": "Active"
+        },
+        "TaxRegistrationID": {},
+        "TaxZone": {},
+        "Terms": {
+            "value": "ONRECEIPT"
+        },
+        "ThresholdReceipt": {
+            "value": 100.000000
+        },
+        "VendorClass": {
+            "value": "GENERAL"
+        },
+        "VendorID": {
+            "value": "V100007"
+        },
+        "VendorIsLaborUnion": {
+            "value": false
+        },
+        "VendorIsTaxAgency": {
+            "value": false
+        },
+        "VendorName": {
+            "value": "ACAD  DESIGN CORP"
+        },
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Vendor/435921ed-1ab3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AP.VendorMaint/BAccount/435921ed-1ab3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "575921ed-1ab3-ed11-9900-0050560201fd",
+        "rowNumber": 8,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "APAccount": {
+            "value": "2000"
+        },
+        "APSubaccount": {
+            "value": "000000"
+        },
+        "CashAccount": {
+            "value": "CCTC-NYAP"
+        },
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:39:13.89-05:00"
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "F1099Box": {},
+        "F1099Vendor": {
+            "value": false
+        },
+        "FATCA": {},
+        "FOBPoint": {},
+        "ForeignEntity": {
+            "value": false
+        },
+        "LandedCostVendor": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-22T21:39:13.89-05:00"
+        },
+        "LeadTimedays": {},
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MaxReceipt": {
+            "value": 100.000000
+        },
+        "MinReceipt": {
+            "value": 0.000000
+        },
+        "ParentAccount": {},
+        "PaymentBy": {
+            "value": "Due Date"
+        },
+        "PaymentLeadTimedays": {
+            "value": 0
+        },
+        "PaymentMethod": {
+            "value": "CHECK"
+        },
+        "PaySeparately": {
+            "value": false
+        },
+        "PrintOrders": {
+            "value": false
+        },
+        "ReceiptAction": {
+            "value": "Accept but Warn"
+        },
+        "ReceivingBranch": {},
+        "RemittanceAddressOverride": {},
+        "RemittanceContactOverride": {},
+        "SendOrdersbyEmail": {
+            "value": true
+        },
+        "ShippingAddressOverride": {},
+        "ShippingContactOverride": {},
+        "ShippingTerms": {},
+        "ShipVia": {},
+        "Status": {
+            "value": "Active"
+        },
+        "TaxRegistrationID": {},
+        "TaxZone": {},
+        "Terms": {
+            "value": "ONRECEIPT"
+        },
+        "ThresholdReceipt": {
+            "value": 100.000000
+        },
+        "VendorClass": {
+            "value": "GENERAL"
+        },
+        "VendorID": {
+            "value": "V100008"
+        },
+        "VendorIsLaborUnion": {
+            "value": false
+        },
+        "VendorIsTaxAgency": {
+            "value": false
+        },
+        "VendorName": {
+            "value": "ACC BUSINESS"
+        },
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Vendor/575921ed-1ab3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AP.VendorMaint/BAccount/575921ed-1ab3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "6b5921ed-1ab3-ed11-9900-0050560201fd",
+        "rowNumber": 9,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "APAccount": {
+            "value": "2000"
+        },
+        "APSubaccount": {
+            "value": "000000"
+        },
+        "CashAccount": {
+            "value": "CCTC-NYAP"
+        },
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:39:14.08-05:00"
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "F1099Box": {},
+        "F1099Vendor": {
+            "value": false
+        },
+        "FATCA": {},
+        "FOBPoint": {},
+        "ForeignEntity": {
+            "value": false
+        },
+        "LandedCostVendor": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-22T21:39:14.08-05:00"
+        },
+        "LeadTimedays": {},
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MaxReceipt": {
+            "value": 100.000000
+        },
+        "MinReceipt": {
+            "value": 0.000000
+        },
+        "ParentAccount": {},
+        "PaymentBy": {
+            "value": "Due Date"
+        },
+        "PaymentLeadTimedays": {
+            "value": 0
+        },
+        "PaymentMethod": {
+            "value": "CHECK"
+        },
+        "PaySeparately": {
+            "value": false
+        },
+        "PrintOrders": {
+            "value": false
+        },
+        "ReceiptAction": {
+            "value": "Accept but Warn"
+        },
+        "ReceivingBranch": {},
+        "RemittanceAddressOverride": {},
+        "RemittanceContactOverride": {},
+        "SendOrdersbyEmail": {
+            "value": true
+        },
+        "ShippingAddressOverride": {},
+        "ShippingContactOverride": {},
+        "ShippingTerms": {},
+        "ShipVia": {},
+        "Status": {
+            "value": "Active"
+        },
+        "TaxRegistrationID": {},
+        "TaxZone": {},
+        "Terms": {
+            "value": "NET60"
+        },
+        "ThresholdReceipt": {
+            "value": 100.000000
+        },
+        "VendorClass": {
+            "value": "GENERAL"
+        },
+        "VendorID": {
+            "value": "V100009"
+        },
+        "VendorIsLaborUnion": {
+            "value": false
+        },
+        "VendorIsTaxAgency": {
+            "value": false
+        },
+        "VendorName": {
+            "value": "ACCURATE SCREW MACHINE CO."
+        },
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Vendor/6b5921ed-1ab3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AP.VendorMaint/BAccount/6b5921ed-1ab3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "7f5921ed-1ab3-ed11-9900-0050560201fd",
+        "rowNumber": 10,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "APAccount": {
+            "value": "2000"
+        },
+        "APSubaccount": {
+            "value": "000000"
+        },
+        "CashAccount": {
+            "value": "CCTC-NYAP"
+        },
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:39:14.317-05:00"
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "F1099Box": {},
+        "F1099Vendor": {
+            "value": false
+        },
+        "FATCA": {},
+        "FOBPoint": {},
+        "ForeignEntity": {
+            "value": false
+        },
+        "LandedCostVendor": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-22T21:39:14.317-05:00"
+        },
+        "LeadTimedays": {},
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MaxReceipt": {
+            "value": 100.000000
+        },
+        "MinReceipt": {
+            "value": 0.000000
+        },
+        "ParentAccount": {},
+        "PaymentBy": {
+            "value": "Due Date"
+        },
+        "PaymentLeadTimedays": {
+            "value": 0
+        },
+        "PaymentMethod": {
+            "value": "CHECK"
+        },
+        "PaySeparately": {
+            "value": false
+        },
+        "PrintOrders": {
+            "value": false
+        },
+        "ReceiptAction": {
+            "value": "Accept but Warn"
+        },
+        "ReceivingBranch": {},
+        "RemittanceAddressOverride": {},
+        "RemittanceContactOverride": {},
+        "SendOrdersbyEmail": {
+            "value": true
+        },
+        "ShippingAddressOverride": {},
+        "ShippingContactOverride": {},
+        "ShippingTerms": {},
+        "ShipVia": {},
+        "Status": {
+            "value": "Active"
+        },
+        "TaxRegistrationID": {},
+        "TaxZone": {},
+        "Terms": {
+            "value": "NET60"
+        },
+        "ThresholdReceipt": {
+            "value": 100.000000
+        },
+        "VendorClass": {
+            "value": "GENERAL"
+        },
+        "VendorID": {
+            "value": "V100010"
+        },
+        "VendorIsLaborUnion": {
+            "value": false
+        },
+        "VendorIsTaxAgency": {
+            "value": false
+        },
+        "VendorName": {
+            "value": "ACE INDUSTRIES"
+        },
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Vendor/7f5921ed-1ab3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AP.VendorMaint/BAccount/7f5921ed-1ab3-ed11-9900-0050560201fd/{filename}"
+        }
+    }
+]

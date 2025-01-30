@@ -1,0 +1,13 @@
+Paperless:
+  dir_to_preserve: hubspot
+  slug: replace_me
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+Hubspot:
+  company_name: replace_me
+
+Exporters:
+  quotes:
+    interval: 1

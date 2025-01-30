@@ -1,0 +1,12 @@
+{
+  "partOperationId": "63a87852-3e57-4a1d-b7cf-bb46a10ff545",
+  "componentId": "53a66c58-b794-46fd-a811-787a78875e43",
+  "quantity": 0.75,
+  "scaling": false,
+  "validate": true,
+  "autoDeplete": true,
+  "transferHeat": true,
+  "note": "",
+  "depletionConversionFactor": 1,
+  "depletionUnitOfMeasure": ""
+}

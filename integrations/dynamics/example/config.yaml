@@ -1,0 +1,46 @@
+Paperless:
+  dir_to_preserve: dynamics
+  slug: replace_me
+  logpath: log.txt
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: replace_me
+
+Exporters:
+  quotes:
+    interval: 3
+    should_create_customer: False
+    should_create_contact: False
+    enable_r_parts: False
+    enable_ts_processes_and_operations: False
+    enable_ts_process_map: False
+    # Paperless
+    pp_mat_id_variable: Material ID Selection
+    pp_coating_item_id_var: coating_no
+    pp_quantity_variable: Sheets Per Part
+    pp_machine_center_variable: workcenter
+    pp_process_selection_variable: Process Selection
+    pp_r_part_flag: Create R-Part in Dynamics?
+    pp_surface_area_variable: Surface Area, Sqft/pc
+    # Dynamics Customer
+    gen_bus_posting_group: DOMESTIC
+    customer_posting_group: DEFAULT
+    tax_area_code: NONTAX
+    # Dynamics Item
+    base_unit_of_measure: PCS
+    gen_prod_posting_group: DEFAULT
+    inventory_posting_group: DEFAULT
+    tax_group_code: NONTAXABLE
+
+
+Importers:
+  materials:
+    interval: 3
+    bulk_enable: True
+  accounts:
+    interval: 3
+  purchased_components:
+    interval: 3
+    bulk_enable: True
+  work_centers:
+    interval: 3
+    bulk_enable: True

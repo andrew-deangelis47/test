@@ -1,0 +1,274 @@
+{
+    "id": "fac75389-b67b-ed11-98fd-0050560201fd",
+    "rowNumber": 1,
+    "note": {
+        "value": ""
+    },
+    "Availability": {
+        "value": "X"
+    },
+    "BaseUnit": {
+        "value": "USD"
+    },
+    "Content": {},
+    "CurrentCost": {
+        "value": 1.000000
+    },
+    "CurrentStdCost": {
+        "value": 1.000000
+    },
+    "CurySpecificMSRP": {
+        "value": 0.000000
+    },
+    "CurySpecificPrice": {
+        "value": 0.000000
+    },
+    "DefaultPrice": {
+        "value": 0.000000
+    },
+    "Description": {
+        "value": "Outside Service Blast - Other"
+    },
+    "DimensionWeight": {
+        "value": 0.000000
+    },
+    "EffectiveDate": {
+        "value": "2023-01-25T00:00:00-05:00"
+    },
+    "ExpenseAccount": {
+        "value": "5000"
+    },
+    "ExpenseAccrualAccount": {
+        "value": "1200"
+    },
+    "ExpenseAccrualSubaccount": {
+        "value": "000000"
+    },
+    "ExpenseSubaccount": {
+        "value": "000000"
+    },
+    "InventoryID": {
+        "value": "BLAST-OTHER"
+    },
+    "IsKit": {
+        "value": false
+    },
+    "ItemClass": {
+        "value": "SERVICE"
+    },
+    "ItemStatus": {
+        "value": "Active"
+    },
+    "ItemType": {
+        "value": "Expense"
+    },
+    "LastCost": {
+        "value": 10.000000
+    },
+    "LastModifiedDateTime": {
+        "value": "2023-02-24T12:20:56.507-05:00"
+    },
+    "MSRP": {
+        "value": 0.000000
+    },
+    "NoteID": {
+        "value": "fac75389-b67b-ed11-98fd-0050560201fd"
+    },
+    "PendingCost": {
+        "value": 0.000000
+    },
+    "PendingCostDate": {},
+    "POAccrualAccount": {
+        "value": "2010"
+    },
+    "POAccrualSubaccount": {
+        "value": "000000"
+    },
+    "PostingClass": {
+        "value": "NONSTOCK"
+    },
+    "PriceClass": {},
+    "PurchasePriceVarianceAccount": {
+        "value": "5120"
+    },
+    "PurchasePriceVarianceSubaccount": {
+        "value": "000000"
+    },
+    "PurchaseUnit": {
+        "value": "USD"
+    },
+    "ReasonCodeSubaccount": {
+        "value": "000000"
+    },
+    "RequireReceipt": {
+        "value": true
+    },
+    "RequireShipment": {
+        "value": true
+    },
+    "SalesAccount": {
+        "value": "4000"
+    },
+    "SalesSubaccount": {
+        "value": "000000"
+    },
+    "SalesUnit": {
+        "value": "USD"
+    },
+    "TaxCategory": {
+        "value": "NON"
+    },
+    "VendorDetails": [
+        {
+            "id": "640e5b03-5cd2-40ec-8d2f-06d8ec602104",
+            "rowNumber": 1,
+            "note": null,
+            "Default": {
+                "value": true
+            },
+            "VendorID": {
+                "value": "V100048"
+            },
+            "VendorName": {
+                "value": "ALLSPEC FINISHING CORP"
+            },
+            "custom": {}
+        },
+        {
+            "id": "9bb9acbe-96b4-4409-b4ce-beee9607c75c",
+            "rowNumber": 2,
+            "note": null,
+            "Default": {
+                "value": false
+            },
+            "VendorID": {
+                "value": "V100106"
+            },
+            "VendorName": {
+                "value": "ARVOS LJUNGSTROM LLC"
+            },
+            "custom": {}
+        },
+        {
+            "id": "5737f88b-ae7a-47b9-a5cd-780a5115f426",
+            "rowNumber": 3,
+            "note": null,
+            "Default": {
+                "value": false
+            },
+            "VendorID": {
+                "value": "V100142"
+            },
+            "VendorName": {
+                "value": "BEAR RIDGE MACHINE & FABRICATION, INC"
+            },
+            "custom": {}
+        },
+        {
+            "id": "c20924a5-3004-4146-841a-263b1118bdf8",
+            "rowNumber": 4,
+            "note": null,
+            "Default": {
+                "value": false
+            },
+            "VendorID": {
+                "value": "V100436"
+            },
+            "VendorName": {
+                "value": "ELMIRA HEAT TREATING, INC"
+            },
+            "custom": {}
+        },
+        {
+            "id": "eed1744f-d67d-4f35-8e3d-8515741b3e02",
+            "rowNumber": 5,
+            "note": null,
+            "Default": {
+                "value": false
+            },
+            "VendorID": {
+                "value": "V100622"
+            },
+            "VendorName": {
+                "value": "HILLIARD CORPORATION"
+            },
+            "custom": {}
+        },
+        {
+            "id": "f838fcbd-2a7c-43ba-923d-0dbc1f6baedb",
+            "rowNumber": 6,
+            "note": null,
+            "Default": {
+                "value": false
+            },
+            "VendorID": {
+                "value": "V101011"
+            },
+            "VendorName": {
+                "value": "PBZ LLC"
+            },
+            "custom": {}
+        },
+        {
+            "id": "6972d112-3f09-48af-a25f-dd1562b4b672",
+            "rowNumber": 7,
+            "note": null,
+            "Default": {
+                "value": false
+            },
+            "VendorID": {
+                "value": "V101325"
+            },
+            "VendorName": {
+                "value": "THE SAND BOX"
+            },
+            "custom": {}
+        },
+        {
+            "id": "8c163c75-98c4-4ff7-8d24-b22cf04eef20",
+            "rowNumber": 8,
+            "note": null,
+            "Default": {
+                "value": false
+            },
+            "VendorID": {
+                "value": "V101367"
+            },
+            "VendorName": {
+                "value": "TRIPLE CITIES METAL FINISHING"
+            },
+            "custom": {}
+        },
+        {
+            "id": "1b26b1ad-704d-437e-befc-0ee6356913a3",
+            "rowNumber": 9,
+            "note": null,
+            "Default": {
+                "value": false
+            },
+            "VendorID": {
+                "value": "V101446"
+            },
+            "VendorName": {
+                "value": "WECO MANUFACTURING"
+            },
+            "custom": {}
+        }
+    ],
+    "Visibility": {
+        "value": "X"
+    },
+    "Volume": {
+        "value": 0.000000
+    },
+    "VolumeUOM": {},
+    "Weight": {
+        "value": 0.000000
+    },
+    "WeightUOM": {},
+    "custom": {},
+    "_links": {
+        "self": "/AcumaticaERP/entity/Default/22.200.001/NonStockItem/fac75389-b67b-ed11-98fd-0050560201fd",
+        "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.NonStockItemMaint/Item/fac75389-b67b-ed11-98fd-0050560201fd/{filename}"
+    }
+}

@@ -1,0 +1,15 @@
+FROM --platform=linux/amd64 public.ecr.aws/f1i5f7i1/pervasive_integrations_base
+COPY integrations/bash_profile_pervasive .bash_profile
+WORKDIR /home/custom_integration
+# copy requirements first to avoid needing to reinstall python requirements each time
+RUN mkdir integrations
+RUN mkdir logs
+ADD integrations/requirements.txt ./integrations
+RUN pip install -r integrations/requirements.txt
+# we do not copy . . here because you could accidentally copy over a lot more than you want, greatly inflating the size of the layer
+COPY integrations integrations/
+COPY custom_processors custom_processors/
+COPY logs logs/
+# one file must exist for the conditional copying of files to work in the next line
+COPY config.yaml custom_* openssl* runner.sh* connector.py* *_map.json* import* ./
+RUN if [ -z "$rm_config" ] ; then echo "Retaining config.yaml from customer" ; else rm -f config.yaml ; fi

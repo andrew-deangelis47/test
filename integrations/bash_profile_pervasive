@@ -1,0 +1,14 @@
+export ACTIANZEN_ROOT=/usr/local/actianzen
+export PATH=$ACTIANZEN_ROOT/bin:/bin:/usr/bin
+
+if [ $(uname -s) = "Darwin" ]
+then
+    export DYLD_LIBRARY_PATH=$ACTIANZEN_ROOT/lib64:$ACTIANZEN_ROOT/bin:/usr/lib
+    export LANG=en_US.UTF-8
+else
+    export LD_LIBRARY_PATH=$ACTIANZEN_ROOT/lib:$ACTIANZEN_ROOT/lib64:$ACTIANZEN_ROOT/bin:/usr/lib:/usr/lib64
+fi
+
+export MANPATH=$ACTIANZEN_ROOT/man:$MANPATH
+export BREQ=$ACTIANZEN_ROOT/lib
+export LD_BIND_NOW=1

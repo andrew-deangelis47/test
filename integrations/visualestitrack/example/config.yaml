@@ -1,0 +1,22 @@
+Paperless:
+  dir_to_preserve: visualestitrack
+  slug: replace_me
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+VISUALESTITRACK:
+  included_fg_inventory: True
+  entered_by: PPRLS
+
+Exporters:
+  orders:
+    interval: 1
+    excluded_operations:
+      - configure
+
+Importers:
+  accounts:
+    interval: 30
+  materials:
+    interval: 1440

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wss="http://www.adonix.com/WSS">
+    <soapenv:Body>
+        <wss:runResponse soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+            <runReturn xsi:type="wss:CAdxResultXml">
+                <messages xsi:type="soapenc:Array" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" soapenc:arrayType="wss:CAdxMessage[1]">
+                    <messages href="#id0"/></messages>
+                <resultXml xsi:type="xsd:string">
+                    <![CDATA[{
+	"GRP1": {
+		"I_MODEXP": "YBPCPPEXP",
+		"I_CHRONO": "NO"
+	},
+	"GRP2": [
+		{
+			"I_TCRITERE": "BPCNUM='C00009'"
+		}
+	],
+	"GRP3": {
+		"I_EXEC": "REALTIME",
+		"I_RECORDSEP": "|",
+		"O_FILE": "{O_FILE_DATA}",
+		"O_REQNUM": "0",
+		"O_STATUS": "0",
+		"O_MESSA": ""
+	}
+}]]>
+                </resultXml>
+                <status xsi:type="xsd:int">1</status>
+                <technicalInfos xsi:type="wss:CAdxTechnicalInfos">
+                    <busy xsi:type="xsd:boolean">false</busy>
+                    <changeLanguage xsi:type="xsd:boolean">false</changeLanguage>
+                    <changeUserId xsi:type="xsd:boolean">false</changeUserId>
+                    <flushAdx xsi:type="xsd:boolean">false</flushAdx>
+                    <loadWebsDuration xsi:type="xsd:double">0</loadWebsDuration>
+                    <nbDistributionCycle xsi:type="xsd:int">-1</nbDistributionCycle>
+                    <poolDistribDuration xsi:type="xsd:double">0</poolDistribDuration>
+                    <poolEntryIdx xsi:type="xsd:int">10320</poolEntryIdx>
+                    <poolExecDuration xsi:type="xsd:double">191</poolExecDuration>
+                    <poolRequestDuration xsi:type="xsd:double">-1</poolRequestDuration>
+                    <poolWaitDuration xsi:type="xsd:double">14</poolWaitDuration>
+                    <processReport xsi:type="xsd:string" xsi:nil="true"/>
+                    <processReportSize xsi:type="xsd:int">-1</processReportSize>
+                    <reloadWebs xsi:type="xsd:boolean">false</reloadWebs>
+                    <resumitAfterDBOpen xsi:type="xsd:boolean">false</resumitAfterDBOpen>
+                    <rowInDistribStack xsi:type="xsd:int" xsi:nil="true"/>
+                    <totalDuration xsi:type="xsd:double">208</totalDuration>
+                    <traceRequest xsi:type="xsd:string"/>
+                    <traceRequestSize xsi:type="xsd:int">0</traceRequestSize>
+                </technicalInfos>
+            </runReturn>
+        </wss:runResponse>
+        <multiRef id="id0" soapenc:root="0" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="wss:CAdxMessage">
+            <type>1</type>
+            <message>|1 lines exported (Table WMAOWS_EXPORT_YBPCPPEXP_PAPER_3174421674864489985.csv)</message>
+        </multiRef>
+    </soapenv:Body>
+</soapenv:Envelope>

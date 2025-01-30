@@ -1,0 +1,258 @@
+{
+    "id": "59785c8b-1078-ed11-98fb-0050560201fd",
+    "rowNumber": 1,
+    "note": {
+        "value": ""
+    },
+    "AccountRef": {},
+    "ApplyOverdueCharges": {
+        "value": false
+    },
+    "AutoApplyPayments": {
+        "value": false
+    },
+    "BAccountID": {
+        "value": 7136
+    },
+    "BillingAddressOverride": {
+        "value": false
+    },
+    "BillingContact": {
+        "id": "889e49e1-0e03-4957-b520-6584ab4acb22",
+        "rowNumber": 1,
+        "note": null,
+        "Address": {
+            "id": "56da26c4-72ab-4b75-a740-80e6e3539ed8",
+            "rowNumber": 1,
+            "note": null,
+            "AddressLine1": {
+                "value": "305 GREGSON DR"
+            },
+            "AddressLine2": {},
+            "City": {
+                "value": "CARY"
+            },
+            "Country": {
+                "value": "US"
+            },
+            "PostalCode": {
+                "value": "27511-6496"
+            },
+            "State": {
+                "value": "NC"
+            },
+            "custom": {}
+        },
+        "AddressValidated": {
+            "value": true
+        },
+        "Attention": {},
+        "ContactID": {
+            "value": 105376
+        },
+        "DisplayName": {
+            "value": "ABB INC."
+        },
+        "Email": {},
+        "Fax": {},
+        "FirstName": {},
+        "JobTitle": {},
+        "LastName": {},
+        "MiddleName": {},
+        "Phone1": {},
+        "Phone1Type": {
+            "value": "Business 1"
+        },
+        "Phone2": {},
+        "Phone2Type": {
+            "value": "Business 2"
+        },
+        "Title": {},
+        "WebSite": {},
+        "custom": {}
+    },
+    "BillingContactOverride": {
+        "value": false
+    },
+    "Contacts": [
+        {
+            "id": "3f0af796-b1b3-ed11-9900-0050560201fd",
+            "rowNumber": 1,
+            "note": {
+                "value": ""
+            },
+            "ContactID": {
+                "value": 111989
+            },
+            "custom": {},
+            "_links": {
+                "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/Contacts/3f0af796-b1b3-ed11-9900-0050560201fd/{filename}"
+            }
+        }
+    ],
+    "CreatedDateTime": {
+        "value": "2022-09-21T16:26:29.61-04:00"
+    },
+    "CreditLimit": {
+        "value": 0.0000
+    },
+    "CurrencyID": {
+        "value": "USD"
+    },
+    "CurrencyRateType": {},
+    "CustomerClass": {
+        "value": "DOMESTIC"
+    },
+    "CustomerID": {
+        "value": "C100001"
+    },
+    "CustomerName": {
+        "value": "ABB INC."
+    },
+    "EnableCurrencyOverride": {
+        "value": false
+    },
+    "EnableRateOverride": {
+        "value": false
+    },
+    "EnableWriteOffs": {
+        "value": true
+    },
+    "EntityUsageType": {
+        "value": "Default"
+    },
+    "FOBPoint": {},
+    "LastModifiedDateTime": {
+        "value": "2023-01-27T14:22:09.2-05:00"
+    },
+    "LeadTimedays": {
+        "value": 2
+    },
+    "LocationName": {
+        "value": "Primary Location"
+    },
+    "MultiCurrencyStatements": {
+        "value": false
+    },
+    "NoteID": {
+        "value": "59785c8b-1078-ed11-98fb-0050560201fd"
+    },
+    "OrderPriority": {
+        "value": 0
+    },
+    "ParentRecord": {},
+    "PriceClassID": {},
+    "PrintInvoices": {
+        "value": true
+    },
+    "PrintStatements": {
+        "value": false
+    },
+    "ResidentialDelivery": {
+        "value": false
+    },
+    "SaturdayDelivery": {
+        "value": false
+    },
+    "SendInvoicesbyEmail": {
+        "value": false
+    },
+    "SendStatementsbyEmail": {
+        "value": false
+    },
+    "ShippingAddressOverride": {
+        "value": false
+    },
+    "ShippingBranch": {},
+    "ShippingContact": {
+        "id": "00e8b9f9-90a0-43da-a539-ab7c2e3fa112",
+        "rowNumber": 1,
+        "note": null,
+        "Address": {
+            "id": "3cbc4d3b-6a73-463c-a5dc-e97290d42ec2",
+            "rowNumber": 1,
+            "note": null,
+            "AddressLine1": {
+                "value": "305 GREGSON DR"
+            },
+            "AddressLine2": {},
+            "City": {
+                "value": "CARY"
+            },
+            "Country": {
+                "value": "US"
+            },
+            "PostalCode": {
+                "value": "27511-6496"
+            },
+            "State": {
+                "value": "NC"
+            },
+            "custom": {}
+        },
+        "AddressValidated": {
+            "value": true
+        },
+        "Attention": {},
+        "ContactID": {
+            "value": 105376
+        },
+        "DisplayName": {
+            "value": "ABB INC."
+        },
+        "Email": {},
+        "Fax": {},
+        "FirstName": {},
+        "JobTitle": {},
+        "LastName": {},
+        "MiddleName": {},
+        "Phone1": {},
+        "Phone1Type": {
+            "value": "Business 1"
+        },
+        "Phone2": {},
+        "Phone2Type": {
+            "value": "Business 2"
+        },
+        "Title": {},
+        "WebSite": {},
+        "custom": {}
+    },
+    "ShippingContactOverride": {
+        "value": false
+    },
+    "ShippingRule": {
+        "value": "Back Order Allowed"
+    },
+    "ShippingTerms": {},
+    "ShippingZoneID": {},
+    "ShipVia": {
+        "value": "CAMERONTRUCK"
+    },
+    "StatementCycleID": {
+        "value": "EOM"
+    },
+    "StatementType": {
+        "value": "Open Item"
+    },
+    "Status": {
+        "value": "Active"
+    },
+    "TaxExemptionNumber": {},
+    "TaxRegistrationID": {},
+    "TaxZone": {
+        "value": "AVALARA"
+    },
+    "Terms": {
+        "value": "NET90EOM"
+    },
+    "WarehouseID": {},
+    "WriteOffLimit": {
+        "value": 1.0000
+    },
+    "custom": {},
+    "_links": {
+        "self": "/AcumaticaERP/entity/Default/22.200.001/Customer/59785c8b-1078-ed11-98fb-0050560201fd",
+        "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/BAccount/59785c8b-1078-ed11-98fb-0050560201fd/{filename}"
+    }
+}

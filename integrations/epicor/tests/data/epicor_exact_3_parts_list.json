@@ -1,0 +1,27 @@
+{
+  "@odata.context": "https://centralusdtpilot02.epicorsaas.com/saas527pilot/api/v2/odata/EX/Erp.BO.PartSvc/$metadata#Parts(Company,PartNum,PartDescription,ClassID,TypeCode)",
+  "@odata.count": 100,
+  "value": [
+    {
+      "Company": "EX",
+      "PartNum": " 10411603",
+      "PartDescription": "16 GA GALVANIZED (G90) 48 X 96",
+      "ClassID": "SHT",
+      "TypeCode": "P"
+    },
+    {
+      "Company": "EX",
+      "PartNum": " 3048-C-440-SS",
+      "PartDescription": "RAF",
+      "ClassID": "HDW",
+      "TypeCode": "P"
+    },
+    {
+      "Company": "EX",
+      "PartNum": "# 1/4 FLAT WASHER",
+      "PartDescription": "Washer, #1/4, flat, steel, clear zinc, RoHS compliant",
+      "ClassID": "HDW",
+      "TypeCode": "P"
+    }
+  ]
+}

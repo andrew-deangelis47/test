@@ -1,0 +1,101 @@
+Paperless:
+  dir_to_preserve: mietrak_pro
+  slug: replace_me
+  logpath: log.txt
+
+Exporters:
+  general:
+    default_work_center_name: PP_DEFAULT
+    default_work_center_code: PP_DEFAULT
+    default_outside_service_work_center_name: PP_DEFAULT
+    default_outside_service_work_center_code: PP_DEFAULT
+    default_outside_service_item_vendor_name: PP_DEFAULT
+    default_purchased_item_vendor_name: PP_DEFAULT
+    outside_service_item_vendor_variable: # Vendor
+    default_terms: PP_DEFAULT
+    default_assembly_operation_name: ASSEMBLY # update to Hardware Insertion
+    raw_material_part_number_variable_name: Material
+    should_perform_assembly_conversion: false
+    should_export_assemblies_with_duplicate_components: true
+
+    # Customer info
+    should_create_mietrak_pro_billing_address: false
+    should_update_mietrak_pro_payment_terms: false
+    should_update_mietrak_pro_customer_notes: false
+    should_update_mietrak_pro_contact_notes: false
+    should_update_mietrak_pro_customer_sales_id: false
+    should_create_mietrak_pro_shipping_address: false
+    should_update_mietrak_pro_customer_misc_data: false
+    should_update_mietrak_pro_contact_misc_data: false
+
+    # Part Data
+    should_update_mietrak_pro_part_description: false
+    should_update_mietrak_pro_purchased_components_data: false
+    should_create_mietrak_pro_raw_material_record: true
+    should_send_email_when_new_customer_is_created: false
+    should_use_default_raw_material: true
+    raw_material_blank_width_variable_name: Stock Width (in)
+    raw_material_blank_length_variable_name: Stock Length (in)
+    raw_material_quantity_variable_name: Qty Required # P3L variable representing bom_quantity to make 1 part
+
+    # Bom Info
+    overage_percentage_variable_name: Overage Percent (%)
+    vendor_variable_name: Vendor Name
+    leadtime_variable_name: Added Lead Time (days)
+    setup_charge_variable_name: Cert Charge
+    quantity_per_inverse_variable_name: Quantity Per Inverse
+    use_exact_material_calc_variable_name: Price Calculation # Checkbox, if "Net" in variable, this will be true, otherwise false
+    osv_minimum_variable_name: Minimum Piece Price
+
+    # Router Info
+    pp_work_center_pk_var: Work Center PK
+    pp_operation_pk_var: Operation PK
+    pp_outside_process_var: Outside Process
+    should_rebuild_existing_mietrak_pro_routers: false # Change to false for production
+    should_associate_purchased_components_with_assembly_operation: false
+    should_associate_subrouters_with_assembly_operation: false
+    parts_per_blank_variable_name: Parts Per Stock
+    part_length_variable_name: Part Length (in)
+    part_width_variable_name: Part Width (in)
+    stock_length_variable_name: Stock Length (in)
+    stock_width_variable_name: Stock Width (in)
+    stock_thickness_variable_name: Stock Height (in)
+    density_variable_name: Density
+
+  orders:
+    interval: 1
+  quotes:
+    interval: 1
+    should_update_quote_erp_code_in_paperless_parts: true
+
+Importers:
+  accounts:
+    interval: 60
+    should_import_sold_to_address: true
+    should_import_billing_address: true
+    should_import_shipping_addresses: true
+    should_import_contacts: true
+    should_skip_incomplete_addresses: true
+  materials:
+    interval: 60
+    should_import_category: True
+    minimum_primary_key_value: 0
+    should_skip_inactive: False
+  purchased_components:
+    interval: 50
+    minimum_primary_key_value: 0
+    should_skip_inactive: False
+    should_skip_non_inventory_items: True
+  work_centers:
+    interval: 10080
+    bulk_enable: False
+    should_import_operations: True
+  outside_services:
+    interval: 70
+    should_import_costs: true
+    should_import_category: true
+    should_import_leadtime: true
+  vendors:
+    interval: 80
+#  repeat_part:
+#    is_post_enabled: true

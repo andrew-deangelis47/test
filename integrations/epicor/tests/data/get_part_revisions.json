@@ -1,0 +1,37 @@
+{
+  "@odata.context": "https://omega-ep-03.opinc.com/epicorerptest/api/v2/odata/OPI/Erp.BO.PartSvc/$metadata#PartRevs(PartNum,RevisionNum)",
+  "value": [
+    {
+      "PartNum": "01128",
+      "RevisionNum": "0"
+    },
+    {
+      "PartNum": "01128",
+      "RevisionNum": "1"
+    },
+    {
+      "PartNum": "01128",
+      "RevisionNum": "2"
+    },
+    {
+      "PartNum": "01128",
+      "RevisionNum": "2.1"
+    },
+    {
+      "PartNum": "01128",
+      "RevisionNum": "2.2"
+    },
+    {
+      "PartNum": "01128",
+      "RevisionNum": "2.3"
+    },
+    {
+      "PartNum": "01128",
+      "RevisionNum": "2.4"
+    },
+    {
+      "PartNum": "01128",
+      "RevisionNum": "2.5"
+    }
+  ]
+}

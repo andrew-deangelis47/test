@@ -1,0 +1,10 @@
+Paperless:
+  dir_to_preserve: excel
+  slug: replace_me
+  source_email: noreply@paperlessparts.com
+  new_custom_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+Exporters:
+  quotes:
+    interval: 1

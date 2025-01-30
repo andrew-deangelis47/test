@@ -1,0 +1,1852 @@
+[
+    {
+        "id": "0a60482f-e0b3-ed11-9900-0050560201fd",
+        "rowNumber": 1,
+        "note": {
+            "value": ""
+        },
+        "ABCCode": {},
+        "AutoIncrementalValue": {},
+        "Availability": {
+            "value": "X"
+        },
+        "AverageCost": {
+            "value": 0.0
+        },
+        "BaseUOM": {
+            "value": "EA"
+        },
+        "COGSAccount": {
+            "value": "5000"
+        },
+        "COGSSubaccount": {
+            "value": "000000"
+        },
+        "Content": {},
+        "CountryOfOrigin": {},
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultIssueLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "DefaultReceiptLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultWarehouseID": {
+            "value": "CMDNY01"
+        },
+        "Description": {
+            "value": "FT #3237-0705 HOSE."
+        },
+        "DimensionVolume": {
+            "value": 0.000000
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "DiscountAccount": {},
+        "DiscountSubaccount": {},
+        "ImageUrl": {},
+        "InventoryAccount": {
+            "value": "1200"
+        },
+        "InventoryID": {
+            "value": "#3237-0705"
+        },
+        "InventorySubaccount": {
+            "value": "000000"
+        },
+        "IsAKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "PURCHASED"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Component Part"
+        },
+        "LandedCostVarianceAccount": {},
+        "LandedCostVarianceSubaccount": {},
+        "LastCost": {
+            "value": 0.0
+        },
+        "LastModified": {
+            "value": "2023-03-03T14:53:28.757-05:00"
+        },
+        "LastStdCost": {
+            "value": 0.000000
+        },
+        "LotSerialClass": {
+            "value": "DEFAULT"
+        },
+        "Markup": {
+            "value": 0.000000
+        },
+        "MaxCost": {
+            "value": 0.0
+        },
+        "MinCost": {
+            "value": 0.0
+        },
+        "MinMarkup": {
+            "value": 0.000000
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NotAvailable": {
+            "value": "X"
+        },
+        "NoteID": {
+            "value": "0a60482f-e0b3-ed11-9900-0050560201fd"
+        },
+        "PendingStdCost": {
+            "value": 0.000000
+        },
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "PURCHASED"
+        },
+        "PriceClass": {},
+        "PriceManager": {},
+        "PriceWorkgroup": {},
+        "ProductManager": {},
+        "ProductWorkgroup": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUOM": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUOM": {
+            "value": "EA"
+        },
+        "StandardCostRevaluationAccount": {
+            "value": "5130"
+        },
+        "StandardCostRevaluationSubaccount": {
+            "value": "000000"
+        },
+        "StandardCostVarianceAccount": {
+            "value": "5120"
+        },
+        "StandardCostVarianceSubaccount": {
+            "value": "000000"
+        },
+        "SubjectToCommission": {
+            "value": false
+        },
+        "TariffCode": {},
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "ValuationMethod": {
+            "value": "FIFO"
+        },
+        "Visibility": {
+            "value": "X"
+        },
+        "VolumeUOM": {},
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/0a60482f-e0b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/0a60482f-e0b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "0f60482f-e0b3-ed11-9900-0050560201fd",
+        "rowNumber": 2,
+        "note": {
+            "value": ""
+        },
+        "ABCCode": {},
+        "AutoIncrementalValue": {},
+        "Availability": {
+            "value": "X"
+        },
+        "AverageCost": {
+            "value": 0.0
+        },
+        "BaseUOM": {
+            "value": "EA"
+        },
+        "COGSAccount": {
+            "value": "5000"
+        },
+        "COGSSubaccount": {
+            "value": "000000"
+        },
+        "Content": {},
+        "CountryOfOrigin": {},
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultIssueLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "DefaultReceiptLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultWarehouseID": {
+            "value": "CMDNY01"
+        },
+        "Description": {
+            "value": "0159008M10-1.5X65MM HHCS BO"
+        },
+        "DimensionVolume": {
+            "value": 0.000000
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "DiscountAccount": {},
+        "DiscountSubaccount": {},
+        "ImageUrl": {},
+        "InventoryAccount": {
+            "value": "1200"
+        },
+        "InventoryID": {
+            "value": "0159008M10"
+        },
+        "InventorySubaccount": {
+            "value": "000000"
+        },
+        "IsAKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "PURCHASED"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Component Part"
+        },
+        "LandedCostVarianceAccount": {},
+        "LandedCostVarianceSubaccount": {},
+        "LastCost": {
+            "value": 0.0
+        },
+        "LastModified": {
+            "value": "2023-03-02T10:45:00.77-05:00"
+        },
+        "LastStdCost": {
+            "value": 0.000000
+        },
+        "LotSerialClass": {
+            "value": "DEFAULT"
+        },
+        "Markup": {
+            "value": 0.000000
+        },
+        "MaxCost": {
+            "value": 0.0
+        },
+        "MinCost": {
+            "value": 0.0
+        },
+        "MinMarkup": {
+            "value": 0.000000
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NotAvailable": {
+            "value": "X"
+        },
+        "NoteID": {
+            "value": "0f60482f-e0b3-ed11-9900-0050560201fd"
+        },
+        "PendingStdCost": {
+            "value": 0.000000
+        },
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "PURCHASED"
+        },
+        "PriceClass": {},
+        "PriceManager": {},
+        "PriceWorkgroup": {},
+        "ProductManager": {},
+        "ProductWorkgroup": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUOM": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUOM": {
+            "value": "EA"
+        },
+        "StandardCostRevaluationAccount": {
+            "value": "5130"
+        },
+        "StandardCostRevaluationSubaccount": {
+            "value": "000000"
+        },
+        "StandardCostVarianceAccount": {
+            "value": "5120"
+        },
+        "StandardCostVarianceSubaccount": {
+            "value": "000000"
+        },
+        "SubjectToCommission": {
+            "value": false
+        },
+        "TariffCode": {},
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "ValuationMethod": {
+            "value": "FIFO"
+        },
+        "Visibility": {
+            "value": "X"
+        },
+        "VolumeUOM": {},
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/0f60482f-e0b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/0f60482f-e0b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "74e55010-2db5-ed11-9900-0050560201fd",
+        "rowNumber": 3,
+        "note": {
+            "value": ""
+        },
+        "ABCCode": {},
+        "AutoIncrementalValue": {},
+        "Availability": {
+            "value": "X"
+        },
+        "AverageCost": {
+            "value": 13.820000000
+        },
+        "BaseUOM": {
+            "value": "EA"
+        },
+        "COGSAccount": {
+            "value": "5000"
+        },
+        "COGSSubaccount": {
+            "value": "000000"
+        },
+        "Content": {},
+        "CountryOfOrigin": {},
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultIssueLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "DefaultReceiptLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultWarehouseID": {
+            "value": "CMDNY01"
+        },
+        "Description": {
+            "value": "TOP GUIDE ROLLER (50MM)"
+        },
+        "DimensionVolume": {
+            "value": 0.000000
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "DiscountAccount": {},
+        "DiscountSubaccount": {},
+        "ImageUrl": {},
+        "InventoryAccount": {
+            "value": "1200"
+        },
+        "InventoryID": {
+            "value": "02200912-1"
+        },
+        "InventorySubaccount": {
+            "value": "000000"
+        },
+        "IsAKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "PURCHASED"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Component Part"
+        },
+        "LandedCostVarianceAccount": {},
+        "LandedCostVarianceSubaccount": {},
+        "LastCost": {
+            "value": 13.820000
+        },
+        "LastModified": {
+            "value": "2023-03-02T17:22:22.91-05:00"
+        },
+        "LastStdCost": {
+            "value": 0.000000
+        },
+        "LotSerialClass": {
+            "value": "DEFAULT"
+        },
+        "Markup": {
+            "value": 0.000000
+        },
+        "MaxCost": {
+            "value": 13.820000
+        },
+        "MinCost": {
+            "value": 13.820000
+        },
+        "MinMarkup": {
+            "value": 0.000000
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NotAvailable": {
+            "value": "X"
+        },
+        "NoteID": {
+            "value": "74e55010-2db5-ed11-9900-0050560201fd"
+        },
+        "PendingStdCost": {
+            "value": 0.000000
+        },
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "PURCHASED"
+        },
+        "PriceClass": {},
+        "PriceManager": {},
+        "PriceWorkgroup": {},
+        "ProductManager": {},
+        "ProductWorkgroup": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUOM": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUOM": {
+            "value": "EA"
+        },
+        "StandardCostRevaluationAccount": {
+            "value": "5130"
+        },
+        "StandardCostRevaluationSubaccount": {
+            "value": "000000"
+        },
+        "StandardCostVarianceAccount": {
+            "value": "5120"
+        },
+        "StandardCostVarianceSubaccount": {
+            "value": "000000"
+        },
+        "SubjectToCommission": {
+            "value": false
+        },
+        "TariffCode": {},
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "ValuationMethod": {
+            "value": "FIFO"
+        },
+        "Visibility": {
+            "value": "X"
+        },
+        "VolumeUOM": {},
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/74e55010-2db5-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/74e55010-2db5-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "31349416-2db5-ed11-9900-0050560201fd",
+        "rowNumber": 4,
+        "note": {
+            "value": ""
+        },
+        "ABCCode": {},
+        "AutoIncrementalValue": {},
+        "Availability": {
+            "value": "X"
+        },
+        "AverageCost": {
+            "value": 57.070000000
+        },
+        "BaseUOM": {
+            "value": "EA"
+        },
+        "COGSAccount": {
+            "value": "5000"
+        },
+        "COGSSubaccount": {
+            "value": "000000"
+        },
+        "Content": {},
+        "CountryOfOrigin": {},
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultIssueLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "DefaultReceiptLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultWarehouseID": {
+            "value": "CMDNY01"
+        },
+        "Description": {
+            "value": "ROLLER SUPPORT PLATE"
+        },
+        "DimensionVolume": {
+            "value": 0.000000
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "DiscountAccount": {},
+        "DiscountSubaccount": {},
+        "ImageUrl": {},
+        "InventoryAccount": {
+            "value": "1200"
+        },
+        "InventoryID": {
+            "value": "02200914-1"
+        },
+        "InventorySubaccount": {
+            "value": "000000"
+        },
+        "IsAKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "PURCHASED"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Component Part"
+        },
+        "LandedCostVarianceAccount": {},
+        "LandedCostVarianceSubaccount": {},
+        "LastCost": {
+            "value": 57.070000
+        },
+        "LastModified": {
+            "value": "2023-03-02T17:22:43.123-05:00"
+        },
+        "LastStdCost": {
+            "value": 0.000000
+        },
+        "LotSerialClass": {
+            "value": "DEFAULT"
+        },
+        "Markup": {
+            "value": 0.000000
+        },
+        "MaxCost": {
+            "value": 57.070000
+        },
+        "MinCost": {
+            "value": 57.070000
+        },
+        "MinMarkup": {
+            "value": 0.000000
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NotAvailable": {
+            "value": "X"
+        },
+        "NoteID": {
+            "value": "31349416-2db5-ed11-9900-0050560201fd"
+        },
+        "PendingStdCost": {
+            "value": 0.000000
+        },
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "PURCHASED"
+        },
+        "PriceClass": {},
+        "PriceManager": {},
+        "PriceWorkgroup": {},
+        "ProductManager": {},
+        "ProductWorkgroup": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUOM": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUOM": {
+            "value": "EA"
+        },
+        "StandardCostRevaluationAccount": {
+            "value": "5130"
+        },
+        "StandardCostRevaluationSubaccount": {
+            "value": "000000"
+        },
+        "StandardCostVarianceAccount": {
+            "value": "5120"
+        },
+        "StandardCostVarianceSubaccount": {
+            "value": "000000"
+        },
+        "SubjectToCommission": {
+            "value": false
+        },
+        "TariffCode": {},
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "ValuationMethod": {
+            "value": "FIFO"
+        },
+        "Visibility": {
+            "value": "X"
+        },
+        "VolumeUOM": {},
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/31349416-2db5-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/31349416-2db5-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "36349416-2db5-ed11-9900-0050560201fd",
+        "rowNumber": 5,
+        "note": {
+            "value": ""
+        },
+        "ABCCode": {},
+        "AutoIncrementalValue": {},
+        "Availability": {
+            "value": "X"
+        },
+        "AverageCost": {
+            "value": 27.520000000
+        },
+        "BaseUOM": {
+            "value": "EA"
+        },
+        "COGSAccount": {
+            "value": "5000"
+        },
+        "COGSSubaccount": {
+            "value": "000000"
+        },
+        "Content": {},
+        "CountryOfOrigin": {},
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultIssueLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "DefaultReceiptLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultWarehouseID": {
+            "value": "CMDNY01"
+        },
+        "Description": {
+            "value": "SLIDER BRACKET"
+        },
+        "DimensionVolume": {
+            "value": 0.000000
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "DiscountAccount": {},
+        "DiscountSubaccount": {},
+        "ImageUrl": {},
+        "InventoryAccount": {
+            "value": "1200"
+        },
+        "InventoryID": {
+            "value": "02204434-2"
+        },
+        "InventorySubaccount": {
+            "value": "000000"
+        },
+        "IsAKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "PURCHASED"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Component Part"
+        },
+        "LandedCostVarianceAccount": {},
+        "LandedCostVarianceSubaccount": {},
+        "LastCost": {
+            "value": 27.520000
+        },
+        "LastModified": {
+            "value": "2023-03-02T17:23:07.55-05:00"
+        },
+        "LastStdCost": {
+            "value": 0.000000
+        },
+        "LotSerialClass": {
+            "value": "DEFAULT"
+        },
+        "Markup": {
+            "value": 0.000000
+        },
+        "MaxCost": {
+            "value": 27.520000
+        },
+        "MinCost": {
+            "value": 27.520000
+        },
+        "MinMarkup": {
+            "value": 0.000000
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NotAvailable": {
+            "value": "X"
+        },
+        "NoteID": {
+            "value": "36349416-2db5-ed11-9900-0050560201fd"
+        },
+        "PendingStdCost": {
+            "value": 0.000000
+        },
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "PURCHASED"
+        },
+        "PriceClass": {},
+        "PriceManager": {},
+        "PriceWorkgroup": {},
+        "ProductManager": {},
+        "ProductWorkgroup": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUOM": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUOM": {
+            "value": "EA"
+        },
+        "StandardCostRevaluationAccount": {
+            "value": "5130"
+        },
+        "StandardCostRevaluationSubaccount": {
+            "value": "000000"
+        },
+        "StandardCostVarianceAccount": {
+            "value": "5120"
+        },
+        "StandardCostVarianceSubaccount": {
+            "value": "000000"
+        },
+        "SubjectToCommission": {
+            "value": false
+        },
+        "TariffCode": {},
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "ValuationMethod": {
+            "value": "FIFO"
+        },
+        "Visibility": {
+            "value": "X"
+        },
+        "VolumeUOM": {},
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/36349416-2db5-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/36349416-2db5-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "1460482f-e0b3-ed11-9900-0050560201fd",
+        "rowNumber": 6,
+        "note": {
+            "value": ""
+        },
+        "ABCCode": {},
+        "AutoIncrementalValue": {},
+        "Availability": {
+            "value": "X"
+        },
+        "AverageCost": {
+            "value": 0.0
+        },
+        "BaseUOM": {
+            "value": "EA"
+        },
+        "COGSAccount": {
+            "value": "5000"
+        },
+        "COGSSubaccount": {
+            "value": "000000"
+        },
+        "Content": {},
+        "CountryOfOrigin": {},
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultIssueLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "DefaultReceiptLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultWarehouseID": {
+            "value": "CMDNY01"
+        },
+        "Description": {
+            "value": "ROSEMOUNT 305 INTEGRAL MANIFOLD"
+        },
+        "DimensionVolume": {
+            "value": 0.000000
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "DiscountAccount": {},
+        "DiscountSubaccount": {},
+        "ImageUrl": {},
+        "InventoryAccount": {
+            "value": "1200"
+        },
+        "InventoryID": {
+            "value": "0305RC32B11B4P2"
+        },
+        "InventorySubaccount": {
+            "value": "000000"
+        },
+        "IsAKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "PURCHASED"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Component Part"
+        },
+        "LandedCostVarianceAccount": {},
+        "LandedCostVarianceSubaccount": {},
+        "LastCost": {
+            "value": 0.0
+        },
+        "LastModified": {
+            "value": "2023-03-07T11:55:39.08-05:00"
+        },
+        "LastStdCost": {
+            "value": 0.000000
+        },
+        "LotSerialClass": {
+            "value": "DEFAULT"
+        },
+        "Markup": {
+            "value": 0.000000
+        },
+        "MaxCost": {
+            "value": 0.0
+        },
+        "MinCost": {
+            "value": 0.0
+        },
+        "MinMarkup": {
+            "value": 0.000000
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NotAvailable": {
+            "value": "X"
+        },
+        "NoteID": {
+            "value": "1460482f-e0b3-ed11-9900-0050560201fd"
+        },
+        "PendingStdCost": {
+            "value": 0.000000
+        },
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "PURCHASED"
+        },
+        "PriceClass": {},
+        "PriceManager": {},
+        "PriceWorkgroup": {},
+        "ProductManager": {},
+        "ProductWorkgroup": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUOM": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUOM": {
+            "value": "EA"
+        },
+        "StandardCostRevaluationAccount": {
+            "value": "5130"
+        },
+        "StandardCostRevaluationSubaccount": {
+            "value": "000000"
+        },
+        "StandardCostVarianceAccount": {
+            "value": "5120"
+        },
+        "StandardCostVarianceSubaccount": {
+            "value": "000000"
+        },
+        "SubjectToCommission": {
+            "value": false
+        },
+        "TariffCode": {},
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "ValuationMethod": {
+            "value": "FIFO"
+        },
+        "Visibility": {
+            "value": "X"
+        },
+        "VolumeUOM": {},
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/1460482f-e0b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/1460482f-e0b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "1960482f-e0b3-ed11-9900-0050560201fd",
+        "rowNumber": 7,
+        "note": {
+            "value": ""
+        },
+        "ABCCode": {},
+        "AutoIncrementalValue": {},
+        "Availability": {
+            "value": "X"
+        },
+        "AverageCost": {
+            "value": 0.0
+        },
+        "BaseUOM": {
+            "value": "EA"
+        },
+        "COGSAccount": {
+            "value": "5000"
+        },
+        "COGSSubaccount": {
+            "value": "000000"
+        },
+        "Content": {},
+        "CountryOfOrigin": {},
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultIssueLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "DefaultReceiptLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultWarehouseID": {
+            "value": "CMDNY01"
+        },
+        "Description": {
+            "value": "0801-0233 CGA#024 CONCOA AIR V"
+        },
+        "DimensionVolume": {
+            "value": 0.000000
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "DiscountAccount": {},
+        "DiscountSubaccount": {},
+        "ImageUrl": {},
+        "InventoryAccount": {
+            "value": "1200"
+        },
+        "InventoryID": {
+            "value": "0801-0233"
+        },
+        "InventorySubaccount": {
+            "value": "000000"
+        },
+        "IsAKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "PURCHASED"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Component Part"
+        },
+        "LandedCostVarianceAccount": {},
+        "LandedCostVarianceSubaccount": {},
+        "LastCost": {
+            "value": 0.0
+        },
+        "LastModified": {
+            "value": "2023-02-24T15:47:03.153-05:00"
+        },
+        "LastStdCost": {
+            "value": 0.000000
+        },
+        "LotSerialClass": {
+            "value": "DEFAULT"
+        },
+        "Markup": {
+            "value": 0.000000
+        },
+        "MaxCost": {
+            "value": 0.0
+        },
+        "MinCost": {
+            "value": 0.0
+        },
+        "MinMarkup": {
+            "value": 0.000000
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NotAvailable": {
+            "value": "X"
+        },
+        "NoteID": {
+            "value": "1960482f-e0b3-ed11-9900-0050560201fd"
+        },
+        "PendingStdCost": {
+            "value": 0.000000
+        },
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "PURCHASED"
+        },
+        "PriceClass": {},
+        "PriceManager": {},
+        "PriceWorkgroup": {},
+        "ProductManager": {},
+        "ProductWorkgroup": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUOM": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUOM": {
+            "value": "EA"
+        },
+        "StandardCostRevaluationAccount": {
+            "value": "5130"
+        },
+        "StandardCostRevaluationSubaccount": {
+            "value": "000000"
+        },
+        "StandardCostVarianceAccount": {
+            "value": "5120"
+        },
+        "StandardCostVarianceSubaccount": {
+            "value": "000000"
+        },
+        "SubjectToCommission": {
+            "value": false
+        },
+        "TariffCode": {},
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "ValuationMethod": {
+            "value": "FIFO"
+        },
+        "Visibility": {
+            "value": "X"
+        },
+        "VolumeUOM": {},
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/1960482f-e0b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/1960482f-e0b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "1e60482f-e0b3-ed11-9900-0050560201fd",
+        "rowNumber": 8,
+        "note": {
+            "value": ""
+        },
+        "ABCCode": {},
+        "AutoIncrementalValue": {},
+        "Availability": {
+            "value": "X"
+        },
+        "AverageCost": {
+            "value": 0.0
+        },
+        "BaseUOM": {
+            "value": "EA"
+        },
+        "COGSAccount": {
+            "value": "5000"
+        },
+        "COGSSubaccount": {
+            "value": "000000"
+        },
+        "Content": {},
+        "CountryOfOrigin": {},
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultIssueLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "DefaultReceiptLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultWarehouseID": {
+            "value": "CMDNY01"
+        },
+        "Description": {
+            "value": "08721W-10449 COVER"
+        },
+        "DimensionVolume": {
+            "value": 0.000000
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "DiscountAccount": {},
+        "DiscountSubaccount": {},
+        "ImageUrl": {},
+        "InventoryAccount": {
+            "value": "1200"
+        },
+        "InventoryID": {
+            "value": "08721W-10449"
+        },
+        "InventorySubaccount": {
+            "value": "000000"
+        },
+        "IsAKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "PURCHASED"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Component Part"
+        },
+        "LandedCostVarianceAccount": {},
+        "LandedCostVarianceSubaccount": {},
+        "LastCost": {
+            "value": 0.0
+        },
+        "LastModified": {
+            "value": "2023-02-24T15:47:03.657-05:00"
+        },
+        "LastStdCost": {
+            "value": 0.000000
+        },
+        "LotSerialClass": {
+            "value": "DEFAULT"
+        },
+        "Markup": {
+            "value": 0.000000
+        },
+        "MaxCost": {
+            "value": 0.0
+        },
+        "MinCost": {
+            "value": 0.0
+        },
+        "MinMarkup": {
+            "value": 0.000000
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NotAvailable": {
+            "value": "X"
+        },
+        "NoteID": {
+            "value": "1e60482f-e0b3-ed11-9900-0050560201fd"
+        },
+        "PendingStdCost": {
+            "value": 0.000000
+        },
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "PURCHASED"
+        },
+        "PriceClass": {},
+        "PriceManager": {},
+        "PriceWorkgroup": {},
+        "ProductManager": {},
+        "ProductWorkgroup": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUOM": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUOM": {
+            "value": "EA"
+        },
+        "StandardCostRevaluationAccount": {
+            "value": "5130"
+        },
+        "StandardCostRevaluationSubaccount": {
+            "value": "000000"
+        },
+        "StandardCostVarianceAccount": {
+            "value": "5120"
+        },
+        "StandardCostVarianceSubaccount": {
+            "value": "000000"
+        },
+        "SubjectToCommission": {
+            "value": false
+        },
+        "TariffCode": {},
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "ValuationMethod": {
+            "value": "FIFO"
+        },
+        "Visibility": {
+            "value": "X"
+        },
+        "VolumeUOM": {},
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/1e60482f-e0b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/1e60482f-e0b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "c2524f35-e0b3-ed11-9900-0050560201fd",
+        "rowNumber": 9,
+        "note": {
+            "value": ""
+        },
+        "ABCCode": {},
+        "AutoIncrementalValue": {},
+        "Availability": {
+            "value": "X"
+        },
+        "AverageCost": {
+            "value": 0.0
+        },
+        "BaseUOM": {
+            "value": "EA"
+        },
+        "COGSAccount": {
+            "value": "5000"
+        },
+        "COGSSubaccount": {
+            "value": "000000"
+        },
+        "Content": {},
+        "CountryOfOrigin": {},
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultIssueLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "DefaultReceiptLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultWarehouseID": {
+            "value": "CMDNY01"
+        },
+        "Description": {
+            "value": "0959082 3/8X3/8X1.5 MACHKEY"
+        },
+        "DimensionVolume": {
+            "value": 0.000000
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "DiscountAccount": {},
+        "DiscountSubaccount": {},
+        "ImageUrl": {},
+        "InventoryAccount": {
+            "value": "1200"
+        },
+        "InventoryID": {
+            "value": "0959082"
+        },
+        "InventorySubaccount": {
+            "value": "000000"
+        },
+        "IsAKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "PURCHASED"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Component Part"
+        },
+        "LandedCostVarianceAccount": {},
+        "LandedCostVarianceSubaccount": {},
+        "LastCost": {
+            "value": 0.0
+        },
+        "LastModified": {
+            "value": "2023-02-24T15:47:04.06-05:00"
+        },
+        "LastStdCost": {
+            "value": 0.000000
+        },
+        "LotSerialClass": {
+            "value": "DEFAULT"
+        },
+        "Markup": {
+            "value": 0.000000
+        },
+        "MaxCost": {
+            "value": 0.0
+        },
+        "MinCost": {
+            "value": 0.0
+        },
+        "MinMarkup": {
+            "value": 0.000000
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NotAvailable": {
+            "value": "X"
+        },
+        "NoteID": {
+            "value": "c2524f35-e0b3-ed11-9900-0050560201fd"
+        },
+        "PendingStdCost": {
+            "value": 0.000000
+        },
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "PURCHASED"
+        },
+        "PriceClass": {},
+        "PriceManager": {},
+        "PriceWorkgroup": {},
+        "ProductManager": {},
+        "ProductWorkgroup": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUOM": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUOM": {
+            "value": "EA"
+        },
+        "StandardCostRevaluationAccount": {
+            "value": "5130"
+        },
+        "StandardCostRevaluationSubaccount": {
+            "value": "000000"
+        },
+        "StandardCostVarianceAccount": {
+            "value": "5120"
+        },
+        "StandardCostVarianceSubaccount": {
+            "value": "000000"
+        },
+        "SubjectToCommission": {
+            "value": false
+        },
+        "TariffCode": {},
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "ValuationMethod": {
+            "value": "FIFO"
+        },
+        "Visibility": {
+            "value": "X"
+        },
+        "VolumeUOM": {},
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/c2524f35-e0b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/c2524f35-e0b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "c7524f35-e0b3-ed11-9900-0050560201fd",
+        "rowNumber": 10,
+        "note": {
+            "value": ""
+        },
+        "ABCCode": {},
+        "AutoIncrementalValue": {},
+        "Availability": {
+            "value": "X"
+        },
+        "AverageCost": {
+            "value": 0.0
+        },
+        "BaseUOM": {
+            "value": "EA"
+        },
+        "COGSAccount": {
+            "value": "5000"
+        },
+        "COGSSubaccount": {
+            "value": "000000"
+        },
+        "Content": {},
+        "CountryOfOrigin": {},
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultIssueLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "DefaultReceiptLocationID": {
+            "value": "DEFAULT"
+        },
+        "DefaultWarehouseID": {
+            "value": "CMDNY01"
+        },
+        "Description": {
+            "value": "1/2-260S-U21/2-304SS THERMOWEL"
+        },
+        "DimensionVolume": {
+            "value": 0.000000
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "DiscountAccount": {},
+        "DiscountSubaccount": {},
+        "ImageUrl": {},
+        "InventoryAccount": {
+            "value": "1200"
+        },
+        "InventoryID": {
+            "value": "1/2-260S-U21/2-304SS"
+        },
+        "InventorySubaccount": {
+            "value": "000000"
+        },
+        "IsAKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "PURCHASED"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Component Part"
+        },
+        "LandedCostVarianceAccount": {},
+        "LandedCostVarianceSubaccount": {},
+        "LastCost": {
+            "value": 0.0
+        },
+        "LastModified": {
+            "value": "2023-02-24T15:47:04.477-05:00"
+        },
+        "LastStdCost": {
+            "value": 0.000000
+        },
+        "LotSerialClass": {
+            "value": "DEFAULT"
+        },
+        "Markup": {
+            "value": 0.000000
+        },
+        "MaxCost": {
+            "value": 0.0
+        },
+        "MinCost": {
+            "value": 0.0
+        },
+        "MinMarkup": {
+            "value": 0.000000
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NotAvailable": {
+            "value": "X"
+        },
+        "NoteID": {
+            "value": "c7524f35-e0b3-ed11-9900-0050560201fd"
+        },
+        "PendingStdCost": {
+            "value": 0.000000
+        },
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "PURCHASED"
+        },
+        "PriceClass": {},
+        "PriceManager": {},
+        "PriceWorkgroup": {},
+        "ProductManager": {},
+        "ProductWorkgroup": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUOM": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUOM": {
+            "value": "EA"
+        },
+        "StandardCostRevaluationAccount": {
+            "value": "5130"
+        },
+        "StandardCostRevaluationSubaccount": {
+            "value": "000000"
+        },
+        "StandardCostVarianceAccount": {
+            "value": "5120"
+        },
+        "StandardCostVarianceSubaccount": {
+            "value": "000000"
+        },
+        "SubjectToCommission": {
+            "value": false
+        },
+        "TariffCode": {},
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "ValuationMethod": {
+            "value": "FIFO"
+        },
+        "Visibility": {
+            "value": "X"
+        },
+        "VolumeUOM": {},
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/c7524f35-e0b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/c7524f35-e0b3-ed11-9900-0050560201fd/{filename}"
+        }
+    }
+]

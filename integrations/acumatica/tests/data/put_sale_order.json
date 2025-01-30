@@ -1,0 +1,6 @@
+{
+    "Description":  "Some new sale order",
+    "CustomerID": "C100005",
+    "OrderType": "SO",
+    "CustomerOrder": "order number 2"
+}

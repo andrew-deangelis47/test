@@ -1,0 +1,28 @@
+FROM --platform=linux/amd64 python:3.10-slim-bullseye
+
+ENV ACCEPT_EULA=y DEBIAN_FRONTEND=noninteractive
+
+RUN /usr/lib/apt/apt-helper download-file https://packages.microsoft.com/keys/microsoft.asc /etc/apt/trusted.gpg.d/microsoft.asc ; \
+    /usr/lib/apt/apt-helper download-file https://packages.microsoft.com/config/debian/11/prod.list /etc/apt/sources.list.d/msprod.list
+
+RUN apt-get -y update ; \
+    apt-get -qy dist-upgrade
+
+# runtime dependencies
+RUN apt-get -qy install \
+      libxml2 libxslt1.1 zlib1g \
+      msodbcsql18 mssql-tools18 unixodbc \
+      python3-pyodbc
+
+# development / build only
+RUN apt-get -qy install \
+      curl \
+      vim \
+      gcc \
+      libxml2-dev \
+      libxslt1-dev \
+      zlib1g-dev \
+      unixodbc-dev \
+      g++ \
+      gnupg \
+      git

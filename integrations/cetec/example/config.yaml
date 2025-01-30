@@ -1,0 +1,19 @@
+Paperless:
+  dir_to_preserve: cetec
+  slug: replace_me
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+Cetec:
+  url: blah.com
+  import_source_name: PAPERLESS
+  internal_customer_id: insert
+  internal_vendor_id: insert
+  default_trans_code: SN
+  place_order: True
+  default_work_center: NEW
+
+Exporters:
+  orders:
+    interval: 1

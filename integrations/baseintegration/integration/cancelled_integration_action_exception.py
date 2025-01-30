@@ -1,0 +1,2 @@
+class CancelledIntegrationActionException(Exception):
+    pass

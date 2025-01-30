@@ -1,0 +1,48 @@
+[report]
+# Regexes for lines to exclude from consideration
+exclude_lines =
+    # Have to re-enable the standard pragma
+    pragma: no cover
+
+    # Don't complain about missing debug-only code:
+    def __repr__
+    if self\.debug
+
+    # Don't complain if tests don't hit defensive assertion code:
+    raise AssertionError
+    raise NotImplementedError
+
+    # Don't complain if non-runnable code isn't run:
+    if 0:
+    if __name__ == .__main__.:
+    except Exception
+    except EpicorNotFoundException:
+
+    # don't complain about setup sentry or on event
+    def _setup_sentry
+    def on_event
+    def get_new
+
+    # don't complain about SQLite DB setup:
+    def create_all_sqlite_tables_if_not_exists
+    def insert_data_into_all_sqlite_tables
+    def create_indexes_on_all_sqlite_tables
+
+    # don't complain about scope that is within a direct SQL write
+    cursor.execute(sql)
+    with connection.cursor() as cursor:
+
+    # don't complain if explicitly not in test mode
+    if not self._integration.test_mode:
+    if not self._exporter._integration.test_mode:
+
+    # don't complain about production config settings for running tests
+    def _set_production_erp_config(self):
+
+ignore_errors = True
+
+[run]
+omit = */epicor/importer/repeat_work_importer.py, */epicor/engineering_workbench.py, */epicor/quote.py, */epicor/base.py, */epicor/job.py, */epicor/importer/utils.py, */epicor/importer/epicor_client_cache_util.py, */epicor/importer/epicor_client_cache.py, */epicor/importer/repeat_work_processors/*, */*models.py, */mietrak_pro/importer/repeat_work_processors/*, */jobboss/importer/*, */*_import.py, */analyzer.py, */settings.py, */utils/__init__.py, */baseintegration/utils/custom_table.py, */autonumber.py, */check_connection.py, */example/*, */plex/exporter/*, */plex/objects/*, */tests/test_e2_shop_system.py, */e2_shop_system_processors/*, */syteline_10_processors/*, */m2m/*, */integration_scheduler.py, */m1/models-org.py
+
+[html]
+directory = coverage_html_report

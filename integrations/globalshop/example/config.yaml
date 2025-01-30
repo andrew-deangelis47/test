@@ -1,0 +1,45 @@
+Paperless:
+  dir_to_preserve: globalshop
+  slug: replace_me
+  logpath: log.txt
+
+Importers:
+  database_minutes_offset: 300
+  accounts:
+    interval: 240
+  work_centers:
+    interval: 100
+  vendors:
+    interval: 160
+  purchased_components:
+    interval: 5
+    codes_to_include: [ 'HW', 'PP' ]
+  materials:
+    interval: 4
+    codes_to_include: [ 'RM' ]
+  custom_table:
+    header_dict:
+      powder_name: Powder Name
+      sort_code: Sort Code
+      part_number: Part Number
+      cost: Cost
+      product_line: Product Line
+    custom_table_name: gss_powders
+    id_field: part_number
+
+
+Exporters:
+  orders:
+    interval: 5
+    osv_description_var: Powder Description
+    project_group_name: Powder Name # Outside service product group, P3L var, rarely used
+    material_id_var: Material Selection
+    material_desc_var: Material Description
+    workcenter_var: Workcenter Lookup
+    product_line_var: Product Line # Appears throughout the codebase, try to keep consistent (addons, etc)
+
+GlobalShop:
+  use_cust_id_as_sort_code: True
+  cust_sort_code: null
+  set_cust_code_on_routers: False
+  run_document_control_exporter: False

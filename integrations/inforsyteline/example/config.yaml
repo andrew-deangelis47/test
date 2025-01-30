@@ -1,0 +1,39 @@
+Paperless:
+  dir_to_preserve: inforsyteline
+  slug: replace_me
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+InforSyteline:
+  entered_by: PPRLS
+
+Exporters:
+  orders:
+    interval: 1
+    site_ref: replace_me
+    pp_work_center_variable: workcenter
+    fail_if_new_customer: False
+    job_route_schedule_driver: L
+
+Importers:
+  accounts:
+    interval: 60
+  materials:
+    interval: 60
+    bulk_enable: True
+    codes_to_include: 
+    - blah
+    - blah1
+  purchased_components:
+    interval: 50
+    bulk_enable: True
+    codes_to_include: 
+    - blah
+    - blah1
+#    repeat_part:
+#      is_post_enabled: True
+#      material_product_codes:
+#        - RAW
+#      purchased_component_product_codes:
+#        - HARDWARE

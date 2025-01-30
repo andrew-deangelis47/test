@@ -1,0 +1,270 @@
+[
+    {
+        "id": "e746e830-cd7b-ed11-98fd-0050560201fd",
+        "rowNumber": 1,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "AddressOverride": {
+            "value": true
+        },
+        "Calendar": {},
+        "ContactOverride": {
+            "value": true
+        },
+        "CreatedDateTime": {
+            "value": "2022-12-14T12:33:57.07-05:00"
+        },
+        "Customer": {
+            "value": "C100002"
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FedExGroundCollect": {
+            "value": false
+        },
+        "FOBPoint": {},
+        "Insurance": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-01-30T19:48:34.22-05:00"
+        },
+        "LeadTimeDays": {
+            "value": 2
+        },
+        "LocationContact": {
+            "id": "12ca8ed4-1ca0-41db-ac1a-dcf1f3b4f677",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "1700e435-ca82-4a26-9953-2ea201e24683",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "5830 Eastport Blvd"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "RICHMOND"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "23231-4451"
+                },
+                "State": {
+                    "value": "VA"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 107169
+            },
+            "DisplayName": {
+                "value": "ABB INC."
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "FullName": {
+                "value": "ABB INC."
+            },
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {},
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "LocationID": {
+            "value": "101"
+        },
+        "LocationName": {
+            "value": "ABB"
+        },
+        "NoteID": {
+            "value": "e746e830-cd7b-ed11-98fd-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "PriceClass": {},
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "ShippingBranch": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZone": {},
+        "ShipVia": {
+            "value": "DIMON"
+        },
+        "TaxExemptionNbr": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {},
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/CustomerLocation/e746e830-cd7b-ed11-98fd-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerLocationMaint/Location/e746e830-cd7b-ed11-98fd-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "5a785c8b-1078-ed11-98fb-0050560201fd",
+        "rowNumber": 2,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "AddressOverride": {
+            "value": false
+        },
+        "Calendar": {},
+        "ContactOverride": {
+            "value": false
+        },
+        "CreatedDateTime": {
+            "value": "2022-12-09T18:26:08.7-05:00"
+        },
+        "Customer": {
+            "value": "C100001"
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FedExGroundCollect": {
+            "value": false
+        },
+        "FOBPoint": {},
+        "Insurance": {
+            "value": false
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-01-30T19:48:34.31-05:00"
+        },
+        "LeadTimeDays": {
+            "value": 2
+        },
+        "LocationContact": {
+            "id": "4f56f6fb-f5e8-4bbf-aa94-164fb9c7b796",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "02fc3271-ae4b-4255-99c5-3a7346347d94",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "305 GREGSON DR"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "CARY"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "27511-6496"
+                },
+                "State": {
+                    "value": "NC"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 105376
+            },
+            "DisplayName": {
+                "value": "ABB INC."
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "FullName": {
+                "value": "ABB INC."
+            },
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {},
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "LocationID": {
+            "value": "MAIN"
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "NoteID": {
+            "value": "5a785c8b-1078-ed11-98fb-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "PriceClass": {},
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "ShippingBranch": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZone": {},
+        "ShipVia": {
+            "value": "CAMERONTRUCK"
+        },
+        "TaxExemptionNbr": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {
+            "value": "AVALARA"
+        },
+        "Warehouse": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/CustomerLocation/5a785c8b-1078-ed11-98fb-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerLocationMaint/Location/5a785c8b-1078-ed11-98fb-0050560201fd/{filename}"
+        }
+    }
+]

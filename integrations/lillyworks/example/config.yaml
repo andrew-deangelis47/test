@@ -1,0 +1,14 @@
+Paperless:
+  dir_to_preserve: lillyworks
+  slug: replace_me
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+LILLYWORKS:
+  email_address: rob.carrington@paperlessparts.com
+  company_name: PDQ Inc.
+
+Exporters:
+  orders:
+    interval: 1

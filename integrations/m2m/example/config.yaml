@@ -1,0 +1,43 @@
+Paperless:
+  dir_to_preserve: m2m
+  slug: replace_me
+  logpath: log.txt
+
+Exporters:
+  orders:
+    interval: 5
+    excluded_operations:
+      - consolidate
+
+Importers:
+  accounts:
+    interval: 5
+  materials:
+    interval: 5
+    bulk_enable: True
+  purchased_components:
+    interval: 5
+    bulk_enable: True
+  work_centers:
+    interval: 5
+#  repeat_part:
+#    is_post_enabled: True
+
+M2M:
+  default_country_alpha_3: USA
+  default_erp_code: replace_me
+  expedite_part_number: replace_me
+  enable_part_consolidation: True
+  purchase_condition: replace_me
+  material_condition: replace_me
+  purchase_use_total_cost: False
+  material_use_total_cost: False
+  material_add_group_code: False
+  material_add_product_class: False
+  purchase_work_center_map:
+    - '{"workcenters": ["replace_me"], "search": "replace_me"}'
+  export_as_quote: False
+  add_standard_parts_as_quote_items: False
+  material_item_mater_number_costing_variable: 'Item Master Number'
+  material_unit_of_measure_costing_variable: 'Unit of Measure'
+  material_quantity_per_part_costing_variable: 'Unit Material Qty'

@@ -1,0 +1,60 @@
+{
+  "id": 114391,
+  "child_ids": [
+    114388,
+    114387,
+    114386,
+    114385
+  ],
+  "children": [
+    {
+      "child_id": 114388,
+      "quantity": 1
+    },
+    {
+      "child_id": 114387,
+      "quantity": 1
+    },
+    {
+      "child_id": 114386,
+      "quantity": 1
+    },
+    {
+      "child_id": 114385,
+      "quantity": 1
+    }
+  ],
+  "description": "Test Part 2",
+  "export_controlled": false,
+  "finishes": [],
+  "innate_quantity": 1,
+  "is_root_component": false,
+  "material": {
+    "id": 2,
+    "display_name": null,
+    "family": "Aluminum",
+    "material_class": "Metal",
+    "name": "Aluminium 6061"
+  },
+  "material_operations": [],
+  "parent_ids": [
+    114384
+  ],
+  "part_custom_attrs": null,
+  "part_name": "Subassembly <1>.step",
+  "part_number": "123457",
+  "part_uuid": "8deb6257-56f8-4aaf-bebc-1707361bf2af",
+  "process": {
+    "id": 1117,
+    "external_name": "CNC Machining",
+    "name": "CNC Machining"
+  },
+  "purchased_component": null,
+  "revision": "1",
+  "shop_operations": [],
+  "supporting_files": [],
+  "thumbnail_url": "https://s3.amazonaws.com//parts.dev.paperlessparts.com/147a8653adafea1b30abf4fc7462e0395a1bd171.png",
+  "type": "assembled",
+  "deliver_quantity": 5,
+  "make_quantity": 5
+}

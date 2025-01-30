@@ -1,0 +1,79 @@
+def aws_account = '431105233043'
+def ecr = "${aws_account}.dkr.ecr.us-east-1.amazonaws.com"
+def image = 'integrations/base'
+
+pipeline {
+
+    /*
+      Use this job to build and publish the integrations/base image
+
+      All images will be tagged with their build number (e.g. 3) and pushed to ECR
+            
+      To set your image as the base for all future integrations image builds, set DEPLOY to true
+      --> DEPLOY will only work if INTEGRATIONS_BRANCH is set to master
+    */
+
+    parameters {
+        gitParameter(name: 'INTEGRATIONS_BRANCH', branchFilter: 'origin/(.*)', defaultValue: 'master', description: '', type: 'PT_BRANCH', quickFilterEnabled: true, requiredParameter: true, sortMode: 'DESCENDING_SMART', selectedValue: 'DEFAULT')
+        booleanParam(name: 'DEPLOY', defaultValue: false, description: 'Artifact will be tagged according to BUILD NUMBER by default. Set this to true to also tag and push image as latest. This means it will be picked up by future integration builds. Only works if branch is set to master.')
+    }
+
+    environment {
+        AWS_REGION = 'us-east-1'
+        BUILDKIT_PROGRESS = 'plain'
+    }
+
+    agent { kubernetes { inheritFrom 'aio' } }
+
+    stages {
+
+        stage('Setup') {
+            steps {
+                script {
+                    // Abort if engineer specified deploy w/o master
+                    if (params.DEPLOY == true && params.INTEGRATIONS_BRANCH != 'master') {
+                        currentBuild.result = 'ABORTED'
+                        currentBuild.description = 'Invalid parameters! Cannot deploy unless branch is master.'
+                        error(currentBuild.description)
+                    }
+                    // Set build display name
+                    currentBuild.displayName += ": ${BUILD_USER}"
+                    // Start Slack thread
+                    slackUserId = slackUserIdFromEmail(BUILD_USER_EMAIL)
+                    slack_msg = slackSend(channel: slackUserId, message: "<@$slackUserId> Base Integrations Image build initiated! \n\nConsole logs <${env.BUILD_URL}console|here>.", sendAsText: true)
+                }
+                sh label: "configure commercial profile", script: """
+                    aws configure set role_arn arn:aws:iam::${aws_account}:role/jenkins --profile jenkins-role
+                    aws configure set source_profile jenkins-keys --profile jenkins-role
+                    aws configure set aws_access_key_id ${env.JENKINS_COMM_ACCESS_KEY} --profile jenkins-keys
+                    aws configure set aws_secret_access_key ${env.JENKINS_COMM_SECRET_ACCESS_KEY} --profile jenkins-keys
+                """
+                sh label: "authenticate to commercial ECR", script: """
+                    aws ecr --profile jenkins-role get-login-password | docker login --username AWS --password-stdin ${aws_account}.dkr.ecr.${env.AWS_REGION}.amazonaws.com       
+                """
+            }
+        }
+
+        stage('Build + Push') {
+            steps {
+                script {
+                    annotationsValue = gitJobMetadata().collect { "\"${it.key}='${it.value}'\"" }.join(',')
+                    writeFile(file: 'docker-bake.override.hcl', text: """BUILD_ANNOTATIONS = [ ${annotationsValue} ]""")
+                }
+                sh label: "Build + push base integration image", script: """
+                    docker buildx bake base --push --provenance=false
+                """
+                script {
+                    slackSend(channel: "${slack_msg.threadId}", message: "${STAGE_NAME} succeeded!", sendAsText: true)
+                }
+            }
+        }
+    }
+
+    post {
+        failure {
+            slackSend(channel: "${slack_msg.threadId}", message: "Base integration build *FAILED*. \n\nConsole logs <${env.BUILD_URL}console|here>.", sendAsText: true)
+        }
+    }
+
+}

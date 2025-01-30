@@ -1,0 +1,66 @@
+Paperless:
+  dir_to_preserve: plex
+  slug: replace_me
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+Exporters:
+  orders:
+    interval: 1
+    excluded_operations:
+      - 'Part Information'
+
+Plex:
+  order_tier: 3
+  account_reactivation_enabled: False
+  account_reactivation_status: 'Active'
+  default_part_type: 'replace'
+  default_part_group: 'replace'
+  default_part_status: 'replace'
+  default_part_source: 'replace'
+  default_product_type: 'replace'
+  default_part_building_code: 'replace'
+  part_information_op_def_name: 'Part Information'
+  part_info_costing_variable_part_type: 'Part Type'
+  part_info_costing_variable_part_group: 'Part Group'
+  part_info_costing_variable_part_status: 'Part Status'
+  part_info_costing_variable_part_source: 'Part Source'
+  part_info_costing_variable_product_type: 'Production Type'
+  part_info_costing_variable_building_code: 'Building Code'
+  default_bom_depletion_unit_type: 'replace'
+  default_bom_depletion_conversion_factor: 1.0
+  default_part_operation_type: 'Production'
+  default_sales_order_type: 'replace'
+  default_ship_from_building_code: 'replace'
+  default_sales_order_release_type: 'replace'
+  default_sales_order_release_status: 'replace'
+  default_sales_order_freight_terms: 'replace'
+  default_sales_order_carrier_code: 'replace'
+  default_sales_order_category: 'replace'
+  default_sales_order_line_unit_type: 'replace'
+  sales_order_line_use_default_order_unit_id: False
+  ship_date_time_offset: 0
+  ship_date_due_date_offset: 0
+  default_sales_person: ''
+  datasources_tier_2_order: ''
+  datasources_tier_2_line_item: ''
+  datasources_work_center: ''
+  operation_code_map_table: 'Operations_Mapping'
+  plex_operation_code_column_header: 'Plex_Operation_Code'
+  material_table_part_number_header: 'PartNo'
+  costing_variable_material_search: 'Material Search'
+  paperless_operation_name_column_header: 'Paperless_Operation_Name'
+  can_creat_new_customers: False
+  default_customer_type: ''
+  powder_op_sub_string: ''
+  use_plex_address_as_fallback: True
+  children_go_to_op:
+    - ''
+  costing_variable_work_center_code: "Workcenter Code"
+  costing_variable_work_center_crew_size: "Number Crew"
+  costing_variable_supplier_code: "Supplier Code"
+  costing_variable_operation_type: "Operation Type"
+  import_customer_status_include_filter:
+    - "Active"
+  part_operation_increment_step: 100

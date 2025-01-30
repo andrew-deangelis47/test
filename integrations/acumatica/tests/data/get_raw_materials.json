@@ -1,0 +1,179 @@
+{
+  "id": "193e2d26-ee44-ed11-98f5-0050560201fd",
+  "rowNumber": 1,
+  "note": {
+    "value": ""
+  },
+  "ABCCode": {},
+  "AutoIncrementalValue": {},
+  "Availability": {
+    "value": "X"
+  },
+  "AverageCost": {
+    "value": 0.0
+  },
+  "BaseUOM": {
+    "value": "EA"
+  },
+  "COGSAccount": {
+    "value": "5000"
+  },
+  "COGSSubaccount": {
+    "value": "000000"
+  },
+  "Content": {},
+  "CountryOfOrigin": {},
+  "CurrentStdCost": {
+    "value": 0.0
+  },
+  "CurySpecificMSRP": {
+    "value": 0.0
+  },
+  "CurySpecificPrice": {
+    "value": 1.1
+  },
+  "DefaultIssueLocationID": {},
+  "DefaultPrice": {
+    "value": 1.1
+  },
+  "DefaultReceiptLocationID": {},
+  "DefaultWarehouseID": {},
+  "Description": {
+    "value": "3-3/8 OD X 2-3/8\" ID X 2-1/4\" LG\""
+  },
+  "DimensionVolume": {
+    "value": 0.0
+  },
+  "DimensionWeight": {
+    "value": 0.0
+  },
+  "DiscountAccount": {},
+  "DiscountSubaccount": {},
+  "ImageUrl": {},
+  "InventoryAccount": {
+    "value": "1200"
+  },
+  "InventoryID": {
+    "value": "72124-16371-TUBING"
+  },
+  "InventorySubaccount": {
+    "value": "000000"
+  },
+  "IsAKit": {
+    "value": "False"
+  },
+  "ItemClass": {
+    "value": "RAWMTL"
+  },
+  "ItemStatus": {
+    "value": "Active"
+  },
+  "ItemType": {
+    "value": "Component Part"
+  },
+  "LandedCostVarianceAccount": {},
+  "LandedCostVarianceSubaccount": {},
+  "LastCost": {
+    "value": 0.0
+  },
+  "LastModified": {
+    "value": "2022-10-05T17:41:37.593-04:00"
+  },
+  "LastStdCost": {
+    "value": 0.0
+  },
+  "LotSerialClass": {
+    "value": "DEFAULT"
+  },
+  "Markup": {
+    "value": 0.0
+  },
+  "MaxCost": {
+    "value": 0.0
+  },
+  "MinCost": {
+    "value": 0.0
+  },
+  "MinMarkup": {
+    "value": 0.0
+  },
+  "MSRP": {
+    "value": 0.0
+  },
+  "NotAvailable": {
+    "value": "X"
+  },
+  "NoteID": {
+    "value": "193e2d26-ee44-ed11-98f5-0050560201fd"
+  },
+  "PendingStdCost": {
+    "value": 0.0
+  },
+  "POAccrualAccount": {
+    "value": "2010"
+  },
+  "POAccrualSubaccount": {
+    "value": "000000"
+  },
+  "PostingClass": {
+    "value": "RAWMTL"
+  },
+  "PriceClass": {},
+  "PriceManager": {},
+  "PriceWorkgroup": {},
+  "ProductManager": {},
+  "ProductWorkgroup": {},
+  "PurchasePriceVarianceAccount": {
+    "value": "5120"
+  },
+  "PurchasePriceVarianceSubaccount": {
+    "value": "000000"
+  },
+  "PurchaseUOM": {
+    "value": "EA"
+  },
+  "ReasonCodeSubaccount": {
+    "value": "000000"
+  },
+  "SalesAccount": {
+    "value": "4000"
+  },
+  "SalesSubaccount": {
+    "value": "000000"
+  },
+  "SalesUOM": {
+    "value": "EA"
+  },
+  "StandardCostRevaluationAccount": {
+    "value": "5130"
+  },
+  "StandardCostRevaluationSubaccount": {
+    "value": "000000"
+  },
+  "StandardCostVarianceAccount": {
+    "value": "5120"
+  },
+  "StandardCostVarianceSubaccount": {
+    "value": "000000"
+  },
+  "SubjectToCommission": {
+    "value": "False"
+  },
+  "TariffCode": {},
+  "TaxCategory": {
+    "value": "NON"
+  },
+  "ValuationMethod": {
+    "value": "FIFO"
+  },
+  "Visibility": {
+    "value": "X"
+  },
+  "VolumeUOM": {},
+  "WeightUOM": {},
+  "custom": {},
+  "_links": {
+    "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/193e2d26-ee44-ed11-98f5-0050560201fd",
+    "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/193e2d26-ee44-ed11-98f5-0050560201fd/{filename}"
+  }
+}

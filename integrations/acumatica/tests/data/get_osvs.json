@@ -1,0 +1,1506 @@
+[
+    {
+        "id": "558c90b1-f8bc-ed11-9904-0050560201fd",
+        "rowNumber": 1,
+        "note": {
+            "value": ""
+        },
+        "Availability": {
+            "value": "X"
+        },
+        "BaseUnit": {
+            "value": "EA"
+        },
+        "Content": {},
+        "CurrentCost": {
+            "value": 0.000000
+        },
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "Description": {
+            "value": "JAW SPREADER"
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "EffectiveDate": {},
+        "ExpenseAccount": {
+            "value": "6340"
+        },
+        "ExpenseAccrualAccount": {
+            "value": "1200"
+        },
+        "ExpenseAccrualSubaccount": {
+            "value": "000000"
+        },
+        "ExpenseSubaccount": {
+            "value": "000050"
+        },
+        "InventoryID": {
+            "value": "07498-04502"
+        },
+        "IsKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "NONSTOCK"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Non-Stock Item"
+        },
+        "LastCost": {
+            "value": 0.000000
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-03-07T10:59:51.89-05:00"
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NoteID": {
+            "value": "558c90b1-f8bc-ed11-9904-0050560201fd"
+        },
+        "PendingCost": {
+            "value": 0.000000
+        },
+        "PendingCostDate": {},
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "NONSTOCK"
+        },
+        "PriceClass": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUnit": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "RequireReceipt": {
+            "value": true
+        },
+        "RequireShipment": {
+            "value": true
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUnit": {
+            "value": "EA"
+        },
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "VendorDetails": [
+            {
+                "id": "34f54008-9bd9-4ad3-9772-3b4aa787aab5",
+                "rowNumber": 1,
+                "note": null,
+                "Default": {
+                    "value": true
+                },
+                "VendorID": {
+                    "value": "V100025"
+                },
+                "VendorName": {
+                    "value": "AIM INDUSTRIES"
+                },
+                "custom": {}
+            }
+        ],
+        "Visibility": {
+            "value": "X"
+        },
+        "Volume": {
+            "value": 0.000000
+        },
+        "VolumeUOM": {},
+        "Weight": {
+            "value": 0.000000
+        },
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/NonStockItem/558c90b1-f8bc-ed11-9904-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.NonStockItemMaint/Item/558c90b1-f8bc-ed11-9904-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "639bacbd-f8bc-ed11-9904-0050560201fd",
+        "rowNumber": 2,
+        "note": {
+            "value": ""
+        },
+        "Availability": {
+            "value": "X"
+        },
+        "BaseUnit": {
+            "value": "EA"
+        },
+        "Content": {},
+        "CurrentCost": {
+            "value": 0.000000
+        },
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "Description": {
+            "value": "JAW PUSHER SPRING"
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "EffectiveDate": {},
+        "ExpenseAccount": {
+            "value": "6340"
+        },
+        "ExpenseAccrualAccount": {
+            "value": "1200"
+        },
+        "ExpenseAccrualSubaccount": {
+            "value": "000000"
+        },
+        "ExpenseSubaccount": {
+            "value": "000050"
+        },
+        "InventoryID": {
+            "value": "07500-00418"
+        },
+        "IsKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "NONSTOCK"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Non-Stock Item"
+        },
+        "LastCost": {
+            "value": 0.000000
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-03-07T11:00:25.477-05:00"
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NoteID": {
+            "value": "639bacbd-f8bc-ed11-9904-0050560201fd"
+        },
+        "PendingCost": {
+            "value": 0.000000
+        },
+        "PendingCostDate": {},
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "NONSTOCK"
+        },
+        "PriceClass": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUnit": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "RequireReceipt": {
+            "value": true
+        },
+        "RequireShipment": {
+            "value": true
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUnit": {
+            "value": "EA"
+        },
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "VendorDetails": [
+            {
+                "id": "ac8a33b9-148a-4a0e-b783-22cde6524fae",
+                "rowNumber": 1,
+                "note": null,
+                "Default": {
+                    "value": true
+                },
+                "VendorID": {
+                    "value": "V100025"
+                },
+                "VendorName": {
+                    "value": "AIM INDUSTRIES"
+                },
+                "custom": {}
+            }
+        ],
+        "Visibility": {
+            "value": "X"
+        },
+        "Volume": {
+            "value": 0.000000
+        },
+        "VolumeUOM": {},
+        "Weight": {
+            "value": 0.000000
+        },
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/NonStockItem/639bacbd-f8bc-ed11-9904-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.NonStockItemMaint/Item/639bacbd-f8bc-ed11-9904-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "2e9fa027-55b8-ed11-9900-0050560201fd",
+        "rowNumber": 3,
+        "note": {
+            "value": ""
+        },
+        "Availability": {
+            "value": "X"
+        },
+        "BaseUnit": {
+            "value": "EA"
+        },
+        "Content": {},
+        "CurrentCost": {
+            "value": 0.000000
+        },
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "Description": {
+            "value": "308A0019 COLLAR"
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "EffectiveDate": {},
+        "ExpenseAccount": {
+            "value": "6230"
+        },
+        "ExpenseAccrualAccount": {
+            "value": "1210"
+        },
+        "ExpenseAccrualSubaccount": {
+            "value": "000000"
+        },
+        "ExpenseSubaccount": {
+            "value": "000000"
+        },
+        "InventoryID": {
+            "value": "308A0019NS"
+        },
+        "IsKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "NONSTOCK"
+        },
+        "ItemStatus": {
+            "value": "Inactive"
+        },
+        "ItemType": {
+            "value": "Non-Stock Item"
+        },
+        "LastCost": {
+            "value": 0.000000
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-03-02T07:31:57.76-05:00"
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NoteID": {
+            "value": "2e9fa027-55b8-ed11-9900-0050560201fd"
+        },
+        "PendingCost": {
+            "value": 0.000000
+        },
+        "PendingCostDate": {},
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "NONSTOCK"
+        },
+        "PriceClass": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUnit": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "RequireReceipt": {
+            "value": true
+        },
+        "RequireShipment": {
+            "value": true
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUnit": {
+            "value": "EA"
+        },
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "VendorDetails": [],
+        "Visibility": {
+            "value": "X"
+        },
+        "Volume": {
+            "value": 0.000000
+        },
+        "VolumeUOM": {},
+        "Weight": {
+            "value": 0.000000
+        },
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/NonStockItem/2e9fa027-55b8-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.NonStockItemMaint/Item/2e9fa027-55b8-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "da854a71-ceb6-ed11-9900-0050560201fd",
+        "rowNumber": 4,
+        "note": {
+            "value": ""
+        },
+        "Availability": {
+            "value": "X"
+        },
+        "BaseUnit": {
+            "value": "EA"
+        },
+        "Content": {},
+        "CurrentCost": {
+            "value": 0.000000
+        },
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "Description": {
+            "value": "Glass-Tube Fuse, Time-Delay, 1/4\" Diameter, Trade Size 3AG, 10A"
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "EffectiveDate": {},
+        "ExpenseAccount": {
+            "value": "5000"
+        },
+        "ExpenseAccrualAccount": {
+            "value": "1200"
+        },
+        "ExpenseAccrualSubaccount": {
+            "value": "000000"
+        },
+        "ExpenseSubaccount": {
+            "value": "000000"
+        },
+        "InventoryID": {
+            "value": "7085K15NS"
+        },
+        "IsKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "NONSTOCK"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Non-Stock Item"
+        },
+        "LastCost": {
+            "value": 0.000000
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-27T14:52:11.693-05:00"
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NoteID": {
+            "value": "da854a71-ceb6-ed11-9900-0050560201fd"
+        },
+        "PendingCost": {
+            "value": 0.000000
+        },
+        "PendingCostDate": {},
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "NONSTOCK"
+        },
+        "PriceClass": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUnit": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "RequireReceipt": {
+            "value": true
+        },
+        "RequireShipment": {
+            "value": true
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUnit": {
+            "value": "EA"
+        },
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "VendorDetails": [
+            {
+                "id": "77d63294-d5f9-4f1c-b853-17afa9760dde",
+                "rowNumber": 1,
+                "note": null,
+                "Default": {
+                    "value": true
+                },
+                "VendorID": {
+                    "value": "V100852"
+                },
+                "VendorName": {
+                    "value": "MCMASTER-CARR SUPPLY COMPANY"
+                },
+                "custom": {}
+            }
+        ],
+        "Visibility": {
+            "value": "X"
+        },
+        "Volume": {
+            "value": 0.000000
+        },
+        "VolumeUOM": {},
+        "Weight": {
+            "value": 0.000000
+        },
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/NonStockItem/da854a71-ceb6-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.NonStockItemMaint/Item/da854a71-ceb6-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "bf5cc1ed-cfb6-ed11-9900-0050560201fd",
+        "rowNumber": 5,
+        "note": {
+            "value": ""
+        },
+        "Availability": {
+            "value": "X"
+        },
+        "BaseUnit": {
+            "value": "EA"
+        },
+        "Content": {},
+        "CurrentCost": {
+            "value": 0.000000
+        },
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "Description": {
+            "value": "Glass-Tube Fuse, Time-Delay, 1/4\" Diameter, Trade Size 3AG, 1/10A"
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "EffectiveDate": {},
+        "ExpenseAccount": {
+            "value": "5000"
+        },
+        "ExpenseAccrualAccount": {
+            "value": "1200"
+        },
+        "ExpenseAccrualSubaccount": {
+            "value": "000000"
+        },
+        "ExpenseSubaccount": {
+            "value": "000000"
+        },
+        "InventoryID": {
+            "value": "7085K27"
+        },
+        "IsKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "NONSTOCK"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Non-Stock Item"
+        },
+        "LastCost": {
+            "value": 0.000000
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-02-27T14:53:41.133-05:00"
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NoteID": {
+            "value": "bf5cc1ed-cfb6-ed11-9900-0050560201fd"
+        },
+        "PendingCost": {
+            "value": 0.000000
+        },
+        "PendingCostDate": {},
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "NONSTOCK"
+        },
+        "PriceClass": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUnit": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "RequireReceipt": {
+            "value": true
+        },
+        "RequireShipment": {
+            "value": true
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUnit": {
+            "value": "EA"
+        },
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "VendorDetails": [
+            {
+                "id": "e9510240-e574-4005-a931-dcff508272bf",
+                "rowNumber": 1,
+                "note": null,
+                "Default": {
+                    "value": true
+                },
+                "VendorID": {
+                    "value": "V100852"
+                },
+                "VendorName": {
+                    "value": "MCMASTER-CARR SUPPLY COMPANY"
+                },
+                "custom": {}
+            }
+        ],
+        "Visibility": {
+            "value": "X"
+        },
+        "Volume": {
+            "value": 0.000000
+        },
+        "VolumeUOM": {},
+        "Weight": {
+            "value": 0.000000
+        },
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/NonStockItem/bf5cc1ed-cfb6-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.NonStockItemMaint/Item/bf5cc1ed-cfb6-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "5453eb9c-f8bc-ed11-9904-0050560201fd",
+        "rowNumber": 6,
+        "note": {
+            "value": ""
+        },
+        "Availability": {
+            "value": "X"
+        },
+        "BaseUnit": {
+            "value": "EA"
+        },
+        "Content": {},
+        "CurrentCost": {
+            "value": 0.000000
+        },
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "Description": {
+            "value": "JAW SET 3PC"
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "EffectiveDate": {},
+        "ExpenseAccount": {
+            "value": "6340"
+        },
+        "ExpenseAccrualAccount": {
+            "value": "1200"
+        },
+        "ExpenseAccrualSubaccount": {
+            "value": "000000"
+        },
+        "ExpenseSubaccount": {
+            "value": "000050"
+        },
+        "InventoryID": {
+            "value": "71210-15001"
+        },
+        "IsKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "NONSTOCK"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Non-Stock Item"
+        },
+        "LastCost": {
+            "value": 0.000000
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-03-07T10:59:23.49-05:00"
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NoteID": {
+            "value": "5453eb9c-f8bc-ed11-9904-0050560201fd"
+        },
+        "PendingCost": {
+            "value": 0.000000
+        },
+        "PendingCostDate": {},
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "NONSTOCK"
+        },
+        "PriceClass": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUnit": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "RequireReceipt": {
+            "value": true
+        },
+        "RequireShipment": {
+            "value": true
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUnit": {
+            "value": "EA"
+        },
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "VendorDetails": [
+            {
+                "id": "af7955c9-3423-4af0-a82a-24a2a68b0737",
+                "rowNumber": 1,
+                "note": null,
+                "Default": {
+                    "value": true
+                },
+                "VendorID": {
+                    "value": "V100025"
+                },
+                "VendorName": {
+                    "value": "AIM INDUSTRIES"
+                },
+                "custom": {}
+            }
+        ],
+        "Visibility": {
+            "value": "X"
+        },
+        "Volume": {
+            "value": 0.000000
+        },
+        "VolumeUOM": {},
+        "Weight": {
+            "value": 0.000000
+        },
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/NonStockItem/5453eb9c-f8bc-ed11-9904-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.NonStockItemMaint/Item/5453eb9c-f8bc-ed11-9904-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "4f6db46c-f8bc-ed11-9904-0050560201fd",
+        "rowNumber": 7,
+        "note": {
+            "value": ""
+        },
+        "Availability": {
+            "value": "X"
+        },
+        "BaseUnit": {
+            "value": "EA"
+        },
+        "Content": {},
+        "CurrentCost": {
+            "value": 0.000000
+        },
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "Description": {
+            "value": "3/16\" MONOBOLT NOSE TIP"
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "EffectiveDate": {},
+        "ExpenseAccount": {
+            "value": "6340"
+        },
+        "ExpenseAccrualAccount": {
+            "value": "1200"
+        },
+        "ExpenseAccrualSubaccount": {
+            "value": "000000"
+        },
+        "ExpenseSubaccount": {
+            "value": "000050"
+        },
+        "InventoryID": {
+            "value": "71210-16020"
+        },
+        "IsKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "NONSTOCK"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Non-Stock Item"
+        },
+        "LastCost": {
+            "value": 0.000000
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-03-07T10:58:15.853-05:00"
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NoteID": {
+            "value": "4f6db46c-f8bc-ed11-9904-0050560201fd"
+        },
+        "PendingCost": {
+            "value": 0.000000
+        },
+        "PendingCostDate": {},
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "NONSTOCK"
+        },
+        "PriceClass": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUnit": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "RequireReceipt": {
+            "value": true
+        },
+        "RequireShipment": {
+            "value": true
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUnit": {
+            "value": "EA"
+        },
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "VendorDetails": [
+            {
+                "id": "0f5e1a7b-ba3a-4693-81a7-23a806ddb545",
+                "rowNumber": 1,
+                "note": null,
+                "Default": {
+                    "value": true
+                },
+                "VendorID": {
+                    "value": "V100025"
+                },
+                "VendorName": {
+                    "value": "AIM INDUSTRIES"
+                },
+                "custom": {}
+            }
+        ],
+        "Visibility": {
+            "value": "X"
+        },
+        "Volume": {
+            "value": 0.000000
+        },
+        "VolumeUOM": {},
+        "Weight": {
+            "value": 0.000000
+        },
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/NonStockItem/4f6db46c-f8bc-ed11-9904-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.NonStockItemMaint/Item/4f6db46c-f8bc-ed11-9904-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "d575ad89-f8bc-ed11-9904-0050560201fd",
+        "rowNumber": 8,
+        "note": {
+            "value": ""
+        },
+        "Availability": {
+            "value": "X"
+        },
+        "BaseUnit": {
+            "value": "EA"
+        },
+        "Content": {},
+        "CurrentCost": {
+            "value": 0.000000
+        },
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "Description": {
+            "value": "1/4\" MONOBOLT NOSE TIP"
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "EffectiveDate": {},
+        "ExpenseAccount": {
+            "value": "6340"
+        },
+        "ExpenseAccrualAccount": {
+            "value": "1200"
+        },
+        "ExpenseAccrualSubaccount": {
+            "value": "000000"
+        },
+        "ExpenseSubaccount": {
+            "value": "000050"
+        },
+        "InventoryID": {
+            "value": "71220-16021"
+        },
+        "IsKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "NONSTOCK"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Non-Stock Item"
+        },
+        "LastCost": {
+            "value": 0.000000
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-03-07T10:58:49.807-05:00"
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NoteID": {
+            "value": "d575ad89-f8bc-ed11-9904-0050560201fd"
+        },
+        "PendingCost": {
+            "value": 0.000000
+        },
+        "PendingCostDate": {},
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "NONSTOCK"
+        },
+        "PriceClass": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUnit": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "RequireReceipt": {
+            "value": true
+        },
+        "RequireShipment": {
+            "value": true
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUnit": {
+            "value": "EA"
+        },
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "VendorDetails": [
+            {
+                "id": "82bafe23-076b-416f-8bf6-0f9f355a84f5",
+                "rowNumber": 1,
+                "note": null,
+                "Default": {
+                    "value": true
+                },
+                "VendorID": {
+                    "value": "V100025"
+                },
+                "VendorName": {
+                    "value": "AIM INDUSTRIES"
+                },
+                "custom": {}
+            }
+        ],
+        "Visibility": {
+            "value": "X"
+        },
+        "Volume": {
+            "value": 0.000000
+        },
+        "VolumeUOM": {},
+        "Weight": {
+            "value": 0.000000
+        },
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/NonStockItem/d575ad89-f8bc-ed11-9904-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.NonStockItemMaint/Item/d575ad89-f8bc-ed11-9904-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "74e4f604-f7bc-ed11-9904-0050560201fd",
+        "rowNumber": 9,
+        "note": {
+            "value": ""
+        },
+        "Availability": {
+            "value": "X"
+        },
+        "BaseUnit": {
+            "value": "EA"
+        },
+        "Content": {},
+        "CurrentCost": {
+            "value": 0.000000
+        },
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "Description": {
+            "value": "UNIVERSAL NOSE ASSY"
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "EffectiveDate": {},
+        "ExpenseAccount": {
+            "value": "6340"
+        },
+        "ExpenseAccrualAccount": {
+            "value": "1200"
+        },
+        "ExpenseAccrualSubaccount": {
+            "value": "000000"
+        },
+        "ExpenseSubaccount": {
+            "value": "000050"
+        },
+        "InventoryID": {
+            "value": "76003-16000"
+        },
+        "IsKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "NONSTOCK"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Non-Stock Item"
+        },
+        "LastCost": {
+            "value": 0.000000
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-03-07T10:51:23.417-05:00"
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NoteID": {
+            "value": "74e4f604-f7bc-ed11-9904-0050560201fd"
+        },
+        "PendingCost": {
+            "value": 0.000000
+        },
+        "PendingCostDate": {},
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "NONSTOCK"
+        },
+        "PriceClass": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUnit": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "RequireReceipt": {
+            "value": true
+        },
+        "RequireShipment": {
+            "value": true
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUnit": {
+            "value": "EA"
+        },
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "VendorDetails": [
+            {
+                "id": "61fac8b4-08fc-4b04-8c1d-acd565deb0b8",
+                "rowNumber": 1,
+                "note": null,
+                "Default": {
+                    "value": true
+                },
+                "VendorID": {
+                    "value": "V100025"
+                },
+                "VendorName": {
+                    "value": "AIM INDUSTRIES"
+                },
+                "custom": {}
+            }
+        ],
+        "Visibility": {
+            "value": "X"
+        },
+        "Volume": {
+            "value": 0.000000
+        },
+        "VolumeUOM": {},
+        "Weight": {
+            "value": 0.000000
+        },
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/NonStockItem/74e4f604-f7bc-ed11-9904-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.NonStockItemMaint/Item/74e4f604-f7bc-ed11-9904-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "6a8ae70d-59b7-ed11-9900-0050560201fd",
+        "rowNumber": 10,
+        "note": {
+            "value": ""
+        },
+        "Availability": {
+            "value": "X"
+        },
+        "BaseUnit": {
+            "value": "EA"
+        },
+        "Content": {},
+        "CurrentCost": {
+            "value": 0.000000
+        },
+        "CurrentStdCost": {
+            "value": 0.000000
+        },
+        "CurySpecificMSRP": {
+            "value": 0.000000
+        },
+        "CurySpecificPrice": {
+            "value": 0.000000
+        },
+        "DefaultPrice": {
+            "value": 0.000000
+        },
+        "Description": {
+            "value": "TOUCH DOWN PROBE BELLOW"
+        },
+        "DimensionWeight": {
+            "value": 0.000000
+        },
+        "EffectiveDate": {},
+        "ExpenseAccount": {
+            "value": "6450"
+        },
+        "ExpenseAccrualAccount": {
+            "value": "1210"
+        },
+        "ExpenseAccrualSubaccount": {
+            "value": "000000"
+        },
+        "ExpenseSubaccount": {
+            "value": "000085"
+        },
+        "InventoryID": {
+            "value": "A-14865"
+        },
+        "IsKit": {
+            "value": false
+        },
+        "ItemClass": {
+            "value": "NONSTOCK"
+        },
+        "ItemStatus": {
+            "value": "Active"
+        },
+        "ItemType": {
+            "value": "Non-Stock Item"
+        },
+        "LastCost": {
+            "value": 0.000000
+        },
+        "LastModifiedDateTime": {
+            "value": "2023-03-01T14:24:09.773-05:00"
+        },
+        "MSRP": {
+            "value": 0.000000
+        },
+        "NoteID": {
+            "value": "6a8ae70d-59b7-ed11-9900-0050560201fd"
+        },
+        "PendingCost": {
+            "value": 0.000000
+        },
+        "PendingCostDate": {},
+        "POAccrualAccount": {
+            "value": "2010"
+        },
+        "POAccrualSubaccount": {
+            "value": "000000"
+        },
+        "PostingClass": {
+            "value": "NONSTOCK"
+        },
+        "PriceClass": {},
+        "PurchasePriceVarianceAccount": {
+            "value": "5120"
+        },
+        "PurchasePriceVarianceSubaccount": {
+            "value": "000000"
+        },
+        "PurchaseUnit": {
+            "value": "EA"
+        },
+        "ReasonCodeSubaccount": {
+            "value": "000000"
+        },
+        "RequireReceipt": {
+            "value": true
+        },
+        "RequireShipment": {
+            "value": true
+        },
+        "SalesAccount": {
+            "value": "4000"
+        },
+        "SalesSubaccount": {
+            "value": "000000"
+        },
+        "SalesUnit": {
+            "value": "EA"
+        },
+        "TaxCategory": {
+            "value": "NON"
+        },
+        "VendorDetails": [
+            {
+                "id": "47473aed-e528-4daf-8a8a-830def50c3e7",
+                "rowNumber": 1,
+                "note": null,
+                "Default": {
+                    "value": false
+                },
+                "VendorID": {
+                    "value": "V100517"
+                },
+                "VendorName": {
+                    "value": "FLOW INTERNATIONAL CORP."
+                },
+                "custom": {}
+            }
+        ],
+        "Visibility": {
+            "value": "X"
+        },
+        "Volume": {
+            "value": 0.000000
+        },
+        "VolumeUOM": {},
+        "Weight": {
+            "value": 0.000000
+        },
+        "WeightUOM": {},
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/NonStockItem/6a8ae70d-59b7-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.NonStockItemMaint/Item/6a8ae70d-59b7-ed11-9900-0050560201fd/{filename}"
+        }
+    }
+]

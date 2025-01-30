@@ -1,0 +1,14 @@
+Paperless:
+  dir_to_preserve: m1
+  slug: replace_me
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+Exporters:
+  orders:
+    interval: 1
+
+Importers:
+  accounts:
+    interval: 1

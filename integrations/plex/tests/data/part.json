@@ -1,0 +1,19 @@
+{
+  "id": "000000000000",
+  "number": "1010-2020",
+  "name": "Test Part",
+  "revision": "11",
+  "description": "Description",
+  "type": "Type",
+  "group": "Test Group",
+  "source": "Test Source",
+  "productType": "Test Product Type",
+  "status": "Test Status",
+  "note": "This is an ote",
+  "leadTimeDays": 5,
+  "buildingCode": "BUILD1",
+  "createdById": "12345",
+  "createdDate": "04/08/21",
+  "modifiedById": "67890",
+  "modifiedDate": "04/08/21"
+}

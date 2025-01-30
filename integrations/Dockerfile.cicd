@@ -1,0 +1,100 @@
+ARG PURPOSE="development"
+
+FROM python:3.10-slim-bullseye AS os
+
+# customize OS for dev and release
+FROM os AS custom-os
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV ACCEPT_EULA=y
+
+# microsoft apt source for mssql support
+RUN /usr/lib/apt/apt-helper download-file https://packages.microsoft.com/keys/microsoft.asc /etc/apt/trusted.gpg.d/microsoft.asc ; \
+    /usr/lib/apt/apt-helper download-file https://packages.microsoft.com/config/debian/11/prod.list /etc/apt/sources.list.d/msprod.list
+
+# Install development and runtime dependencies
+RUN apt-get -y update ; \
+    apt-get -qy dist-upgrade ; \
+    apt-get -qy install \
+      libxml2 libxslt1.1 zlib1g msodbcsql18 mssql-tools18 unixodbc python3-pyodbc ; \
+    apt-get -qy install \
+      curl vim gcc libxml2-dev libxslt1-dev zlib1g-dev unixodbc-dev g++ gnupg git ; \
+    apt-get -qy autoremove ; \
+    apt-get clean ; \
+    rm -rf /var/lib/apt/lists/* ; \
+    find /var/log -name '*.log' -delete
+
+# base with common integration layout and all python requirements cached
+FROM custom-os AS base-integration
+
+# Set customer_integration WORKDIR
+WORKDIR /home/custom_integration
+
+# Set up Directories
+RUN mkdir integrations logs custom_processors
+
+# Cache all possible requirements
+ADD requirements.txt ./integrations/
+RUN pip3 install \
+      --no-warn-script-location \
+      --progress-bar off -r integrations/requirements.txt \
+    && rm -rf ./integrations/requirements.txt /root/.cache
+
+# Customer specific image for release
+FROM base-integration AS base-release
+WORKDIR /home/custom_integration
+ADD requirements-release.txt integrations/requirements-release.txt
+RUN pip3 install --progress-bar off -r integrations/requirements-release.txt && rm -rf /root/.cache
+
+# Customer specific image for development
+FROM base-integration AS base-development
+WORKDIR /home/custom_integration
+ADD requirements.txt integrations/requirements.txt
+RUN pip3 install --progress-bar off -r integrations/requirements.txt && rm -rf /root/.cache
+
+FROM base-${PURPOSE} AS base
+
+# Customer image
+FROM base AS customer-specific
+
+# Required build args
+ARG CUSTOMER
+ARG ERP_SYSTEM
+
+# Copy Files
+COPY erp_systems/"${ERP_SYSTEM}" home/custom_integration/integrations/"${ERP_SYSTEM}"
+COPY baseintegration home/custom_integration/integrations/baseintegration
+COPY customers/"${CUSTOMER}"/custom_processors home/custom_integration/custom_processors/
+COPY customers/"${CUSTOMER}"/logs home/custom_integration/logs/
+COPY customers/"${CUSTOMER}"/* home/custom_integration/
+COPY check_connection.py database_diff.py manage.py home/custom_integration/integrations/
+
+# TODO: this should be temporary until we implement secrets manager into integrations
+COPY secrets.dev.ini home/custom_integration/secrets.ini
+
+# Remove all development / build only packages and clean system files
+FROM customer-specific AS customer-clean-release
+
+RUN rm -rf `pip3 cache dir` \
+    && find /usr/local/lib -name 'tests' -type d -print0 | xargs -0 -I{} rm -rf "{}" \
+    && apt-get -qy purge curl vim gcc libxml2-dev libxslt1-dev zlib1g-dev unixodbc-dev g++ gnupg git \
+    && apt-get -qy autoremove \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* \
+    && find /var/log -name '*.log' -delete
+
+FROM customer-specific AS customer-clean-development
+
+FROM os AS customer-release
+COPY --from=customer-clean-release / /
+
+FROM os AS customer-development
+COPY --from=customer-clean-development / /
+
+FROM customer-${PURPOSE} AS customer
+ARG HTTP_PORT=8080
+WORKDIR /home/custom_integration
+COPY --from=base-integration /usr/local/lib/python3.10/site-packages /usr/local/lib/python3.10/site-packages
+COPY --from=base-integration /usr/local/bin /usr/local/bin
+
+EXPOSE ${HTTP_PORT}

@@ -1,0 +1,114 @@
+{
+  "id": "cb6b5d6c-4944-ed11-98f5-0050560201fd",
+  "rowNumber": 1,
+  "note": {
+    "value": ""
+  },
+  "AccountRef": {},
+  "APAccount": {
+    "value": "2000"
+  },
+  "APSubaccount": {
+    "value": "000000"
+  },
+  "CashAccount": {},
+  "CreatedDateTime": {
+    "value": "2022-10-04T22:02:28.63-04:00"
+  },
+  "CurrencyID": {
+    "value": "USD"
+  },
+  "CurrencyRateType": {},
+  "EnableCurrencyOverride": {
+    "value": "False"
+  },
+  "EnableRateOverride": {
+    "value": "False"
+  },
+  "F1099Box": {},
+  "F1099Vendor": {
+    "value": "False"
+  },
+  "FATCA": {},
+  "FOBPoint": {},
+  "ForeignEntity": {
+    "value": "False"
+  },
+  "LandedCostVendor": {
+    "value": "False"
+  },
+  "LastModifiedDateTime": {
+    "value": "2022-10-26T11:32:46.2-04:00"
+  },
+  "LeadTimedays": {},
+  "LocationName": {
+    "value": "Primary Location"
+  },
+  "MaxReceipt": {
+    "value": 100.0
+  },
+  "MinReceipt": {
+    "value": 0.0
+  },
+  "ParentAccount": {},
+  "PaymentBy": {
+    "value": "Due Date"
+  },
+  "PaymentLeadTimedays": {
+    "value": 0
+  },
+  "PaymentMethod": {
+    "value": "CHECK"
+  },
+  "PaySeparately": {
+    "value": "False"
+  },
+  "PrintOrders": {
+    "value": "False"
+  },
+  "ReceiptAction": {
+    "value": "Accept but Warn"
+  },
+  "ReceivingBranch": {},
+  "RemittanceAddressOverride": {},
+  "RemittanceContactOverride": {},
+  "SendOrdersbyEmail": {
+    "value": "True"
+  },
+  "ShippingAddressOverride": {},
+  "ShippingContactOverride": {},
+  "ShippingTerms": {},
+  "ShipVia": {},
+  "Status": {
+    "value": "Active"
+  },
+  "TaxRegistrationID": {},
+  "TaxZone": {},
+  "Terms": {
+    "value": "NET60"
+  },
+  "ThresholdReceipt": {
+    "value": 100.0
+  },
+  "VendorClass": {
+    "value": "GENERAL"
+  },
+  "VendorID": {
+    "value": "V100001"
+  },
+  "VendorIsLaborUnion": {
+    "value": "False"
+  },
+  "VendorIsTaxAgency": {
+    "value": "False"
+  },
+  "VendorName": {
+    "value": "SYRACUSE SUPPLY"
+  },
+  "Warehouse": {},
+  "custom": {},
+  "_links": {
+    "self": "/AcumaticaERP/entity/Default/22.200.001/Vendor/cb6b5d6c-4944-ed11-98f5-0050560201fd",
+    "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AP.VendorMaint/BAccount/cb6b5d6c-4944-ed11-98f5-0050560201fd/{filename}"
+  }
+}

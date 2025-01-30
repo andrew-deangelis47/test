@@ -1,0 +1,29 @@
+Mapping:
+  # Calls involving a customer id
+  The specified field attempts to reference data that does not exist.","metadata":{"field":"CustomerId": The customer is not valid
+
+  # Part
+  Field \'Name\' must be a string with a maximum allowable storage length of 100.: Field 'Name' exceeds maximum length of 100 characters.
+  Field \'Description\' must be a string with a maximum allowable storage length of 500.: Field 'Description' exceeds maximum length of 500 characters.
+  Field \'Note\' must be a string with a maximum allowable storage length of 500.: Field 'Note' exceeds maximum length of 500 characters
+
+  # Customer Part
+  Field \'Description\' must be a string with a maximum allowable storage length of 200: Field 'Description' exceeds maximum characters of 200.
+
+  # Sales Order Release
+  Release will exceed the customer\'s credit limit.: Customer's credit limit was exceeded.
+
+  # BOM
+  The given MinimumQuantity value should be less than or equal to the Quantity value of: The minimum quantity on bom components must be less than or equal to the quantity. Please check material operations to ensure the quantity is correct.
+
+  # Datasources 500 error
+  An unexpected error occurred while processing your request. Please try again shortly. If the problem persists, please contact customer support for additional assistance: 500 errored occured
+
+  # Unexpected error generic - not sure the cause of this
+  An unexpected error occurred while processing the request.: The Plex API has encountered an issue processing the last request. Please re-export the order. Anything already exported to Plex during this export can be reviewed in the "integration_export_report" custom table.
+
+  # Sales order - invalid ship to for customer and part - not really sure what this one means as of now
+  field":"ShipToAddressId","explanation":"Ship To is not valid for the customer and part.": Ship to is not valid for the customer and part
+
+  # supply item not existing or not active
+  propertyName":"ComponentId","message":"The given componentId does not exist or is not active.: When creating a bom component the component part does not exist or is not valid. This likely occured when adding a supply item as a component.

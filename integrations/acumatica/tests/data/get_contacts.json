@@ -1,0 +1,100 @@
+{
+    "id": "3f0af796-b1b3-ed11-9900-0050560201fd",
+    "rowNumber": 1,
+    "note": {
+        "value": ""
+    },
+    "Active": {
+        "value": true
+    },
+    "AddressValidated": {
+        "value": true
+    },
+    "Attention": {},
+    "BusinessAccount": {
+        "value": "C100001"
+    },
+    "CompanyName": {
+        "value": "ADAPTEC SOLUTIONS"
+    },
+    "ContactID": {
+        "value": 111989
+    },
+    "ContactMethod": {
+        "value": "Any"
+    },
+    "DateOfBirth": {},
+    "DisplayName": {
+        "value": "Doug Coleman"
+    },
+    "DuplicateFound": {
+        "value": false
+    },
+    "Email": {
+        "value": "doug.coleman@adaptecsolutions.com"
+    },
+    "Fax": {},
+    "FaxType": {
+        "value": "Fax"
+    },
+    "FirstName": {
+        "value": "Doug"
+    },
+    "Gender": {},
+    "Image": {},
+    "JobTitle": {
+        "value": "Engineering"
+    },
+    "LanguageOrLocale": {},
+    "LastIncomingActivity": {},
+    "LastModifiedDateTime": {
+        "value": "2023-02-23T15:37:39.27-05:00"
+    },
+    "LastName": {
+        "value": "Coleman"
+    },
+    "LastOutgoingActivity": {},
+    "MaritalStatus": {},
+    "MiddleName": {},
+    "NoteID": {
+        "value": "3f0af796-b1b3-ed11-9900-0050560201fd"
+    },
+    "OverrideAccountAddress": {
+        "value": false
+    },
+    "Owner": {},
+    "OwnerEmployeeName": {},
+    "ParentAccount": {},
+    "Phone1": {
+        "value": "585-877-6032"
+    },
+    "Phone1Type": {
+        "value": "Business 1"
+    },
+    "Phone2": {
+        "value": "585-487-6937"
+    },
+    "Phone2Type": {
+        "value": "Cell"
+    },
+    "Phone3": {},
+    "Phone3Type": {
+        "value": "Home"
+    },
+    "SpouseOrPartnerName": {},
+    "Status": {
+        "value": "Active"
+    },
+    "Title": {},
+    "Type": {
+        "value": "Contact"
+    },
+    "WebSite": {},
+    "Workgroup": {},
+    "WorkgroupDescription": {},
+    "custom": {},
+    "_links": {
+        "self": "/AcumaticaERP/entity/Default/22.200.001/Contact/3f0af796-b1b3-ed11-9900-0050560201fd",
+        "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.CR.ContactMaint/Contact/3f0af796-b1b3-ed11-9900-0050560201fd/{filename}"
+    }
+}

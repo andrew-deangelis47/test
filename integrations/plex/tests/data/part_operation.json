@@ -1,0 +1,12 @@
+{
+    "id": "abcdefgh",
+    "type": "Receive/Inspect",
+    "partId": "partId",
+    "operationId": "operationId",
+    "operationNumber": 1,
+    "active": true,
+    "subOperation": false,
+    "shippable": true,
+    "multiple": 1,
+    "netWeight": 50.0
+  }

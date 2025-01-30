@@ -1,0 +1,11 @@
+Paperless:
+  dir_to_preserve: googlesheets
+  slug: regal-plastic
+  logpath: log.txt
+
+GoogleSheets:
+  spreadsheet_id: insert_id_here
+
+Importers:
+  materials:
+    interval: 60

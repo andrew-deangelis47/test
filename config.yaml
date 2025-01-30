@@ -1,0 +1,176 @@
+Paperless:
+  dir_to_preserve: epicor
+  slug: accurate-metal-fabricating
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+Epicor:
+  base_url: insert
+  company_name: insert
+  verify_ssl_cert: True
+  eco_group: paperless
+  plant_code:
+
+# integration report custom table
+# these are 'off the shelf' columns, feel free to add more for custom processors
+# take a look at existing Plex processors and how they use this
+# if you do not want a report custom table, just delete the configuration here
+integration_report_columns:
+  - customer
+  - parts
+  - quote_header
+  - quote_lines
+  - quote_quantity
+  - add_ons
+  - quote_assemblies
+  - quote_operations
+  - quote_material
+
+
+Exporters:
+  orders:
+
+    # CRM-related config options
+    interval: 1
+    should_create_customer: True
+    default_customer_id: null
+    new_customer_check_duplicate_po: True
+    new_customer_type: PRO
+    default_payment_terms_code: 30
+    should_create_contact: True
+    should_add_quote_contacts: True
+    default_contact_email: test@test.com
+    should_create_shipping_address: True
+
+    # Quote header/quote line item config options
+    should_mark_quotes_as_quoted: False
+    should_mark_quotes_as_engineered: False
+    should_mark_quote_lines_as_template: False
+    should_add_public_pp_notes_to_quote_detail: True
+    should_add_private_pp_notes_to_quote_detail: False
+    should_populate_reference_with_pp_quote_num: False
+    should_add_pp_part_viewer_link_to_quote_comments: False
+    duplicate_part_number_append_character: CHILD
+    lead_time_unit_preference: calendar_days  # calendar_days, business_days, calendar_weeks, business_weeks
+    default_salesperson_id: None
+    set_quote_line_item_prod_code_from_first_pp_op: False
+    set_quote_line_item_sales_code_from_first_pp_op: False
+
+    # Add on config options
+    add_ons_should_create_line_items: False  # If False, will use default MiscCharge code
+    default_line_item_add_on_part_number: PART-NUMBER  # add_ons_should_create_line_items must be True for this to apply
+    add_ons_should_create_new_misc_charges: False  # If true, will create new MiscCharge code (if one cannot be found)
+    default_misc_charge_code: ENG  # Default MiscCharge if above option is False
+
+    # Part config preferences
+    disable_part_creation: False
+    should_use_customer_part_numbers: False
+    customer_part_number_auto_assignment_default: AutoAssign
+    default_customer_part_number_part: TEST123
+
+    # Raw material/material operation config options
+    should_create_raw_materials: False
+    default_raw_material_id: PLACEHOLDER-PART
+    pp_mat_id_variable: Material ID
+    pp_mat_cost_variable: unit_cost
+    material_op_quantity_per_parent_var: quantity_per_parent
+    pp_mat_UOMCode_variable: cost_unit_of_measure
+    pp_mat_description_variable: Material Description
+    default_raw_material_class_id: BAR
+    default_material_op_cost_method: L
+    material_op_default_part_type: P
+    pp_mat_op_vendor_num: epicor_vendor_num
+    pp_mat_op_lead_time: epicor_lead_days
+    write_material_operation_notes_to_purchasing_comments: True
+    default_related_operation_num: 0
+#    custom_uom_class_dict: {
+#      "SI": "AREA",
+#      "SFT": "AREA",
+#      "LFT": "LENGTH",
+#      "EA": "Count",
+#      "IN": "IN",
+#      "POUNDS": "WEIGHT"
+#    }
+
+    # Purchased component config options
+    pp_purchased_component_op_def_name: PC Piece Price
+    pp_purchased_component_op_piece_price_var: piece_price
+    default_purchased_comp_cost_method: L
+    default_hardware_class_id: HDW
+    set_hardware_components_as_non_stock: True
+    write_pc_part_description_to_purchasing_comments: True
+    
+
+    # Manufactured component config options
+    default_part_revision: '-'  # note that empty string or null are not valid options
+    default_non_root_mfg_class_id: MFG
+    default_non_root_mfg_product_code: ABC
+    default_root_component_class_id: ROOT
+    default_root_component_product_code: ABC
+    default_manufactured_comp_cost_method: S
+    set_mfg_components_as_non_stock: True
+
+    # Shop operation config options
+    pp_op_id_variable: operation_code # Set this value to IGNORE in P3L to skip exporting an operation
+    default_operation_id: OperationCode
+    pp_resource_group_id_variable: resource_group_id
+    pp_resource_id_variable: resource_id
+    default_std_format: HP
+    default_std_basis: E
+    crew_size_variable: crew_size
+    crew_size_destination: prod # Options include "prod", "setup" or "both"
+    pp_vendor_id_variable: supplier_id
+    pp_vendor_unit_cost_variable: piece_price
+    pp_vendor_lot_charge_variable: min_charge
+    disable_quote_operation_details: False
+    set_auto_receive_into_inventory_on_last_operation: False
+    set_final_operation_on_last_operation: False
+
+Importers:
+  materials:
+    interval: 120
+    bulk_enable: True
+    include_raw_material_class_ids:
+      - SHT
+      - BAR
+    should_include_null_dates: True  # Determines whether legacy data "null" dates will be captured in the import
+    should_update_null_dates: True  # Determines whether legacy data "null" dates will be updated for better performance
+    returned_record_limit: 10000  # Maps to the "$top" Odata field to limit the number of queried records
+  purchased_components:
+    interval: 180
+    bulk_enable: True
+    should_include_purchased_component_class_ids:
+      - HDW  # List of ClassIDs that indicate non-raw material Parts
+    should_include_null_dates: True  # Determines whether legacy data "null" dates will be captured in the import
+    should_update_null_dates: True  # Determines whether legacy data "null" dates will be updated for better performance
+    custom_column_header_names:
+      - class_id  # class_id must exist
+      - i_u_m
+      - std_material_cost
+    corresponding_column_header_type:  # NOTE: This list must correspond with the respective values in "custom_column_header_names"
+      - string  # must be one of the following: string, boolean, or numeric
+      - string
+      - numeric
+    default_numeric_value: 0.01  # NOTE: These defaults will apply for all custom headers of this type
+    default_string_value: None
+    default_boolean_value: False
+    returned_record_limit: 10000  # Maps to the "$top" Odata field to limit the number of queried records
+    get_pc_price_from_last_cost: False
+  accounts:
+    interval: 240
+    import_account_notes: True
+  work_centers:
+    interval: 10080 # weekly, since each time it is a full import
+    bulk_enable: True
+    should_import_resource_groups: True
+    should_import_resources: True
+  repeat_part:
+    interval: 100
+    import_objects_newer_than: 1970-01-01
+    is_post_enabled: True
+    print_out_json: False
+    repeat_part_batch_size: 25  # Dictates how many parts will be cached and processed at one time (system memory affected)
+    quote_id_count_filter_limit: 25  # Dictates how many quote objects will be requested in a single query (affects efficiency of quote requests)
+    job_id_count_filter_limit: 25  # Dictates how many job objects will be requested in a single query (affects efficiency of job requests)
+    page_size: 26  # Dictates how many API calls will be made to return results of a specfic filter req (affects efficiency of all paginated requests)

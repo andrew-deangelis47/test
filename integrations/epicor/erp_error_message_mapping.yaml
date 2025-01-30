@@ -1,0 +1,7 @@
+Mapping:
+
+  # Part Creation
+  '"Message":"Class references invalid value.","Type":"Error","Table":"Part"': Tried to create part with an invalid Class property.
+
+  # Quote Creation
+  'Erp.BO.QuoteSvc/Quotes - {"HttpStatus":400,"ReasonPhrase":"REST API Exception","ErrorMessage":"Ship Via Code 2 is inactive."': Could not create Epicor quote. Ship Via Code 2 is inactive.

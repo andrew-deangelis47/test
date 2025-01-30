@@ -1,0 +1,7 @@
+GeneralLedgerAccount query:
+
+Select AccountNumber, GeneralLedgerAccount.Description FROM GeneralLedgerAccount
+INNER JOIN GeneralLedgerAccountType
+ON GeneralLedgerAccountTypeFK = GeneralLedgerAccountTypePK
+WHERE (NotVisible = 0 OR NotVisible IS NULL) AND GeneralLedgerAccountType.Code NOT IN ('001', '002', '006')
+ORDER BY AccountNumber

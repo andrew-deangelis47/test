@@ -1,0 +1,43 @@
+{
+  "id": "b4fabddb-9c66-ed11-98fa-0050560201fd",
+  "rowNumber": 1,
+  "note": {
+    "value": ""
+  },
+  "Active": {
+    "value": "True"
+  },
+  "BackflushLabor": {
+    "value": "False"
+  },
+  "BackflushMaterials": {
+    "value": "False"
+  },
+  "BasisforCapacity": {
+    "value": "Crew Size"
+  },
+  "Description": {
+    "value": "0BCU"
+  },
+  "Location": { },
+  "OutsideProcessing": {
+    "value": "False"
+  },
+  "ScrapActionDefault": {
+    "value": "No Action"
+  },
+  "StandardCost": {
+    "value": 0.0
+  },
+  "Warehouse": {
+    "value": "CMDFL01"
+  },
+  "WorkCenterID": {
+    "value": "0BCU"
+  },
+  "custom": { },
+  "_links": {
+    "self": "/AcumaticaERP/entity/Manufacturing/21.200.001/WorkCenter/b4fabddb-9c66-ed11-98fa-0050560201fd",
+    "files:put": "/AcumaticaERP/entity/Manufacturing/21.200.001/files/PX.Objects.AM.WCMaint/WCRecords/b4fabddb-9c66-ed11-98fa-0050560201fd/{filename}"
+  }
+}

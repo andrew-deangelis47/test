@@ -1,0 +1,92 @@
+def customer_choices = [
+    '',
+    'example_customer',
+    'gsmw-auto-quote'
+]
+
+def aws_account = '431105233043'
+def ecr = "${aws_account}.dkr.ecr.us-east-1.amazonaws.com"
+
+pipeline {
+
+    /*
+      Use this job to build and publish new integrations images
+
+      All images will be tagged with their build number (e.g. 3).
+            
+      To tag the image artifact as release, set DEPLOY to true
+      --> DEPLOY will only work if INTEGRATIONS_BRANCH is set to master OR if NONMASTER_DEPLOY is true
+    */
+
+    parameters {
+        gitParameter(name: 'INTEGRATIONS_BRANCH', branchFilter: 'origin/(.*)', defaultValue: 'master', description: '', type: 'PT_BRANCH', quickFilterEnabled: true, requiredParameter: true, sortMode: 'DESCENDING_SMART', selectedValue: 'DEFAULT')
+        choice(name: 'CUSTOMER', choices: customer_choices, description: 'Customer to build integration for. Jenkins will grab files from integrations/customers/${CUSTOMER}.')
+        booleanParam(name: 'NONMASTER_DEPLOY', defaultValue: false, description: 'I acknowledge that I am deploying integrations code that has not been merged into master. Check this if you need to deploy off a non-master branch.')
+        booleanParam(name: 'DEPLOY', defaultValue: false, description: 'Artifact will be tagged according to BUILD NUMBER by default. Set this to true to also tag and push image as release. Only works if branch is set to master or if NONMASTER_DEPLOY is checked.')
+    }
+
+    environment {
+        AWS_REGION = 'us-east-1'
+        BUILDKIT_PROGRESS = 'plain'
+    }
+
+    agent { kubernetes { inheritFrom 'aio' } }
+
+    stages {
+
+        stage('Setup') {
+            steps {
+                script {
+                    // Abort if engineer did not specify CUSTOMER
+                    if (!params.CUSTOMER?.trim()) {
+                        currentBuild.result = 'ABORTED'
+                        currentBuild.description = 'Invalid parameters! Must select CUSTOMER'
+                        error(currentBuild.description)
+                    }
+                    // Abort if engineer specified deploy w/o master or w/o clicking nonmaster_deploy ack
+                    if (params.DEPLOY == true && params.INTEGRATIONS_BRANCH != 'master' && params.NONMASTER_DEPLOY == false) {
+                        currentBuild.result = 'ABORTED'
+                        currentBuild.description = 'Invalid parameters! Cannot deploy unless branch is master OR NONMASTER_DEPLOY is checked.'
+                        error(currentBuild.description)
+                    }
+                    // Set build display name 
+                    currentBuild.displayName += ": ${BUILD_USER}: ${params.CUSTOMER}"
+                    // Start Slack thread
+                    slackUserId = slackUserIdFromEmail(BUILD_USER_EMAIL)
+                    slack_msg = slackSend(channel: slackUserId, message: "<@$slackUserId> Integration build initiated! \n\nConsole logs <${env.BUILD_URL}console|here>.", sendAsText: true) // Don't share customer name to Slack
+                }
+                sh label: "configure commercial profile", script: """
+                    aws configure set role_arn arn:aws:iam::${aws_account}:role/jenkins --profile jenkins-role
+                    aws configure set source_profile jenkins-keys --profile jenkins-role
+                    aws configure set aws_access_key_id ${env.JENKINS_COMM_ACCESS_KEY} --profile jenkins-keys
+                    aws configure set aws_secret_access_key ${env.JENKINS_COMM_SECRET_ACCESS_KEY} --profile jenkins-keys
+                """
+                sh label: "authenticate to commercial ECR", script: """
+                    aws ecr --profile jenkins-role get-login-password | docker login --username AWS --password-stdin ${ecr}    
+                """
+            }
+        }
+
+        stage('Build + Push') {
+            steps {
+                script {
+                    annotationsValue = gitJobMetadata().collect { "\"${it.key}=${it.value}\"" }.join(', ')
+                    writeFile(file: 'docker-bake.override.hcl', text: """BUILD_ANNOTATIONS = [ ${annotationsValue} ]""")
+                }
+                sh label: "Build + push base integration image", script: """
+                    docker buildx bake customer-${params.CUSTOMER} --push --provenance=false
+                """
+                script {
+                    slackSend(channel: "${slack_msg.threadId}", message: "${STAGE_NAME} succeeded!", sendAsText: true)
+                }
+            }
+        }
+    }
+
+    post {
+        failure {
+            slackSend(channel: "${slack_msg.threadId}", message: "Integration build *FAILED*. \n\nConsole logs <${env.BUILD_URL}console|here>.", sendAsText: true)
+        }
+    }
+
+}

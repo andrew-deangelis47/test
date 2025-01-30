@@ -1,0 +1,88 @@
+Paperless:
+  dir_to_preserve: e2
+  slug: replace_me
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+E2:
+  entered_by: PAPERLESS
+  tax_exempt_code: <tax_exempt_code>
+
+
+Exporters:
+  orders:
+    interval: 5
+    tax_exempt_code: <tax_exempt_code>
+    credit_card_terms_code: credit_card_terms_code>
+    default_work_center_name: PP_DEFAULT
+    default_vendor_code_name: PP_DEFAULT
+    vendor_code_operation_variable_name: Vendor
+    op_code_operation_variable_name: Operation Selection
+    should_update_e2_billing_address: false
+    should_update_e2_payment_terms: false
+    should_update_e2_customer_notes: false
+    should_update_e2_customer_sales_id: false
+    should_create_e2_shipping_address: false
+    should_update_e2_part_revision: false
+    should_update_e2_part_description: false
+    should_update_e2_purchased_components_data: false
+    should_create_e2_raw_material_record: true
+    should_replace_e2_routing_for_existing_parts: false
+    should_replace_e2_bom_for_existing_parts: false
+    should_get_vend_code_from_operation_variable: false
+    should_create_job_req_records_for_outside_operations: true
+    should_create_job_req_records_for_purchased_components: true
+    should_create_job_req_records_for_raw_materials: true
+    should_include_paperless_urls_in_job_notes: true
+    should_update_e2_part_quantity_and_price: false
+    should_use_extended_part_quantity_and_price: false
+    should_populate_order_routing_for_add_ons: false
+    raw_material_part_number_variable_name: Material ID
+    raw_material_row_lookup_variable_name: Mat
+    default_customer_currency_code: USA
+    should_export_assemblies_with_duplicate_components: True
+
+    # New material options
+    should_use_new_multiple_material_logic: True
+    material_op_quantity_required_var: Required Quantity
+    material_op_uom_var: Pricing Unit Of Measure
+    material_default_uom: EA
+    material_op_prod_code_var: Product Code
+    material_default_prod_code: BAR
+
+Importers:
+  accounts:
+    interval: 60
+    should_import_sold_to_address: true
+    should_import_billing_address: true
+    should_import_shipping_addresses: true
+    should_import_contacts: true
+    should_import_salesperson_for_account: true
+    should_skip_incomplete_addresses: true
+  materials:
+    interval: 60
+    bulk_enable: True
+    codes_to_include: 
+    - RAW MATERIAL
+    - blah1
+    codes_to_exclude: 
+    - blah2
+    - blah3
+  purchased_components:
+    bulk_enable: True
+    interval: 50
+    codes_to_include: 
+    - HARDWARE
+    - blah1
+    codes_to_exclude: 
+    - blah4
+    - blah5
+  work_centers:
+    bulk_enable: True
+    interval: 245
+  vendors:
+    bulk_enable: True
+    interval: 45
+#  repeat_part:
+#    is_post_enabled: True

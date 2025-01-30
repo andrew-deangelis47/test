@@ -1,0 +1,26 @@
+{
+    "outputs": {},
+    "tables": [
+        {
+            "columns": [
+                "Part_Key",
+                "Part_No",
+                "Revision",
+                "Part_No_Revision",
+                "Name",
+                "Part_Type",
+                "Part_Status",
+                "Note",
+                "Image",
+                "APQP_Checklist_No",
+                "Revision_Effective_Date",
+                "Spec_Rev_Exists",
+                "Temper",
+                "Grade"
+            ],
+            "rows": [],
+            "rowLimitExceeded": false
+        }
+    ],
+    "transactionNo": "2056763"
+}

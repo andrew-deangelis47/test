@@ -1,0 +1,22 @@
+{ "id": "81b3c7aa-2f7b-ed11-98fd-0050560201fd",
+    "details": [{
+    "LineNbr": {
+        "value": 1
+    },
+    "InventoryID": {
+        "value": "TEST_PART_8"
+    },
+    "LineType": {
+        "value": "Goods for Inventory"
+    },
+    "UnitPrice": {
+        "value": "54.32"
+    },
+    "OrderQty": {
+        "value": 100
+    },
+    "WarehouseID": {
+        "value": "CMDNY01"
+    }
+}]
+}

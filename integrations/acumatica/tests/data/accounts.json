@@ -1,0 +1,2468 @@
+[
+    {
+        "id": "5ea0d6e3-18b3-ed11-9900-0050560201fd",
+        "rowNumber": 1,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "ApplyOverdueCharges": {
+            "value": false
+        },
+        "AutoApplyPayments": {
+            "value": false
+        },
+        "BAccountID": {
+            "value": 11229
+        },
+        "BillingAddressOverride": {
+            "value": false
+        },
+        "BillingContact": {
+            "id": "12fe5a23-f1bf-4a6c-a1c4-ac7645dd4592",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "79ff9cf1-764c-48b4-9e89-ad8e0bc5c332",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "305 Gregson Dr"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "CARY"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "27511-6496"
+                },
+                "State": {
+                    "value": "NC"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109540
+            },
+            "DisplayName": {
+                "value": "ABB INC."
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {},
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "BillingContactOverride": {
+            "value": false
+        },
+        "Contacts": [],
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:14:29.35-05:00"
+        },
+        "CreditLimit": {
+            "value": 0.0000
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "CustomerClass": {
+            "value": "DOMESTIC"
+        },
+        "CustomerID": {
+            "value": "C100001"
+        },
+        "CustomerName": {
+            "value": "ABB INC."
+        },
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "EnableWriteOffs": {
+            "value": true
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FOBPoint": {},
+        "LastModifiedDateTime": {
+            "value": "2023-02-23T14:55:39.42-05:00"
+        },
+        "LeadTimedays": {
+            "value": 2
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MultiCurrencyStatements": {
+            "value": false
+        },
+        "NoteID": {
+            "value": "5ea0d6e3-18b3-ed11-9900-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "ParentRecord": {},
+        "PriceClassID": {},
+        "PrintInvoices": {
+            "value": true
+        },
+        "PrintStatements": {
+            "value": false
+        },
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "SendInvoicesbyEmail": {
+            "value": false
+        },
+        "SendStatementsbyEmail": {
+            "value": false
+        },
+        "ShippingAddressOverride": {},
+        "ShippingBranch": {},
+        "ShippingContact": {
+            "id": "2caf915a-dcb4-463a-a00b-c69f797e1b30",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "c117838a-1a48-43ba-b18a-a938407acbf6",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "305 Gregson Dr"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "CARY"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "27511-6496"
+                },
+                "State": {
+                    "value": "NC"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109540
+            },
+            "DisplayName": {
+                "value": "ABB INC."
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {},
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "ShippingContactOverride": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZoneID": {},
+        "ShipVia": {},
+        "StatementCycleID": {
+            "value": "EOM"
+        },
+        "StatementType": {
+            "value": "Open Item"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "TaxExemptionNumber": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {
+            "value": "AVALARA"
+        },
+        "Terms": {
+            "value": "NET90EOM"
+        },
+        "WarehouseID": {},
+        "WriteOffLimit": {
+            "value": 1.0000
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Customer/5ea0d6e3-18b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/BAccount/5ea0d6e3-18b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "72a0d6e3-18b3-ed11-9900-0050560201fd",
+        "rowNumber": 2,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "ApplyOverdueCharges": {
+            "value": false
+        },
+        "AutoApplyPayments": {
+            "value": false
+        },
+        "BAccountID": {
+            "value": 11230
+        },
+        "BillingAddressOverride": {
+            "value": false
+        },
+        "BillingContact": {
+            "id": "898ac3e5-2c9a-4705-a954-de8573890492",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "af2ce78d-1135-4661-9d9f-96e62d89117b",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "9699 ENTERPRISE DR"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "PAINTED POST"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14870-9166"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109541
+            },
+            "DisplayName": {
+                "value": "ADAPTEC SOLUTIONS"
+            },
+            "Email": {
+                "value": "ap@adaptecsolutions.com"
+            },
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "(800)724-5794"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "BillingContactOverride": {
+            "value": false
+        },
+        "Contacts": [
+            {
+                "id": "3f0af796-b1b3-ed11-9900-0050560201fd",
+                "rowNumber": 1,
+                "note": {
+                    "value": ""
+                },
+                "ContactID": {
+                    "value": 111989
+                },
+                "custom": {},
+                "_links": {
+                    "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/Contacts/3f0af796-b1b3-ed11-9900-0050560201fd/{filename}"
+                }
+            },
+            {
+                "id": "570af796-b1b3-ed11-9900-0050560201fd",
+                "rowNumber": 2,
+                "note": {
+                    "value": ""
+                },
+                "ContactID": {
+                    "value": 111990
+                },
+                "custom": {},
+                "_links": {
+                    "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/Contacts/570af796-b1b3-ed11-9900-0050560201fd/{filename}"
+                }
+            }
+        ],
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:16:22.097-05:00"
+        },
+        "CreditLimit": {
+            "value": 0.0000
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "CustomerClass": {
+            "value": "DOMESTIC"
+        },
+        "CustomerID": {
+            "value": "C100002"
+        },
+        "CustomerName": {
+            "value": "ADAPTEC SOLUTIONS"
+        },
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "EnableWriteOffs": {
+            "value": true
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FOBPoint": {},
+        "LastModifiedDateTime": {
+            "value": "2023-02-24T11:47:25.813-05:00"
+        },
+        "LeadTimedays": {
+            "value": 2
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MultiCurrencyStatements": {
+            "value": false
+        },
+        "NoteID": {
+            "value": "72a0d6e3-18b3-ed11-9900-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "ParentRecord": {},
+        "PriceClassID": {},
+        "PrintInvoices": {
+            "value": false
+        },
+        "PrintStatements": {
+            "value": false
+        },
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "SendInvoicesbyEmail": {
+            "value": true
+        },
+        "SendStatementsbyEmail": {
+            "value": false
+        },
+        "ShippingAddressOverride": {},
+        "ShippingBranch": {},
+        "ShippingContact": {
+            "id": "81a4b575-e998-4ec7-a6d5-54918d299eea",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "1bd5da4b-59d4-4262-84f7-f3bb7ec8faf5",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "9699 ENTERPRISE DR"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "PAINTED POST"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14870-9166"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109541
+            },
+            "DisplayName": {
+                "value": "ADAPTEC SOLUTIONS"
+            },
+            "Email": {
+                "value": "ap@adaptecsolutions.com"
+            },
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "(800)724-5794"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "ShippingContactOverride": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZoneID": {},
+        "ShipVia": {},
+        "StatementCycleID": {
+            "value": "EOM"
+        },
+        "StatementType": {
+            "value": "Open Item"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "TaxExemptionNumber": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {
+            "value": "AVALARA"
+        },
+        "Terms": {
+            "value": "NET30"
+        },
+        "WarehouseID": {},
+        "WriteOffLimit": {
+            "value": 1.0000
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Customer/72a0d6e3-18b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/BAccount/72a0d6e3-18b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "86a0d6e3-18b3-ed11-9900-0050560201fd",
+        "rowNumber": 3,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "ApplyOverdueCharges": {
+            "value": false
+        },
+        "AutoApplyPayments": {
+            "value": false
+        },
+        "BAccountID": {
+            "value": 11231
+        },
+        "BillingAddressOverride": {
+            "value": false
+        },
+        "BillingContact": {
+            "id": "714492fc-d2e6-4093-b5db-7c923b37d4c7",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "90183153-e7b9-46d9-ba10-fd3f1d726aab",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "126 Ridge Rd"
+                },
+                "AddressLine2": {
+                    "value": "PO Box 187"
+                },
+                "City": {
+                    "value": "LANSING"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14882-9012"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109542
+            },
+            "DisplayName": {
+                "value": "ADVANCED DESIGN CONSULTING"
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "607-533-3531"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "BillingContactOverride": {
+            "value": false
+        },
+        "Contacts": [],
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:16:22.203-05:00"
+        },
+        "CreditLimit": {
+            "value": 0.0000
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "CustomerClass": {
+            "value": "DOMESTIC"
+        },
+        "CustomerID": {
+            "value": "C100003"
+        },
+        "CustomerName": {
+            "value": "ADVANCED DESIGN CONSULTING"
+        },
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "EnableWriteOffs": {
+            "value": true
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FOBPoint": {},
+        "LastModifiedDateTime": {
+            "value": "2023-02-23T14:45:33.583-05:00"
+        },
+        "LeadTimedays": {
+            "value": 2
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MultiCurrencyStatements": {
+            "value": false
+        },
+        "NoteID": {
+            "value": "86a0d6e3-18b3-ed11-9900-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "ParentRecord": {},
+        "PriceClassID": {},
+        "PrintInvoices": {
+            "value": true
+        },
+        "PrintStatements": {
+            "value": false
+        },
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "SendInvoicesbyEmail": {
+            "value": false
+        },
+        "SendStatementsbyEmail": {
+            "value": false
+        },
+        "ShippingAddressOverride": {},
+        "ShippingBranch": {},
+        "ShippingContact": {
+            "id": "dde70cdb-9097-4145-a849-397ea0044231",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "036cc4cf-49a3-4560-a5de-d4c6fdcc5873",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "126 Ridge Rd"
+                },
+                "AddressLine2": {
+                    "value": "PO Box 187"
+                },
+                "City": {
+                    "value": "LANSING"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14882-9012"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109542
+            },
+            "DisplayName": {
+                "value": "ADVANCED DESIGN CONSULTING"
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "607-533-3531"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "ShippingContactOverride": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZoneID": {},
+        "ShipVia": {},
+        "StatementCycleID": {
+            "value": "EOM"
+        },
+        "StatementType": {
+            "value": "Open Item"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "TaxExemptionNumber": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {
+            "value": "AVALARA"
+        },
+        "Terms": {
+            "value": "1NET30"
+        },
+        "WarehouseID": {},
+        "WriteOffLimit": {
+            "value": 1.0000
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Customer/86a0d6e3-18b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/BAccount/86a0d6e3-18b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "9aa0d6e3-18b3-ed11-9900-0050560201fd",
+        "rowNumber": 4,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "ApplyOverdueCharges": {
+            "value": false
+        },
+        "AutoApplyPayments": {
+            "value": false
+        },
+        "BAccountID": {
+            "value": 11232
+        },
+        "BillingAddressOverride": {
+            "value": false
+        },
+        "BillingContact": {
+            "id": "c1abf67f-5d89-49a1-97f8-29c6bc40a3ea",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "2d8cdc0f-ff04-4e02-ba51-e7dc9cb2a0ae",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "9828 ROUTE 96"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "TRUMANSBURG"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14886-9327"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109543
+            },
+            "DisplayName": {
+                "value": "ADVION BIOSYSEMS, INC."
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "607-266-0665"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "BillingContactOverride": {
+            "value": false
+        },
+        "Contacts": [],
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:16:22.32-05:00"
+        },
+        "CreditLimit": {
+            "value": 0.0000
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "CustomerClass": {
+            "value": "DOMESTIC"
+        },
+        "CustomerID": {
+            "value": "C100004"
+        },
+        "CustomerName": {
+            "value": "ADVION BIOSYSEMS, INC."
+        },
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "EnableWriteOffs": {
+            "value": true
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FOBPoint": {},
+        "LastModifiedDateTime": {
+            "value": "2023-02-23T14:45:33.733-05:00"
+        },
+        "LeadTimedays": {
+            "value": 2
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MultiCurrencyStatements": {
+            "value": false
+        },
+        "NoteID": {
+            "value": "9aa0d6e3-18b3-ed11-9900-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "ParentRecord": {},
+        "PriceClassID": {},
+        "PrintInvoices": {
+            "value": true
+        },
+        "PrintStatements": {
+            "value": false
+        },
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "SendInvoicesbyEmail": {
+            "value": false
+        },
+        "SendStatementsbyEmail": {
+            "value": false
+        },
+        "ShippingAddressOverride": {},
+        "ShippingBranch": {},
+        "ShippingContact": {
+            "id": "b30cc2eb-4568-446f-8c45-66a6e687604b",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "81a0c663-4019-4a6c-8c4d-be3a518c33f6",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "9828 ROUTE 96"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "TRUMANSBURG"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14886-9327"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109543
+            },
+            "DisplayName": {
+                "value": "ADVION BIOSYSEMS, INC."
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "607-266-0665"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "ShippingContactOverride": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZoneID": {},
+        "ShipVia": {},
+        "StatementCycleID": {
+            "value": "EOM"
+        },
+        "StatementType": {
+            "value": "Open Item"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "TaxExemptionNumber": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {
+            "value": "AVALARA"
+        },
+        "Terms": {
+            "value": "1NET30"
+        },
+        "WarehouseID": {},
+        "WriteOffLimit": {
+            "value": 1.0000
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Customer/9aa0d6e3-18b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/BAccount/9aa0d6e3-18b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "aea0d6e3-18b3-ed11-9900-0050560201fd",
+        "rowNumber": 5,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "ApplyOverdueCharges": {
+            "value": false
+        },
+        "AutoApplyPayments": {
+            "value": false
+        },
+        "BAccountID": {
+            "value": 11233
+        },
+        "BillingAddressOverride": {
+            "value": false
+        },
+        "BillingContact": {
+            "id": "aede1dfa-a3d4-4557-b1c2-700e2b6c5bd9",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "565a820c-aa66-493a-87af-19e00b3b0552",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "713 Batavia St"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "ELMIRA"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14904-2011"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109544
+            },
+            "DisplayName": {
+                "value": "AFI"
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "607-732-3244"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "BillingContactOverride": {
+            "value": false
+        },
+        "Contacts": [
+            {
+                "id": "610af796-b1b3-ed11-9900-0050560201fd",
+                "rowNumber": 1,
+                "note": {
+                    "value": ""
+                },
+                "ContactID": {
+                    "value": 111991
+                },
+                "custom": {},
+                "_links": {
+                    "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/Contacts/610af796-b1b3-ed11-9900-0050560201fd/{filename}"
+                }
+            }
+        ],
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:16:22.453-05:00"
+        },
+        "CreditLimit": {
+            "value": 0.0000
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "CustomerClass": {
+            "value": "DOMESTIC"
+        },
+        "CustomerID": {
+            "value": "C100005"
+        },
+        "CustomerName": {
+            "value": "AFI"
+        },
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "EnableWriteOffs": {
+            "value": true
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FOBPoint": {},
+        "LastModifiedDateTime": {
+            "value": "2023-02-23T14:45:33.9-05:00"
+        },
+        "LeadTimedays": {
+            "value": 2
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MultiCurrencyStatements": {
+            "value": false
+        },
+        "NoteID": {
+            "value": "aea0d6e3-18b3-ed11-9900-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "ParentRecord": {},
+        "PriceClassID": {},
+        "PrintInvoices": {
+            "value": true
+        },
+        "PrintStatements": {
+            "value": false
+        },
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "SendInvoicesbyEmail": {
+            "value": false
+        },
+        "SendStatementsbyEmail": {
+            "value": false
+        },
+        "ShippingAddressOverride": {},
+        "ShippingBranch": {},
+        "ShippingContact": {
+            "id": "7a36cd58-c4e8-4d3a-8f4d-187b3ed93f2d",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "018f2aa2-3417-41c9-abb5-679605618a06",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "713 Batavia St"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "ELMIRA"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14904-2011"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109544
+            },
+            "DisplayName": {
+                "value": "AFI"
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "607-732-3244"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "ShippingContactOverride": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZoneID": {},
+        "ShipVia": {},
+        "StatementCycleID": {
+            "value": "EOM"
+        },
+        "StatementType": {
+            "value": "Open Item"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "TaxExemptionNumber": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {
+            "value": "AVALARA"
+        },
+        "Terms": {
+            "value": "1NET30"
+        },
+        "WarehouseID": {},
+        "WriteOffLimit": {
+            "value": 1.0000
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Customer/aea0d6e3-18b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/BAccount/aea0d6e3-18b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "c2a0d6e3-18b3-ed11-9900-0050560201fd",
+        "rowNumber": 6,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "ApplyOverdueCharges": {
+            "value": false
+        },
+        "AutoApplyPayments": {
+            "value": false
+        },
+        "BAccountID": {
+            "value": 11234
+        },
+        "BillingAddressOverride": {
+            "value": false
+        },
+        "BillingContact": {
+            "id": "5b5ddd37-e39c-423f-90c1-85f72a0bc9b8",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "7a2f7914-b69c-409c-aa8d-ece224879f7f",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "108 Rush St"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "Mount Holly"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "28120-1701"
+                },
+                "State": {
+                    "value": "NC"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109545
+            },
+            "DisplayName": {
+                "value": "AIRBORN"
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "800-986-4646"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "BillingContactOverride": {
+            "value": false
+        },
+        "Contacts": [],
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:19:34.5-05:00"
+        },
+        "CreditLimit": {
+            "value": 0.0000
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "CustomerClass": {
+            "value": "DOMESTIC"
+        },
+        "CustomerID": {
+            "value": "C100006"
+        },
+        "CustomerName": {
+            "value": "AIRBORN"
+        },
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "EnableWriteOffs": {
+            "value": true
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FOBPoint": {},
+        "LastModifiedDateTime": {
+            "value": "2023-02-23T14:45:34.003-05:00"
+        },
+        "LeadTimedays": {
+            "value": 2
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MultiCurrencyStatements": {
+            "value": false
+        },
+        "NoteID": {
+            "value": "c2a0d6e3-18b3-ed11-9900-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "ParentRecord": {},
+        "PriceClassID": {},
+        "PrintInvoices": {
+            "value": true
+        },
+        "PrintStatements": {
+            "value": false
+        },
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "SendInvoicesbyEmail": {
+            "value": false
+        },
+        "SendStatementsbyEmail": {
+            "value": false
+        },
+        "ShippingAddressOverride": {},
+        "ShippingBranch": {},
+        "ShippingContact": {
+            "id": "3e9748cc-d929-48d3-977f-7d8e1f67cc3a",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "ee35f008-7afd-46d5-9211-56e038760329",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "108 Rush St"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "Mount Holly"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "28120-1701"
+                },
+                "State": {
+                    "value": "NC"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109545
+            },
+            "DisplayName": {
+                "value": "AIRBORN"
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "800-986-4646"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "ShippingContactOverride": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZoneID": {},
+        "ShipVia": {},
+        "StatementCycleID": {
+            "value": "EOM"
+        },
+        "StatementType": {
+            "value": "Open Item"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "TaxExemptionNumber": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {
+            "value": "AVALARA"
+        },
+        "Terms": {
+            "value": "ONRECEIPT"
+        },
+        "WarehouseID": {},
+        "WriteOffLimit": {
+            "value": 1.0000
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Customer/c2a0d6e3-18b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/BAccount/c2a0d6e3-18b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "dc6ebbed-18b3-ed11-9900-0050560201fd",
+        "rowNumber": 7,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "ApplyOverdueCharges": {
+            "value": false
+        },
+        "AutoApplyPayments": {
+            "value": false
+        },
+        "BAccountID": {
+            "value": 11247
+        },
+        "BillingAddressOverride": {
+            "value": false
+        },
+        "BillingContact": {
+            "id": "dff908f5-4587-44d5-bce1-d4051308f360",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "932b5f12-e02f-4b7e-b803-175f043bbf61",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "365 Upper Oakwood Ave"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "ELMIRA HEIGHTS"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14903-1127"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109546
+            },
+            "DisplayName": {
+                "value": "AIR-FLO MFG, CO., INC"
+            },
+            "Email": {
+                "value": "katlyn@air-flo.com"
+            },
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "733-8284"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "BillingContactOverride": {
+            "value": false
+        },
+        "Contacts": [],
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:24:59.31-05:00"
+        },
+        "CreditLimit": {
+            "value": 0.0000
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "CustomerClass": {
+            "value": "DOMESTIC"
+        },
+        "CustomerID": {
+            "value": "C100007"
+        },
+        "CustomerName": {
+            "value": "AIR-FLO MFG, CO., INC"
+        },
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "EnableWriteOffs": {
+            "value": true
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FOBPoint": {},
+        "LastModifiedDateTime": {
+            "value": "2023-02-23T14:45:34.137-05:00"
+        },
+        "LeadTimedays": {
+            "value": 2
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MultiCurrencyStatements": {
+            "value": false
+        },
+        "NoteID": {
+            "value": "dc6ebbed-18b3-ed11-9900-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "ParentRecord": {},
+        "PriceClassID": {},
+        "PrintInvoices": {
+            "value": false
+        },
+        "PrintStatements": {
+            "value": false
+        },
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "SendInvoicesbyEmail": {
+            "value": true
+        },
+        "SendStatementsbyEmail": {
+            "value": false
+        },
+        "ShippingAddressOverride": {},
+        "ShippingBranch": {},
+        "ShippingContact": {
+            "id": "26cc7ae9-b666-42fb-b807-066050283609",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "6c7fdeef-79f2-467b-9669-c334dc52848e",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "365 Upper Oakwood Ave"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "ELMIRA HEIGHTS"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14903-1127"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109546
+            },
+            "DisplayName": {
+                "value": "AIR-FLO MFG, CO., INC"
+            },
+            "Email": {
+                "value": "katlyn@air-flo.com"
+            },
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "733-8284"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "ShippingContactOverride": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZoneID": {},
+        "ShipVia": {},
+        "StatementCycleID": {
+            "value": "EOM"
+        },
+        "StatementType": {
+            "value": "Open Item"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "TaxExemptionNumber": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {
+            "value": "AVALARA"
+        },
+        "Terms": {
+            "value": "NET30"
+        },
+        "WarehouseID": {},
+        "WriteOffLimit": {
+            "value": 1.0000
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Customer/dc6ebbed-18b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/BAccount/dc6ebbed-18b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "f06ebbed-18b3-ed11-9900-0050560201fd",
+        "rowNumber": 8,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "ApplyOverdueCharges": {
+            "value": false
+        },
+        "AutoApplyPayments": {
+            "value": false
+        },
+        "BAccountID": {
+            "value": 11248
+        },
+        "BillingAddressOverride": {
+            "value": false
+        },
+        "BillingContact": {
+            "id": "bebed1f1-3ca7-4f53-9232-c10a49cd0599",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "63663889-b605-4eaa-b31a-cf2bafcf3e77",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "2006 JALAN JELAWAT"
+                },
+                "AddressLine2": {
+                    "value": "SEBERANG JAYA INDUSTRIAL ESTATE"
+                },
+                "City": {
+                    "value": "PRAI"
+                },
+                "Country": {
+                    "value": "MY"
+                },
+                "PostalCode": {
+                    "value": "13700"
+                },
+                "State": {
+                    "value": "PE"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": false
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109547
+            },
+            "DisplayName": {
+                "value": "ALLIANCE CONTRACT MFG SDN BHD"
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "604-2912 858"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "BillingContactOverride": {
+            "value": false
+        },
+        "Contacts": [],
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:24:59.507-05:00"
+        },
+        "CreditLimit": {
+            "value": 0.0000
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "CustomerClass": {
+            "value": "FOREIGN"
+        },
+        "CustomerID": {
+            "value": "C100008"
+        },
+        "CustomerName": {
+            "value": "ALLIANCE CONTRACT MFG SDN BHD"
+        },
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "EnableWriteOffs": {
+            "value": true
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FOBPoint": {},
+        "LastModifiedDateTime": {
+            "value": "2023-02-23T14:45:34.327-05:00"
+        },
+        "LeadTimedays": {
+            "value": 2
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MultiCurrencyStatements": {
+            "value": false
+        },
+        "NoteID": {
+            "value": "f06ebbed-18b3-ed11-9900-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "ParentRecord": {},
+        "PriceClassID": {},
+        "PrintInvoices": {
+            "value": true
+        },
+        "PrintStatements": {
+            "value": false
+        },
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "SendInvoicesbyEmail": {
+            "value": false
+        },
+        "SendStatementsbyEmail": {
+            "value": false
+        },
+        "ShippingAddressOverride": {},
+        "ShippingBranch": {},
+        "ShippingContact": {
+            "id": "c0537654-a711-404a-bc12-b22c80742283",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "c57c2b63-9a6e-48a2-89ff-def07a92b868",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "2006 JALAN JELAWAT"
+                },
+                "AddressLine2": {
+                    "value": "SEBERANG JAYA INDUSTRIAL ESTATE"
+                },
+                "City": {
+                    "value": "PRAI"
+                },
+                "Country": {
+                    "value": "MY"
+                },
+                "PostalCode": {
+                    "value": "13700"
+                },
+                "State": {
+                    "value": "PE"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": false
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109547
+            },
+            "DisplayName": {
+                "value": "ALLIANCE CONTRACT MFG SDN BHD"
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "604-2912 858"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "ShippingContactOverride": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZoneID": {},
+        "ShipVia": {},
+        "StatementCycleID": {
+            "value": "EOM"
+        },
+        "StatementType": {
+            "value": "Open Item"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "TaxExemptionNumber": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {
+            "value": "AVALARA"
+        },
+        "Terms": {
+            "value": "NET30"
+        },
+        "WarehouseID": {},
+        "WriteOffLimit": {
+            "value": 1.0000
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Customer/f06ebbed-18b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/BAccount/f06ebbed-18b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "046fbbed-18b3-ed11-9900-0050560201fd",
+        "rowNumber": 9,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "ApplyOverdueCharges": {
+            "value": false
+        },
+        "AutoApplyPayments": {
+            "value": false
+        },
+        "BAccountID": {
+            "value": 11249
+        },
+        "BillingAddressOverride": {
+            "value": false
+        },
+        "BillingContact": {
+            "id": "d51ed261-a5c0-4c8c-8a4f-4d1c9d8c59df",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "314a5970-2c47-456c-97e7-08f1ba63f820",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "1 Transit Dr"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "HORNELL"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14843-2268"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109548
+            },
+            "DisplayName": {
+                "value": "ALSTOM TRANSPORTATION, INC."
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "607-281-3221"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "BillingContactOverride": {
+            "value": false
+        },
+        "Contacts": [],
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:24:59.63-05:00"
+        },
+        "CreditLimit": {
+            "value": 0.0000
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "CustomerClass": {
+            "value": "DOMESTIC"
+        },
+        "CustomerID": {
+            "value": "C100009"
+        },
+        "CustomerName": {
+            "value": "ALSTOM TRANSPORTATION, INC."
+        },
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "EnableWriteOffs": {
+            "value": true
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FOBPoint": {},
+        "LastModifiedDateTime": {
+            "value": "2023-02-23T14:45:34.523-05:00"
+        },
+        "LeadTimedays": {
+            "value": 2
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MultiCurrencyStatements": {
+            "value": false
+        },
+        "NoteID": {
+            "value": "046fbbed-18b3-ed11-9900-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "ParentRecord": {},
+        "PriceClassID": {},
+        "PrintInvoices": {
+            "value": true
+        },
+        "PrintStatements": {
+            "value": false
+        },
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "SendInvoicesbyEmail": {
+            "value": false
+        },
+        "SendStatementsbyEmail": {
+            "value": false
+        },
+        "ShippingAddressOverride": {},
+        "ShippingBranch": {},
+        "ShippingContact": {
+            "id": "cc567aad-f06a-471c-aed6-c88028dbb574",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "07a563dc-810b-495b-aa9a-6f88ef35918e",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "1 Transit Dr"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "HORNELL"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14843-2268"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109548
+            },
+            "DisplayName": {
+                "value": "ALSTOM TRANSPORTATION, INC."
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "607-281-3221"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "ShippingContactOverride": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZoneID": {},
+        "ShipVia": {},
+        "StatementCycleID": {
+            "value": "EOM"
+        },
+        "StatementType": {
+            "value": "Open Item"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "TaxExemptionNumber": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {
+            "value": "AVALARA"
+        },
+        "Terms": {
+            "value": "1NET30"
+        },
+        "WarehouseID": {},
+        "WriteOffLimit": {
+            "value": 1.0000
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Customer/046fbbed-18b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/BAccount/046fbbed-18b3-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "186fbbed-18b3-ed11-9900-0050560201fd",
+        "rowNumber": 10,
+        "note": {
+            "value": ""
+        },
+        "AccountRef": {},
+        "ApplyOverdueCharges": {
+            "value": false
+        },
+        "AutoApplyPayments": {
+            "value": false
+        },
+        "BAccountID": {
+            "value": 11250
+        },
+        "BillingAddressOverride": {
+            "value": false
+        },
+        "BillingContact": {
+            "id": "991228a3-f1e8-4b75-99a8-cfd18e481e10",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "d48aa38a-20c9-44db-928a-b3a1e91e9fff",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "9431 Foster Wheeler Rd"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "DANSVILLE"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14437-9178"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109549
+            },
+            "DisplayName": {
+                "value": "AMERICAN MOTIVE POWER INC."
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "585-335-3131 EXT 112"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "BillingContactOverride": {
+            "value": false
+        },
+        "Contacts": [],
+        "CreatedDateTime": {
+            "value": "2023-02-22T21:24:59.787-05:00"
+        },
+        "CreditLimit": {
+            "value": 0.0000
+        },
+        "CurrencyID": {
+            "value": "USD"
+        },
+        "CurrencyRateType": {},
+        "CustomerClass": {
+            "value": "DOMESTIC"
+        },
+        "CustomerID": {
+            "value": "C100010"
+        },
+        "CustomerName": {
+            "value": "AMERICAN MOTIVE POWER INC."
+        },
+        "EnableCurrencyOverride": {
+            "value": false
+        },
+        "EnableRateOverride": {
+            "value": false
+        },
+        "EnableWriteOffs": {
+            "value": true
+        },
+        "EntityUsageType": {
+            "value": "Default"
+        },
+        "FOBPoint": {},
+        "LastModifiedDateTime": {
+            "value": "2023-02-23T14:45:34.663-05:00"
+        },
+        "LeadTimedays": {
+            "value": 2
+        },
+        "LocationName": {
+            "value": "Primary Location"
+        },
+        "MultiCurrencyStatements": {
+            "value": false
+        },
+        "NoteID": {
+            "value": "186fbbed-18b3-ed11-9900-0050560201fd"
+        },
+        "OrderPriority": {
+            "value": 0
+        },
+        "ParentRecord": {},
+        "PriceClassID": {},
+        "PrintInvoices": {
+            "value": true
+        },
+        "PrintStatements": {
+            "value": false
+        },
+        "ResidentialDelivery": {
+            "value": false
+        },
+        "SaturdayDelivery": {
+            "value": false
+        },
+        "SendInvoicesbyEmail": {
+            "value": false
+        },
+        "SendStatementsbyEmail": {
+            "value": false
+        },
+        "ShippingAddressOverride": {},
+        "ShippingBranch": {},
+        "ShippingContact": {
+            "id": "34041e52-207d-4ab6-a696-968716bb38c1",
+            "rowNumber": 1,
+            "note": null,
+            "Address": {
+                "id": "a963f31e-444c-49f5-b57b-474922f0c7d1",
+                "rowNumber": 1,
+                "note": null,
+                "AddressLine1": {
+                    "value": "9431 Foster Wheeler Rd"
+                },
+                "AddressLine2": {},
+                "City": {
+                    "value": "DANSVILLE"
+                },
+                "Country": {
+                    "value": "US"
+                },
+                "PostalCode": {
+                    "value": "14437-9178"
+                },
+                "State": {
+                    "value": "NY"
+                },
+                "custom": {}
+            },
+            "AddressValidated": {
+                "value": true
+            },
+            "Attention": {},
+            "ContactID": {
+                "value": 109549
+            },
+            "DisplayName": {
+                "value": "AMERICAN MOTIVE POWER INC."
+            },
+            "Email": {},
+            "Fax": {},
+            "FirstName": {},
+            "JobTitle": {},
+            "LastName": {},
+            "MiddleName": {},
+            "Phone1": {
+                "value": "585-335-3131 EXT 112"
+            },
+            "Phone1Type": {
+                "value": "Business 1"
+            },
+            "Phone2": {},
+            "Phone2Type": {
+                "value": "Business 2"
+            },
+            "Title": {},
+            "WebSite": {},
+            "custom": {}
+        },
+        "ShippingContactOverride": {},
+        "ShippingRule": {
+            "value": "Back Order Allowed"
+        },
+        "ShippingTerms": {},
+        "ShippingZoneID": {},
+        "ShipVia": {},
+        "StatementCycleID": {
+            "value": "EOM"
+        },
+        "StatementType": {
+            "value": "Open Item"
+        },
+        "Status": {
+            "value": "Active"
+        },
+        "TaxExemptionNumber": {},
+        "TaxRegistrationID": {},
+        "TaxZone": {
+            "value": "AVALARA"
+        },
+        "Terms": {
+            "value": "NET30"
+        },
+        "WarehouseID": {},
+        "WriteOffLimit": {
+            "value": 1.0000
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Default/22.200.001/Customer/186fbbed-18b3-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.AR.CustomerMaint/BAccount/186fbbed-18b3-ed11-9900-0050560201fd/{filename}"
+        }
+    }
+]

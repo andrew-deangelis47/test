@@ -1,0 +1,42 @@
+# This file contains requirements for integration images 
+#   that will be deployed to production. For all other 
+#   integration images (e.g. dev images) use requirements.txt
+
+# Dev modules that have been removed from this file:
+#   * coverage
+#   * pytest-django
+#   * requests_mock
+#   * pytest
+#   * pytest-cov
+#   * pytest-mock
+#   * debugpy
+#   * safety
+#   * flake8
+
+boto3==1.17.54
+Django==4.2.16
+mssql-django==1.5
+pyodbc==5.1.0
+pytz==2022.6
+requests==2.32.3
+attrs==19.2.0
+git+https://github.com/part-os/core-python.git@7e8d9ed26c22c804225116350fe33fc2763578cb#egg=core-python
+sentry-sdk==2.8.0
+cryptography==42.0.6
+pendulum==3.0.0
+pyyaml==6.0.1
+apscheduler==3.7.0
+pycountry==20.7.3
+pgeocode==0.3.0
+google-api-python-client==2.11.0
+fuzzywuzzy==0.18.0
+simplejson==3.17.5
+pydantic==1.10.13
+numpy==1.23.5
+hubspot-api-client==4.0.6
+xmltodict==0.13.0
+openpyxl==3.0.9
+pandas==1.4.2
+xlsxwriter==3.2.0
+xlutils==2.0.0
+xlrd==2.0.1

@@ -1,0 +1,432 @@
+[
+    {
+        "id": "1c6e08aa-c37b-ed11-98fd-0050560201fd",
+        "rowNumber": 1,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "BackflushLabor": {
+            "value": false
+        },
+        "BackflushMaterials": {
+            "value": true
+        },
+        "BasisforCapacity": {
+            "value": "Crew Size"
+        },
+        "Description": {
+            "value": "B1 SMWELD"
+        },
+        "Location": {},
+        "OutsideProcessing": {
+            "value": false
+        },
+        "ScrapActionDefault": {
+            "value": "No Action"
+        },
+        "StandardCost": {
+            "value": 72.130000
+        },
+        "Warehouse": {
+            "value": "CMDNY01"
+        },
+        "WorkCenterID": {
+            "value": "B1-SMWELD"
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Manufacturing/21.200.001/WorkCenter/1c6e08aa-c37b-ed11-98fd-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Manufacturing/21.200.001/files/PX.Objects.AM.WCMaint/WCRecords/1c6e08aa-c37b-ed11-98fd-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "226e08aa-c37b-ed11-98fd-0050560201fd",
+        "rowNumber": 2,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "BackflushLabor": {
+            "value": false
+        },
+        "BackflushMaterials": {
+            "value": true
+        },
+        "BasisforCapacity": {
+            "value": "Crew Size"
+        },
+        "Description": {
+            "value": "B2 SPECFAB"
+        },
+        "Location": {},
+        "OutsideProcessing": {
+            "value": false
+        },
+        "ScrapActionDefault": {
+            "value": "No Action"
+        },
+        "StandardCost": {
+            "value": 72.130000
+        },
+        "Warehouse": {
+            "value": "CMDNY01"
+        },
+        "WorkCenterID": {
+            "value": "B2-SPECFAB"
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Manufacturing/21.200.001/WorkCenter/226e08aa-c37b-ed11-98fd-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Manufacturing/21.200.001/files/PX.Objects.AM.WCMaint/WCRecords/226e08aa-c37b-ed11-98fd-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "286e08aa-c37b-ed11-98fd-0050560201fd",
+        "rowNumber": 3,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "BackflushLabor": {
+            "value": false
+        },
+        "BackflushMaterials": {
+            "value": true
+        },
+        "BasisforCapacity": {
+            "value": "Crew Size"
+        },
+        "Description": {
+            "value": "B3 HVYFAB"
+        },
+        "Location": {},
+        "OutsideProcessing": {
+            "value": false
+        },
+        "ScrapActionDefault": {
+            "value": "No Action"
+        },
+        "StandardCost": {
+            "value": 72.130000
+        },
+        "Warehouse": {
+            "value": "CMDNY01"
+        },
+        "WorkCenterID": {
+            "value": "B3-HVYFAB"
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Manufacturing/21.200.001/WorkCenter/286e08aa-c37b-ed11-98fd-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Manufacturing/21.200.001/files/PX.Objects.AM.WCMaint/WCRecords/286e08aa-c37b-ed11-98fd-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "2e6e08aa-c37b-ed11-98fd-0050560201fd",
+        "rowNumber": 4,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "BackflushLabor": {
+            "value": false
+        },
+        "BackflushMaterials": {
+            "value": true
+        },
+        "BasisforCapacity": {
+            "value": "Crew Size"
+        },
+        "Description": {
+            "value": "B4 SPECFAB"
+        },
+        "Location": {},
+        "OutsideProcessing": {
+            "value": false
+        },
+        "ScrapActionDefault": {
+            "value": "No Action"
+        },
+        "StandardCost": {
+            "value": 72.130000
+        },
+        "Warehouse": {
+            "value": "CMDNY01"
+        },
+        "WorkCenterID": {
+            "value": "B4-SPECFAB"
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Manufacturing/21.200.001/WorkCenter/2e6e08aa-c37b-ed11-98fd-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Manufacturing/21.200.001/files/PX.Objects.AM.WCMaint/WCRecords/2e6e08aa-c37b-ed11-98fd-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "9f9dfb0d-12b5-ed11-9900-0050560201fd",
+        "rowNumber": 5,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "BackflushLabor": {
+            "value": false
+        },
+        "BackflushMaterials": {
+            "value": true
+        },
+        "BasisforCapacity": {
+            "value": "Crew Size"
+        },
+        "Description": {
+            "value": "CMD-FLORIDA"
+        },
+        "Location": {},
+        "OutsideProcessing": {
+            "value": false
+        },
+        "ScrapActionDefault": {
+            "value": "No Action"
+        },
+        "StandardCost": {
+            "value": 61.760000
+        },
+        "Warehouse": {
+            "value": "CMDFL01"
+        },
+        "WorkCenterID": {
+            "value": "CMD-FLORIDA"
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Manufacturing/21.200.001/WorkCenter/9f9dfb0d-12b5-ed11-9900-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Manufacturing/21.200.001/files/PX.Objects.AM.WCMaint/WCRecords/9f9dfb0d-12b5-ed11-9900-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "ac6e08aa-c37b-ed11-98fd-0050560201fd",
+        "rowNumber": 6,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "BackflushLabor": {
+            "value": false
+        },
+        "BackflushMaterials": {
+            "value": true
+        },
+        "BasisforCapacity": {
+            "value": "Crew Size"
+        },
+        "Description": {
+            "value": "TRUMPF - 1000 CNC PUNCH"
+        },
+        "Location": {},
+        "OutsideProcessing": {
+            "value": false
+        },
+        "ScrapActionDefault": {
+            "value": "No Action"
+        },
+        "StandardCost": {
+            "value": 61.760000
+        },
+        "Warehouse": {
+            "value": "CMDFL01"
+        },
+        "WorkCenterID": {
+            "value": "CNC-PUNCH-FL"
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Manufacturing/21.200.001/WorkCenter/ac6e08aa-c37b-ed11-98fd-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Manufacturing/21.200.001/files/PX.Objects.AM.WCMaint/WCRecords/ac6e08aa-c37b-ed11-98fd-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "046e08aa-c37b-ed11-98fd-0050560201fd",
+        "rowNumber": 7,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "BackflushLabor": {
+            "value": false
+        },
+        "BackflushMaterials": {
+            "value": true
+        },
+        "BasisforCapacity": {
+            "value": "Crew Size"
+        },
+        "Description": {
+            "value": "CONTROLS - ELECTRICAL ASSY/WIRING"
+        },
+        "Location": {},
+        "OutsideProcessing": {
+            "value": false
+        },
+        "ScrapActionDefault": {
+            "value": "No Action"
+        },
+        "StandardCost": {
+            "value": 52.460000
+        },
+        "Warehouse": {
+            "value": "CMDNY01"
+        },
+        "WorkCenterID": {
+            "value": "CONTROLS"
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Manufacturing/21.200.001/WorkCenter/046e08aa-c37b-ed11-98fd-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Manufacturing/21.200.001/files/PX.Objects.AM.WCMaint/WCRecords/046e08aa-c37b-ed11-98fd-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "106e08aa-c37b-ed11-98fd-0050560201fd",
+        "rowNumber": 8,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "BackflushLabor": {
+            "value": false
+        },
+        "BackflushMaterials": {
+            "value": true
+        },
+        "BasisforCapacity": {
+            "value": "Crew Size"
+        },
+        "Description": {
+            "value": "CRATE BUILDING"
+        },
+        "Location": {},
+        "OutsideProcessing": {
+            "value": false
+        },
+        "ScrapActionDefault": {
+            "value": "No Action"
+        },
+        "StandardCost": {
+            "value": 72.130000
+        },
+        "Warehouse": {
+            "value": "CMDNY01"
+        },
+        "WorkCenterID": {
+            "value": "CRATE-BUILDING"
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Manufacturing/21.200.001/WorkCenter/106e08aa-c37b-ed11-98fd-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Manufacturing/21.200.001/files/PX.Objects.AM.WCMaint/WCRecords/106e08aa-c37b-ed11-98fd-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "f86d08aa-c37b-ed11-98fd-0050560201fd",
+        "rowNumber": 9,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "BackflushLabor": {
+            "value": false
+        },
+        "BackflushMaterials": {
+            "value": true
+        },
+        "BasisforCapacity": {
+            "value": "Crew Size"
+        },
+        "Description": {
+            "value": "DEBURR - LASER BREAKOUT"
+        },
+        "Location": {},
+        "OutsideProcessing": {
+            "value": false
+        },
+        "ScrapActionDefault": {
+            "value": "No Action"
+        },
+        "StandardCost": {
+            "value": 72.130000
+        },
+        "Warehouse": {
+            "value": "CMDNY01"
+        },
+        "WorkCenterID": {
+            "value": "DEBURR"
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Manufacturing/21.200.001/WorkCenter/f86d08aa-c37b-ed11-98fd-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Manufacturing/21.200.001/files/PX.Objects.AM.WCMaint/WCRecords/f86d08aa-c37b-ed11-98fd-0050560201fd/{filename}"
+        }
+    },
+    {
+        "id": "fe6d08aa-c37b-ed11-98fd-0050560201fd",
+        "rowNumber": 10,
+        "note": {
+            "value": ""
+        },
+        "Active": {
+            "value": true
+        },
+        "BackflushLabor": {
+            "value": false
+        },
+        "BackflushMaterials": {
+            "value": true
+        },
+        "BasisforCapacity": {
+            "value": "Crew Size"
+        },
+        "Description": {
+            "value": "ENGINEERING"
+        },
+        "Location": {},
+        "OutsideProcessing": {
+            "value": false
+        },
+        "ScrapActionDefault": {
+            "value": "No Action"
+        },
+        "StandardCost": {
+            "value": 61.050000
+        },
+        "Warehouse": {
+            "value": "CMDNY01"
+        },
+        "WorkCenterID": {
+            "value": "ENGINEERING"
+        },
+        "custom": {},
+        "_links": {
+            "self": "/AcumaticaERP/entity/Manufacturing/21.200.001/WorkCenter/fe6d08aa-c37b-ed11-98fd-0050560201fd",
+            "files:put": "/AcumaticaERP/entity/Manufacturing/21.200.001/files/PX.Objects.AM.WCMaint/WCRecords/fe6d08aa-c37b-ed11-98fd-0050560201fd/{filename}"
+        }
+    }
+]

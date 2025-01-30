@@ -1,0 +1,237 @@
+Paperless:
+  dir_to_preserve: plex_v2
+  slug: replace_me
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+# integration report custom table
+# these are 'off the shelf' columns, feel free to add more for custom processors
+# take a look at existing Plex processors and how they use this
+# if you do not want a report custom table, just delete the configuration here
+integration_report_columns:
+  - customer
+  - parts
+  - part_operations
+  - approved_workcenters
+  - approved_suppliers
+  - bom_components
+  - sales_order
+  - customer_part
+
+integration_report_row_limit: 50 # the row limit of the integration report custom table
+integration_report_clear_count: 5 # how many rows to remove once we hit the row limit
+
+Exporters:
+  orders:
+    interval: 1
+
+Importers:
+  accounts:
+    interval: 1440
+    bulk_enable: True
+    use_billing_address_prefix: False # adds the address code as a prefix to first address line
+    should_use_address_code_for_facility_name: False # if True the plex location code is used as the facility name, otherwise it uses plex location name
+    import_customer_status_include_filter:
+      - "Active"
+    # customer terms, require data source Customers_API_Get (Common)
+    # also relies on payment_terms_payment_terms_period_mapping which maps plex payment terms to their payment terms period
+    # columns required are payment_terms which is the payment terms in Plex (str), and payment_terms_period which is the pay period (int)
+    default_payment_terms: Net 30 # used when should_import_customer_terms is not enabled
+    default_payment_terms_period: 30 # used when should_import_customer_terms is not enabled
+    should_import_customer_terms: False # if this is True then we need to set up the mapping table (see below)
+    payment_mapping_custom_table_name: payment_terms_payment_terms_period_mapping # how we map Plex payment terms to a terms period (look at eagle-performance-plastics as an example)
+  materials:
+    interval: 60
+    bulk_enable: True
+    raw_material_classes: [] # tells the integration which part types are considered raw material
+    part_statuses_active: [] # filters the material imported by status
+
+    # these will be pulled in via the material import
+    # define as 'numeric' or 'string' so we can construct the custom table properly
+    raw_material_part_attributes: []
+    # example:
+#      - field: Length
+#        type: float
+#      - field: Color
+#        type: str
+
+    default_raw_material_attribute_value: N/A
+    default_raw_material_numeric_value: -999
+    should_import_material_pricing: False
+    # requires data source 15664
+    should_import_material_inventory: False
+    # defined which properties should be imported using data source 15664
+    material_inventory_properties:
+      - FG_Quantity
+    default_material_price: 0
+    default_material_price_unit: ''
+  purchased_components:
+    interval: 60
+    bulk_enable: True
+    purchased_component_types: [] # tells the integration which part types are considered purchased components
+    part_statuses_active: [] # filters the PCs imported by status
+    should_audit_existing_pcs: False
+    default_description_if_blank: "replace_me"
+    should_import_pc_pricing: False
+    default_pc_piece_price: 0
+    default_pc_price_unit: ''
+    # requires data source 15664
+    should_import_pc_inventory: False
+    # defined which properties should be imported using data source 15664
+    pc_inventory_properties:
+      - FG_Quantity
+  vendors:
+    interval: 60
+    bulk_enable: True
+    supplier_status_blacklist: [] # tells the integration which supplier statuses NOT to import
+    supplier_types: [] # tells the integration which supplier types are valid for import
+  work_centers: # disable this by default
+    interval: 10080 # only change this with intent - we cannot sense updates so each import is a full import - if the interval is too short it will break the Plex API
+    bulk_enable: True
+
+Plex:
+  order_tier: 3
+
+  # customer/contacts/addresses export
+  can_create_new_customers: False
+  default_customer_type: 'replace_me'
+  default_customer_status: 'replace_me'
+  use_plex_address_as_fallback: False # if there is no address info on the order, use an existing Plex address
+
+  # part export - part properties
+  part_information_op_def_name: 'Part Information' # this is the name of the informational operation that would have the below fields defined, if not we use the defaults
+
+  # type
+  part_type_var: 'Part Type'
+  default_part_type: 'replace_me'
+  default_raw_material_part_type: 'replace_me'
+  default_purchased_component_part_type: 'replace_me'
+
+  # group
+  part_group_var: 'Part Group'
+  default_part_group: 'replace_me'
+  default_part_group_raw_material: 'replace_me'
+  default_part_group_purchased_component: 'replace_me'
+
+  # product type
+  part_product_type_var: 'Product Type'
+  default_product_type: 'replace_me'
+  default_product_type_raw_material: 'replace_me'
+  default_product_type_purchased_components: 'replace_me'
+
+  # source
+  part_source_var: 'Part Source'
+  default_part_source: 'replace_me'
+  default_raw_material_part_source: replace_me
+  default_purchased_component_part_source: replace_me
+
+  # status
+  part_status_var: 'Part Status'
+  default_part_status: 'replace_me'
+  default_raw_material_part_status: 'replace_me'
+  default_purchased_component_part_status: 'replace_me'
+
+  # building code
+  part_building_code_var: 'Building Code'
+  default_part_building_code: ''
+  default_part_building_code_raw_material: ''
+  default_part_building_code_purchased_components: ''
+
+  # lead time - only for material
+  part_lead_time_var: 'Standard Lead Time (days)'
+  default_raw_material_lead_time: 0
+
+
+  # there are some properties that you can only set using the Part Upload Datasource (5137)
+  # so far we have built in functionality for Grade and Cycle Frequency
+  # for each of these you can either supply a default or throw it in an operaton
+  # my recomendation is put every attribute you set here in a dropdown called "Part Information"
+
+  # grade
+  should_export_part_grade: False
+  part_grade_var: File Type
+  default_part_grade: ''
+  default_part_grade_raw_material: ''
+  default_part_grade_purchased_component: ''
+
+  # cycle frequency
+  should_export_part_cycle_frequency: False
+  part_cycle_frequency_var: Cycle Frequency
+  default_part_cycle_frequency: Never
+  default_part_cycle_frequency_raw_material: Never
+  default_part_cycle_frequency_purchased_component: Never
+
+  # building code
+  should_export_part_building_code: False
+  part_building_code_var: 'Building Code'
+  default_building_code: Nowhere
+  default_part_building_code_raw_material: Nowhere
+  default_part_building_code_purchased_component: Nowhere
+
+  # internal note
+  should_export_internal_note: False
+  internal_note_var: 'Internal Note'
+  default_internal_note: ''
+  default_internal_note_raw_material: ''
+  default_internal_note_purchased_component: ''
+
+  # weight
+  should_export_part_weight: False
+  part_weight_var: 'Part Weight'
+  default_part_weight: 0.0
+  default_part_weight_raw_material: 0.0
+  default_part_weight_purchased_component: 0.0
+
+
+  # routing export
+  default_part_operation_type: 'replace_me'
+  part_operation_type_var_name: 'Part Operation Type'
+  part_operation_increment_step: 10
+  plex_op_code_var: 'Plex Operation Code'
+  supplier_code_var: 'Plex Supplier Code'
+  piece_price_var: 'Piece Price'
+
+  # there are some properties not included in the normal API that we can set (data source 20274 - field names must match exactly)
+  # if you need to set these properties you must inherit from the part operation factory and create getters for each property (example in factory is "_get_note")
+  routing_datasource_properties_required: []
+  routing_datasource_properties_required_material: [] # this is the same as above, except for non-stock material
+  crew_size_var: Crew Size
+  default_approved_workcenter_crew_size: 1  # if there is not a p3L var for crew size we use this
+
+  # sales order export
+  should_create_order_lines_on_existing_order: False
+  default_sales_order_type: 'replace_me'
+  default_ship_from_building_code: 'replace_me'
+  default_sales_order_release_type: 'replace_me'
+  default_sales_order_release_status: 'replace_me'
+  default_sales_order_freight_terms: 'replace_me'
+  default_sales_order_carrier_code: ''
+  default_sales_order_status: 'replace_me'
+  default_sales_order_category: ''
+  default_sales_order_line_unit_type: 'replace_me'
+  sales_order_line_use_default_order_unit_id: True
+  ship_date_time_offset: 0 # not currently used but I could see a case for using it in the future, or for custom processor
+  ship_date_due_date_offset: 0 # not currently used but I could see a case for using it in the future, or for custom processor
+  default_sales_person: ''
+  should_use_customer_terms: False # requires datasource 230853
+  default_sales_order_payment_terms: 'No Terms'
+
+  # bom export
+  var_material_part_number: 'Plex Part Number'
+  var_material_part_revision: 'Plex Part Revision'
+  material_quantity_var: Plex Quantity Required
+
+  # PP->Plex operation mapping
+  operation_code_map_table: 'Operations_Mapping'
+  plex_operation_code_column_header: 'Plex_Operation_Code'
+  paperless_operation_name_column_header: 'Paperless_Operation_Name'
+  plex_operation_code_column_header: 'Plex_Operation_Code'
+  plex_approved_workcenters_column_header: 'plex_approved_workcenters'
+  plex_approved_suppliers_column_header: 'plex_approved_suppliers'
+  paperless_only_column_header: 'Paperless_Only'
+
+  # Optional Processing
+  should_create_approved_workcenters: False # requires data source 233466
+  should_create_approved_suppliers: False # requires data source 233467
+  should_create_sales_order_release: True

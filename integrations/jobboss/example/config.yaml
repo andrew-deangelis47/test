@@ -1,0 +1,104 @@
+Paperless:
+  dir_to_preserve: jobboss
+  slug: replace_me
+  source_email: noreply@paperlessparts.com
+  new_customer_emails: noreply@paperlessparts.com
+  logpath: log.txt
+
+JobBoss:
+  paperless_user: PPRLSS
+
+Exporters:
+  orders:
+    interval: 1
+    sales_orders_active: True
+    sales_order_default_status: Hold
+    should_link_addl_charge_to_sales_order_detail: False
+    sales_code: PARTS
+    import_material: True
+    default_location: SHOP
+    import_operations: True
+    assign_runtime_and_setup_time_from_standard_op_variables: True
+    generate_material_ops: True
+    use_default_materials: False
+    default_raw_material: PPARTSDEFAULT
+    default_hardware_material: PPARTS_PC
+    pp_material_code_ops: Material Operation, Another One
+    pp_mat_id_variable: Jobboss Material Name
+    import_job_as: Pending
+    op_ignore: Part Level, Admin
+    solo_mfg_comp_assembly: True
+    assembly_conversion_should_adopt_top_level_part_number: True
+    hardware_is_top_level_only: False
+    should_create_new_hardware_materials: False # False = prevents hardware from being created in material master
+    generate_finished_good_material: False
+    part_length_variable: Jobboss Part Length
+    part_width_variable: Jobboss Part Width
+    cutoff_variable: Jobboss Cutoff
+    facing_variable: Jobboss Facing
+    standard_bar_end_variable: Jobboss Standard Bar End
+    parts_per_bar_variable: Jobboss Parts per Material
+    jb_calculator_qty: Jobboss Required Quantity
+    is_rounded_variable: Jobboss Is Rounded
+    buy_item_description_variables: Joboss Bar Description  # Allows for multiple comma-separated variables
+    buy_item_unit_cost: Jobboss Unit Cost
+    osv_operations: Anodize, Chromate
+    vendor_variable: Jobboss Vendor ID
+    service_variable: Jobboss Service Name
+    select_default_vendor: PAPERLESS
+    default_work_center_name: PP_DEFAULT
+    standard_work_center_variable_name: Jobboss Workcenter
+    template_job_matching_enabled: False
+    assembly_suffix_use_letters: True
+    assembly_suffix_separator: '-'
+    enable_estimator_mapping: False
+    default_estimator: JSMITH
+    estimator_mapping_table_name: estimator_mapping
+    estimator_email_column_name: paperless_parts_email
+    estimator_jb_id_column_name: jb_estimator_id
+    should_assign_fg_to_parent: False
+    material_req_default_pick_or_buy: P
+    should_email_when_job_created: False
+    email_subject: "Test: Job Created "
+    email_body: "Test: A Job has been created from Paperless Parts into JobBOSS"
+    should_import_inactive_customers: False
+    should_export_assemblies_with_duplicate_components: True
+
+Importers:
+  materials:
+    interval: 13
+    bulk_enable: True
+    should_include_revision: True
+    should_include_pick_buy_indicator: True
+    should_include_material_dimensions: True
+    should_include_costs: True
+    should_include_vendor: True
+    should_include_stock_item_dimensions: True
+    should_include_shape_data: True
+    should_include_alloy_data: True
+    should_include_densities: True
+
+  accounts:
+    interval: 67
+    should_import_inactive_customers: False
+    should_import_contacts: True
+    should_import_billing_addresses: True
+    should_import_shipping_addresses: True
+
+  purchased_components:
+    interval: 73
+    bulk_enable: True
+
+  outside_services:
+    interval: 23
+
+  vendors:
+    interval: 55
+
+  work_centers:
+    interval: 10080
+#  repeat_part:
+#    interval: 1440
+#    is_post_enabled: True
+#    get_quotes_and_jobs_newer_than: 1970-01-01  # YYYY-MM-DD
+#    should_persist_database_after_run: False

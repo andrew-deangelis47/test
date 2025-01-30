@@ -1,0 +1,11 @@
+{
+  "odata.metadata": "https://epicor-app.abc.local/e10test/api/v1/Erp.BO.CustomerSvc/$metadata#Epicor.RestApi.Customers&$select=CustID",
+  "value": [
+    {
+      "CustID": "ABC1234"
+    },
+    {
+      "CustID": "DEF4567"
+    }
+  ]
+}

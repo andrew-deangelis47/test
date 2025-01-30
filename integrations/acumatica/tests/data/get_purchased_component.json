@@ -1,0 +1,180 @@
+[{
+  "id": "5685272c-ee44-ed11-98f5-0050560201fd",
+  "rowNumber": 1,
+  "note": {
+    "value": ""
+  },
+  "ABCCode": { },
+  "AutoIncrementalValue": { },
+  "Availability": {
+    "value": "X"
+  },
+  "AverageCost": {
+    "value": 0.0
+  },
+  "BaseUOM": {
+    "value": "EA"
+  },
+  "COGSAccount": {
+    "value": "5000"
+  },
+  "COGSSubaccount": {
+    "value": "000000"
+  },
+  "Content": { },
+  "CountryOfOrigin": { },
+  "CurrentStdCost": {
+    "value": 0.0
+  },
+  "CurySpecificMSRP": {
+    "value": 0.0
+  },
+  "CurySpecificPrice": {
+    "value": 0.0
+  },
+  "DefaultIssueLocationID": { },
+  "DefaultPrice": {
+    "value": 0.0
+  },
+  "DefaultReceiptLocationID": { },
+  "DefaultWarehouseID": { },
+  "Description": {
+    "value": "(AKM9T-420-260) Rivetnut Insert, 1/4-20 (.165-.260 Grip) Round Body Splined, Low Profile Head, Monel, Tin Plate Clear"
+  },
+  "DimensionVolume": {
+    "value": 0.0
+  },
+  "DimensionWeight": {
+    "value": 0.0
+  },
+  "DiscountAccount": { },
+  "DiscountSubaccount": { },
+  "ImageUrl": { },
+  "InventoryAccount": {
+    "value": "1200"
+  },
+  "InventoryID": {
+    "value": "AKM1-420-260"
+  },
+  "InventorySubaccount": {
+    "value": "000000"
+  },
+  "IsAKit": {
+    "value": "False"
+  },
+  "ItemClass": {
+    "value": "HARDWARE"
+  },
+  "ItemStatus": {
+    "value": "Active"
+  },
+  "ItemType": {
+    "value": "Component Part"
+  },
+  "LandedCostVarianceAccount": { },
+  "LandedCostVarianceSubaccount": { },
+  "LastCost": {
+    "value": 0.0
+  },
+  "LastModified": {
+    "value": "2022-10-05T17:41:43.003-04:00"
+  },
+  "LastStdCost": {
+    "value": 0.0
+  },
+  "LotSerialClass": {
+    "value": "DEFAULT"
+  },
+  "Markup": {
+    "value": 0.0
+  },
+  "MaxCost": {
+    "value": 0.0
+  },
+  "MinCost": {
+    "value": 0.0
+  },
+  "MinMarkup": {
+    "value": 0.0
+  },
+  "MSRP": {
+    "value": 0.0
+  },
+  "NotAvailable": {
+    "value": "X"
+  },
+  "NoteID": {
+    "value": "5685272c-ee44-ed11-98f5-0050560201fd"
+  },
+  "PendingStdCost": {
+    "value": 0.0
+  },
+  "POAccrualAccount": {
+    "value": "2010"
+  },
+  "POAccrualSubaccount": {
+    "value": "000000"
+  },
+  "PostingClass": {
+    "value": "HARDWARE"
+  },
+  "PriceClass": { },
+  "PriceManager": { },
+  "PriceWorkgroup": { },
+  "ProductManager": { },
+  "ProductWorkgroup": { },
+  "PurchasePriceVarianceAccount": {
+    "value": "5120"
+  },
+  "PurchasePriceVarianceSubaccount": {
+    "value": "000000"
+  },
+  "PurchaseUOM": {
+    "value": "EA"
+  },
+  "ReasonCodeSubaccount": {
+    "value": "000000"
+  },
+  "SalesAccount": {
+    "value": "4000"
+  },
+  "SalesSubaccount": {
+    "value": "000000"
+  },
+  "SalesUOM": {
+    "value": "EA"
+  },
+  "StandardCostRevaluationAccount": {
+    "value": "5130"
+  },
+  "StandardCostRevaluationSubaccount": {
+    "value": "000000"
+  },
+  "StandardCostVarianceAccount": {
+    "value": "5120"
+  },
+  "StandardCostVarianceSubaccount": {
+    "value": "000000"
+  },
+  "SubjectToCommission": {
+    "value": "False"
+  },
+  "TariffCode": { },
+  "TaxCategory": {
+    "value": "NON"
+  },
+  "ValuationMethod": {
+    "value": "FIFO"
+  },
+  "Visibility": {
+    "value": "X"
+  },
+  "VolumeUOM": { },
+  "VendorDetails": [{"id": "a56677aa-ff7c-ef11-9937-0050560201fd", "rowNumber": 1, "note": {"value": ""}, "Active": {"value": true}, "AddLeadTimeDays": {"value": 14}, "CurrencyID": {"value": "USD"}, "Default": {"value": true}, "EOQ": {"value": 0.0}, "LastVendorPrice": {"value": 0.0}, "LeadTimeDays": {}, "Location": {"value": "MAIN"}, "LotSize": {"value": 0.0}, "MaxOrderQty": {"value": 0.0}, "MinOrderFrequencyInDays": {"value": 0}, "MinOrderQty": {"value": 0.0}, "Override": {"value": false}, "PurchaseUnit": {"value": "EA"}, "RecordID": {"value": 20730}, "VendorID": {"value": "V101277"}, "VendorName": {"value": "SURFACE FINISH TECHNOLOGIES"}, "Warehouse": {}, "custom": {}, "_links": {"files:put": "/AcumaticaERP/entity/Default/23.200.001/files/PX.Objects.IN.InventoryItemMaint/VendorItems/a56677aa-ff7c-ef11-9937-0050560201fd/{filename}"}}],
+  "WeightUOM": { },
+  "custom": { },
+  "_links": {
+    "self": "/AcumaticaERP/entity/Default/22.200.001/StockItem/5685272c-ee44-ed11-98f5-0050560201fd",
+    "files:put": "/AcumaticaERP/entity/Default/22.200.001/files/PX.Objects.IN.InventoryItemMaint/Item/5685272c-ee44-ed11-98f5-0050560201fd/{filename}"
+  }
+}]
