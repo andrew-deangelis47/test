@@ -22,13 +22,11 @@ jobs:
           grep -v '^pip' integrations/requirements.txt > integrations/filtered-requirements.txt
           cat integrations/filtered-requirements.txt
           pip install -r integrations/filtered-requirements.txt
+          pip install pyinstaller
 
-      # Build python script into a single execute or app folder (macOS)
-      - uses: Nuitka/Nuitka-Action@main
-        with:
-          nuitka-version: main
-          script-name: connector.py
-          mode: app
+      - name: Build with PyInstaller
+        run: |
+          pyinstaller --onefile connector.py
 
       # Uploads artifact
       - name: Upload Artifact
