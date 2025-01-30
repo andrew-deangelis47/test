@@ -22,12 +22,11 @@ jobs:
           grep -v '^pip' integrations/requirements.txt > integrations/filtered-requirements.txt
           cat integrations/filtered-requirements.txt
           pip install -r integrations/filtered-requirements.txt
-          cat integrations/filtered-requirements.txt
           pip install pyinstaller
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller --onefile connector.py --add-data "integrations;integrations"
+          pyinstaller --onedir connector.py --paths=. --add-data "integrations;integrations"
 
       # Uploads artifact
       - name: Upload Artifact
