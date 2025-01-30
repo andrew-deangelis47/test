@@ -33,5 +33,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: exe
-          path: dist/connector.exe
+          path: build/connector
           include-hidden-files: true
