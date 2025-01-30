@@ -30,9 +30,7 @@ jobs:
           # The --onefile option creates a single-file executable
           # The --include-data-dir argument includes an entire folder in the build
           # If you're using 'import yaml' (PyYAML), use --include-module=yaml if needed
-          nuitka --onefile connector.py \
-                 --include-data-dir=integrations=integrations \
-                 --include-module=yaml
+          nuitka --onefile connector.py --include-data-dir=integrations=integrations --include-module=yaml
           # If you have other subpackages that Nuitka doesn't auto-detect, add more:
           #   --include-package=baseintegration
           #   --include-package=epicor
