@@ -22,13 +22,28 @@ jobs:
           grep -v '^pip' integrations/requirements.txt > integrations/filtered-requirements.txt
           cat integrations/filtered-requirements.txt
           pip install -r integrations/filtered-requirements.txt
-          pip install pyinstaller
-          pyinstaller --onefile connector.py --add-data "integrations;integrations" --hidden-import yaml
+          
+          pip install nuitka
+          
+      - name: Build with Nuitka
+        run: |
+          # The --onefile option creates a single-file executable
+          # The --include-data-dir argument includes an entire folder in the build
+          # If you're using 'import yaml' (PyYAML), use --include-module=yaml if needed
+          nuitka --onefile connector.py \
+                 --include-data-dir=integrations=integrations \
+                 --include-module=yaml
+          # If you have other subpackages that Nuitka doesn't auto-detect, add more:
+          #   --include-package=baseintegration
+          #   --include-package=epicor
+          #
+          # Nuitka by default should produce 'connector.exe' in this same folder,
+          # though you can customize with e.g. --output-filename=dist/connector.exe
 
       # Uploads artifact
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: exe
-          path: dist/connector.exe
+          path: connector.exe
           include-hidden-files: true
