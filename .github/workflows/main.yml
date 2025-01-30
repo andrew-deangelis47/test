@@ -23,10 +23,7 @@ jobs:
           cat integrations/filtered-requirements.txt
           pip install -r integrations/filtered-requirements.txt
           pip install pyinstaller
-
-      - name: Build with PyInstaller
-        run: |
-          pyinstaller --onedir connector.py --paths=. --add-data "integrations;integrations"
+          pyinstaller --onedir connector.py --add-data "integrations;integrations"
 
       # Uploads artifact
       - name: Upload Artifact

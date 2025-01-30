@@ -18,7 +18,7 @@ sys.path.append(resource_path("integrations/epicor"))
 sys.path.append(resource_path("integrations/baseintegration"))
 
 
-from integrations.baseintegration.utils import run_integration
+from baseintegration.utils import run_integration
 
 if __name__ == '__main__':
     run_integration()
