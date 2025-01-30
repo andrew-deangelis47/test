@@ -1,8 +1,23 @@
 import os
 import sys
-sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), "integrations"))
-sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), "integrations/epicor"))
-sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), "integrations/baseintegration"))
+
+def resource_path(relative_path):
+    """
+    Use sys._MEIPASS if present (PyInstaller),
+    else fallback to normal.
+    """
+    try:
+        base_path = sys._MEIPASS  # Set by PyInstaller
+    except AttributeError:
+        base_path = os.path.dirname(__file__)
+    return os.path.abspath(os.path.join(base_path, relative_path))
+
+
+sys.path.append(resource_path("integrations"))
+sys.path.append(resource_path("integrations/epicor"))
+sys.path.append(resource_path("integrations/baseintegration"))
+
+
 from baseintegration.utils import run_integration
 
 if __name__ == '__main__':
