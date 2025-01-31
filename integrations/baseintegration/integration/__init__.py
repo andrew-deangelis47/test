@@ -162,7 +162,11 @@ class Integration:
 
     def _get_secrets(self) -> dict:
         print('Reading secrets configuration file')
-        with open(os.path.join(os.path.dirname(__file__), "../../../secrets.ini")) as fp:
+        if getattr(sys, 'frozen', False):
+            file_path = os.path.join(os.path.dirname(sys.executable), 'secrets.ini')
+        else:
+            file_path = os.path.join(os.path.dirname(__file__), "../../../secrets.ini")
+        with open(file_path) as fp:
             parser = RawConfigParser()
             parser.read_file(fp)
             return parser._sections
