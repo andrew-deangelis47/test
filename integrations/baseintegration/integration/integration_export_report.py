@@ -1,16 +1,16 @@
-from baseintegration.datamigration import logger
+from ...baseintegration.datamigration import logger
 from paperless.client import PaperlessClient
-from baseintegration.utils import custom_table_patch
-from baseintegration.integration import Integration
+from ...baseintegration.utils import custom_table_patch
+from ...baseintegration.integration import Integration
 from pydantic import Field
 
 from typing import Dict, Any, Union, List
-from baseintegration.utils.custom_table import ImportCustomTable
+from ...baseintegration.utils.custom_table import ImportCustomTable
 from paperless.objects.orders import Order
 from paperless.objects.quotes import Quote
 from pendulum.datetime import DateTime
 from pytz import timezone
-from baseintegration.utils import custom_table_delete_row
+from ...baseintegration.utils import custom_table_delete_row
 
 COLUMN_NAME_EXPORT_ID = 'export_id'
 COLUMN_NAME_QUOTE_NUM = 'quote_num'

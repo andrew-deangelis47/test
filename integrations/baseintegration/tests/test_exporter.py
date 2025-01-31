@@ -1,14 +1,14 @@
 import pytest
-from baseintegration.exporter.exceptions import IntegrationNotImplementedError
-from baseintegration.exporter.order_exporter import OrderExporter
-from baseintegration.exporter.quote_exporter import QuoteExporter
-from baseintegration.exporter import ProcessorNotRegisteredError, BaseExporter
+from ...baseintegration.exporter.exceptions import IntegrationNotImplementedError
+from ...baseintegration.exporter.order_exporter import OrderExporter
+from ...baseintegration.exporter.quote_exporter import QuoteExporter
+from ...baseintegration.exporter import ProcessorNotRegisteredError, BaseExporter
 from paperless.objects.orders import Order
 from paperless.objects.quotes import Quote
-from baseintegration.utils.test_utils import get_quote, get_order
+from ...baseintegration.utils.test_utils import get_quote, get_order
 from test_processor import ERPResource, ERPProcessor, resource_db
-from baseintegration.integration import Integration
-from baseintegration.datamigration import logger
+from ...baseintegration.integration import Integration
+from ...baseintegration.datamigration import logger
 import requests_mock
 
 

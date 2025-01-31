@@ -1,7 +1,7 @@
 from paperless.objects.orders import OrderComponent, OrderOperation, OrderCostingVariable
 from paperless.objects.quotes import QuoteComponent, QuoteOperation, CostingVariablePayload
 from typing import Union
-from baseintegration.integration.cancelled_integration_action_exception import CancelledIntegrationActionException
+from ...baseintegration.integration.cancelled_integration_action_exception import CancelledIntegrationActionException
 
 
 # we need some sort of default so we can easily check if the caller of these functions supplied a default

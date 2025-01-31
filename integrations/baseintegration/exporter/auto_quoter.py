@@ -1,9 +1,9 @@
-from baseintegration.datamigration import logger
-from baseintegration.exporter.exceptions import IntegrationNotImplementedError
+from ...baseintegration.datamigration import logger
+from ...baseintegration.exporter.exceptions import IntegrationNotImplementedError
+from ...baseintegration.exporter import BaseExporter
+from ...baseintegration.exporter.mixins.order_assembly_traversal_mixin import AssemblyTraversalMixin
+from ...baseintegration.integration import Integration
 from paperless.objects.quotes import Quote
-from baseintegration.exporter import BaseExporter
-from baseintegration.exporter.mixins.order_assembly_traversal_mixin import AssemblyTraversalMixin
-from baseintegration.integration import Integration
 
 
 class AutoQuoteResult:

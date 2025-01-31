@@ -1,7 +1,7 @@
 import attr
 from typing import List
-from baseintegration.utils import current_datetime_utc
-from baseintegration.utils.repeat_work_base import BaseObject
+from ...baseintegration.utils import current_datetime_utc
+from ...baseintegration.utils.repeat_work_base import BaseObject
 
 
 @attr.s

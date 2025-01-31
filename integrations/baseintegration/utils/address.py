@@ -3,7 +3,7 @@ from typing import Optional
 import pgeocode
 from pycountry import countries, subdivisions
 from pgeocode import Nominatim
-from baseintegration.datamigration import logger
+from ...baseintegration.datamigration import logger
 
 
 class AddressUtils:

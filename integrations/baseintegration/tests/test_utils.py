@@ -4,21 +4,21 @@ import sys
 import os
 
 # append to path
-from baseintegration.integration import Integration
-from baseintegration.utils.custom_table import ImportCustomTable
+from ...baseintegration.integration import Integration
+from ...baseintegration.utils.custom_table import ImportCustomTable
 from paperless.custom_tables.custom_tables import CustomTable
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "./example_model"))
 sys.path.append(os.path.join(os.path.dirname(__file__), "."))
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from example_model.models import InstaModel, InstaTruncatedModel
-from baseintegration.utils import trim_django_model, safe_get
-from baseintegration.utils.operations import OperationUtils
-from baseintegration.utils.address import AddressUtils
+from ...baseintegration.utils import trim_django_model, safe_get
+from ...baseintegration.utils.operations import OperationUtils
+from ...baseintegration.utils.address import AddressUtils
 from django.utils.timezone import make_aware
 from unittest.mock import create_autospec
 import unittest
-from baseintegration.integration.cancelled_integration_action_exception import CancelledIntegrationActionException
+from ...baseintegration.integration.cancelled_integration_action_exception import CancelledIntegrationActionException
 from paperless.objects.orders import OrderComponent, OrderOperation, OrderCostingVariable
 from paperless.objects.quotes import QuoteComponent, QuoteOperation, Quantity, CostingVariablePayload
 from types import SimpleNamespace

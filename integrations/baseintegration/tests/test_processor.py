@@ -1,7 +1,7 @@
 import pytest
-from baseintegration.exporter.processor import BaseProcessor, ProcessNotImplementedError
-from baseintegration.exporter import BaseExporter
-from baseintegration.integration import Integration
+from ...baseintegration.exporter.processor import BaseProcessor, ProcessNotImplementedError
+from ...baseintegration.exporter import BaseExporter
+from ...baseintegration.integration import Integration
 
 
 class UnchangedProcessor(BaseProcessor):

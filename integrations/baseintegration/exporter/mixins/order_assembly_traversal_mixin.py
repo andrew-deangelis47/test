@@ -1,6 +1,6 @@
 from paperless.objects.orders import OrderComponent
 
-from baseintegration.exporter.mixins.assembly_traversal_mixin import AssemblyTraversalMixin
+from ....baseintegration.exporter.mixins.assembly_traversal_mixin import AssemblyTraversalMixin
 
 
 class OrderAssemblyTraversalMixin(AssemblyTraversalMixin):

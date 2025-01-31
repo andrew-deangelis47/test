@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List, Dict
 from django.db.models import Model
-from baseintegration.utils.repeat_work_objects import Header, MethodOfManufacture
+from ...baseintegration.utils.repeat_work_objects import Header, MethodOfManufacture
 
 
 @dataclass

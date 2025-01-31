@@ -1,7 +1,7 @@
 from paperless.client import PaperlessClient
 from typing import List
-from baseintegration.datamigration import logger
-from baseintegration.utils import custom_table_delete_row
+from ...baseintegration.datamigration import logger
+from ...baseintegration.utils import custom_table_delete_row
 import json
 
 CUSTOM_TABLE_KEY_ROW_NUMBER = 'row_number'

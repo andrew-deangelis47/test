@@ -1,9 +1,9 @@
-from baseintegration.integration import Integration
 # Set up a basic logger just in case something tries to use the logger before
 # configure_logging() is run
 import logging
 from paperless.objects.integration_actions import IntegrationAction
-from baseintegration.integration.erp_error_message_converter import ERPErrorMessageConverter
+from ...baseintegration.integration import Integration
+from ...baseintegration.integration.erp_error_message_converter import ERPErrorMessageConverter
 import os
 import yaml
 

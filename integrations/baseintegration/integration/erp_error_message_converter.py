@@ -1,5 +1,5 @@
 from typing import List, Union
-from baseintegration.integration.cancelled_integration_action_exception import CancelledIntegrationActionException
+from ...baseintegration.integration.cancelled_integration_action_exception import CancelledIntegrationActionException
 
 
 class ConvertedErrorException(CancelledIntegrationActionException):

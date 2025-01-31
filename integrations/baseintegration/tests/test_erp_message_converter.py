@@ -1,5 +1,5 @@
 from unittest import TestCase
-from baseintegration.integration.erp_error_message_converter import ERPErrorMessageConverter, ErrorMessageMapping
+from ...baseintegration.integration.erp_error_message_converter import ERPErrorMessageConverter, ErrorMessageMapping
 from typing import List
 
 ERP_ERROR_MESSAGE_0 = 'ERP_ERROR_MESSAGE_0'

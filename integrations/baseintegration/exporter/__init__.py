@@ -3,9 +3,9 @@ from typing import Type
 import boto3
 from contextlib import contextmanager
 
-from baseintegration.datamigration import BaseDataMigration, logger
-from baseintegration.exporter.processor import BaseProcessor
-from baseintegration.exporter.exceptions import ProcessorNotRegisteredError, IntegrationNotImplementedError
+from ...baseintegration.datamigration import BaseDataMigration, logger
+from ...baseintegration.exporter.processor import BaseProcessor
+from ...baseintegration.exporter.exceptions import ProcessorNotRegisteredError, IntegrationNotImplementedError
 
 from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart

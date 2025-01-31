@@ -2,7 +2,7 @@ from typing import Tuple, List, Union, Dict, Any
 
 from django.db.models.expressions import RawSQL
 
-from baseintegration.datamigration import logger
+from ...baseintegration.datamigration import logger
 from paperless.custom_tables.custom_tables import CustomTable
 from paperless.exceptions import PaperlessException, PaperlessNotFoundException
 from paperless.client import PaperlessClient
@@ -14,7 +14,7 @@ from django.db.models.fields import BooleanField, DecimalField, IntegerField
 import pendulum
 import time
 
-from baseintegration.utils import custom_table_put, custom_table_delete_row, get_dict_size
+from ...baseintegration.utils import custom_table_put, custom_table_delete_row, get_dict_size
 
 NUMERIC = 'numeric'
 BOOL = 'boolean'

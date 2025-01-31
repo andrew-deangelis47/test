@@ -1,8 +1,8 @@
 from unittest import TestCase
 
 
-from baseintegration.integration.integration_export_report import IntegrationExportReport
-from baseintegration.integration import Integration
+from ...baseintegration.integration.integration_export_report import IntegrationExportReport
+from ...baseintegration.integration import Integration
 from paperless.objects.orders import Order
 from paperless.objects.quotes import Quote
 

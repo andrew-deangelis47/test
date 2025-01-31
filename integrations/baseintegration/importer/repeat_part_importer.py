@@ -1,15 +1,15 @@
 from typing import Union
-from baseintegration.importer import BaseImporter
-from baseintegration.exporter.exceptions import IntegrationNotImplementedError
-from baseintegration.datamigration import logger
-from baseintegration.integration import Integration
+from ...baseintegration.importer import BaseImporter
+from ...baseintegration.exporter.exceptions import IntegrationNotImplementedError
+from ...baseintegration.datamigration import logger
+from ...baseintegration.integration import Integration
 from datetime import datetime
 from paperless.client import PaperlessClient, PaperlessException
-from baseintegration.utils import repeat_part_bulk_post, get_string_size, BULK_IMPORT_ENTITY_ID_STRING
+from ...baseintegration.utils import repeat_part_bulk_post, get_string_size, BULK_IMPORT_ENTITY_ID_STRING
 import json
 import os
 
-from baseintegration.utils.custom_table import MAX_UPLOAD_SIZE_MB, MAX_BATCH_SIZE
+from ...baseintegration.utils.custom_table import MAX_UPLOAD_SIZE_MB, MAX_BATCH_SIZE
 
 
 class RepeatPartImporter(BaseImporter):

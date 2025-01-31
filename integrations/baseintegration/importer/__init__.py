@@ -1,12 +1,12 @@
-from baseintegration.datamigration import BaseDataMigration
 from contextlib import contextmanager
-from baseintegration.datamigration import logger
-from baseintegration.exporter.exceptions import IntegrationNotImplementedError
-from baseintegration.integration import Integration
-from baseintegration.utils import set_custom_formatter, reset_custom_formatter, mark_action_as_completed, \
-    mark_action_as_cancelled, BULK_IMPORT_ENTITY_ID_STRING
 import re
 from typing import Callable, List, Union
+from ...baseintegration.datamigration import BaseDataMigration
+from ...baseintegration.datamigration import logger
+from ...baseintegration.exporter.exceptions import IntegrationNotImplementedError
+from ...baseintegration.integration import Integration
+from ...baseintegration.utils import set_custom_formatter, reset_custom_formatter, mark_action_as_completed, \
+    mark_action_as_cancelled, BULK_IMPORT_ENTITY_ID_STRING
 
 
 class BaseImporter(BaseDataMigration):

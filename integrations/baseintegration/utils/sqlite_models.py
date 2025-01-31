@@ -1,7 +1,7 @@
 import sqlite3
 from django.db import connections
 from django.apps import apps
-from baseintegration.utils import logger
+from ...baseintegration.utils import logger
 import decimal
 
 

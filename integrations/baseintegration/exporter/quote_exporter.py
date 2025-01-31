@@ -1,12 +1,12 @@
-from baseintegration.exporter import BaseExporter
+from ...baseintegration.exporter import BaseExporter
+from ...baseintegration.datamigration import logger
+from ...baseintegration.exporter.exceptions import IntegrationNotImplementedError
+from ...baseintegration.exporter.mixins.assembly_traversal_mixin import AssemblyTraversalMixin
+from ...baseintegration.integration import Integration
+from ...baseintegration.utils import set_custom_formatter, reset_custom_formatter, should_time_out_integration_action_from_event, mark_action_as_failed, mark_action_as_completed, mark_action_as_cancelled
+from ...baseintegration.integration.integration_export_report import IntegrationExportReport
 from paperless.objects.quotes import Quote
-from baseintegration.datamigration import logger
-from baseintegration.exporter.exceptions import IntegrationNotImplementedError
-from baseintegration.exporter.mixins.assembly_traversal_mixin import AssemblyTraversalMixin
-from baseintegration.integration import Integration
-from baseintegration.utils import set_custom_formatter, reset_custom_formatter, should_time_out_integration_action_from_event, mark_action_as_failed, mark_action_as_completed, mark_action_as_cancelled
 from paperless.objects.integration_actions import IntegrationAction, ManagedIntegration
-from baseintegration.integration.integration_export_report import IntegrationExportReport
 
 
 class QuoteExporter(AssemblyTraversalMixin, BaseExporter):

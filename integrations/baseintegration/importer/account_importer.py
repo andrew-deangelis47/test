@@ -1,7 +1,7 @@
-from baseintegration.importer import BaseImporter
-from baseintegration.exporter.exceptions import IntegrationNotImplementedError
-from baseintegration.datamigration import logger
-from baseintegration.integration import Integration
+from ...baseintegration.importer import BaseImporter
+from ...baseintegration.exporter.exceptions import IntegrationNotImplementedError
+from ...baseintegration.datamigration import logger
+from ...baseintegration.integration import Integration
 
 
 class AccountImporter(BaseImporter):

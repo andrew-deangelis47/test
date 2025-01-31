@@ -1,6 +1,6 @@
-from baseintegration.integration import Integration
+from ...baseintegration.integration import Integration
 import signal
-from baseintegration.datamigration import logger
+from ...baseintegration.datamigration import logger
 import sys
 import types
 

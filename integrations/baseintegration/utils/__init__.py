@@ -1,8 +1,8 @@
 import os
 import sys
 from time import perf_counter
-from baseintegration.datamigration import logger
-from baseintegration.integration import Integration
+from ...baseintegration.datamigration import logger
+from ...baseintegration.integration import Integration
 import configparser
 from paperless.objects.customers import Contact, Account, AccountList
 from paperless.objects.quotes import Quote
@@ -12,13 +12,13 @@ import json
 from paperless.client import PaperlessClient, PaperlessException
 from django.utils.text import slugify
 import pycountry
-from baseintegration.utils.suffixes import STREET_SUFFIX_ABBREVS
+from ...baseintegration.utils.suffixes import STREET_SUFFIX_ABBREVS
 import logging
 import debugpy
 from datetime import datetime, timedelta, timezone
 from functools import reduce
 from paperless.objects.integration_actions import IntegrationAction
-from baseintegration.integration.cancelled_integration_action_exception import CancelledIntegrationActionException
+from ...baseintegration.integration.cancelled_integration_action_exception import CancelledIntegrationActionException
 import pendulum
 from django.db.models.expressions import RawSQL
 from requests import Response

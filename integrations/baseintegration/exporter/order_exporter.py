@@ -1,12 +1,12 @@
-from baseintegration.datamigration import logger
-from baseintegration.exporter.exceptions import IntegrationNotImplementedError
-from paperless.objects.orders import Order
-from baseintegration.exporter import BaseExporter
-from baseintegration.exporter.mixins.order_assembly_traversal_mixin import OrderAssemblyTraversalMixin
-from baseintegration.integration import Integration
-from baseintegration.utils import set_custom_formatter, reset_custom_formatter, should_time_out_integration_action_from_event, mark_action_as_failed, mark_action_as_completed, mark_action_as_cancelled
+from ...baseintegration.datamigration import logger
+from ...baseintegration.exporter.exceptions import IntegrationNotImplementedError
+from ...baseintegration.exporter import BaseExporter
+from ...baseintegration.exporter.mixins.order_assembly_traversal_mixin import OrderAssemblyTraversalMixin
+from ...baseintegration.integration import Integration
+from ...baseintegration.utils import set_custom_formatter, reset_custom_formatter, should_time_out_integration_action_from_event, mark_action_as_failed, mark_action_as_completed, mark_action_as_cancelled
+from ...baseintegration.integration.integration_export_report import IntegrationExportReport
 from paperless.objects.integration_actions import IntegrationAction, ManagedIntegration
-from baseintegration.integration.integration_export_report import IntegrationExportReport
+from paperless.objects.orders import Order
 
 
 class OrderExporter(OrderAssemblyTraversalMixin, BaseExporter):

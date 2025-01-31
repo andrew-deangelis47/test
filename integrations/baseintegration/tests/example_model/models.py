@@ -1,6 +1,6 @@
 from django.db import models
-from baseintegration.tests.example_model.settings import IS_TEST
-from baseintegration.utils.truncated_model import TruncatedModel
+from ...baseintegration.tests.example_model.settings import IS_TEST
+from ...baseintegration.utils.truncated_model import TruncatedModel
 
 
 class InstaModel(models.Model):

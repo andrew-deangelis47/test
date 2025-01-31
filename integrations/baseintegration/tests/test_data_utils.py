@@ -1,6 +1,6 @@
 import decimal
 
-from baseintegration.utils.data import sqlize_value, sqlize_str, safe_trim, sqlize_bool
+from ...baseintegration.utils.data import sqlize_value, sqlize_str, safe_trim, sqlize_bool
 
 
 class TestDataUtils:

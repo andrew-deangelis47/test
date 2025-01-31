@@ -1,4 +1,4 @@
-from baseintegration.importer import BaseImporter
+from ...baseintegration.importer import BaseImporter
 
 
 class BaseImportProcessor:

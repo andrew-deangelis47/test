@@ -1,8 +1,8 @@
 from django.db import models
-from baseintegration.utils import trim_django_model
+from ...baseintegration.utils import trim_django_model
 from django.db.models import QuerySet
 
-from baseintegration.utils.test_utils import fill_and_save
+from ...baseintegration.utils.test_utils import fill_and_save
 
 
 class TruncatedModelQuerySet(QuerySet):

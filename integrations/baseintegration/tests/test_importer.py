@@ -1,15 +1,15 @@
-from baseintegration.importer import BaseImporter
-from baseintegration.importer.material_importer import MaterialImporter
-from baseintegration.importer.account_importer import AccountImporter
-from baseintegration.importer.purchased_component_importer import PurchasedComponentImporter
-from baseintegration.importer.vendor_importer import VendorImporter
-from baseintegration.importer.work_center_importer import WorkCenterImporter
-from baseintegration.importer.outside_service_importer import OutsideServiceImporter
-from baseintegration.importer.import_processor import BaseImportProcessor
+from ...baseintegration.importer import BaseImporter
+from ...baseintegration.importer.material_importer import MaterialImporter
+from ...baseintegration.importer.account_importer import AccountImporter
+from ...baseintegration.importer.purchased_component_importer import PurchasedComponentImporter
+from ...baseintegration.importer.vendor_importer import VendorImporter
+from ...baseintegration.importer.work_center_importer import WorkCenterImporter
+from ...baseintegration.importer.outside_service_importer import OutsideServiceImporter
+from ...baseintegration.importer.import_processor import BaseImportProcessor
 from test_processor import ERPResource
 import pytest
-from baseintegration.integration import Integration
-from baseintegration.exporter.exceptions import IntegrationNotImplementedError
+from ...baseintegration.integration import Integration
+from ...baseintegration.exporter.exceptions import IntegrationNotImplementedError
 import requests_mock
 from typing import List
 

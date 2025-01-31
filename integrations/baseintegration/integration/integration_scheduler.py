@@ -2,9 +2,9 @@ import time
 
 import botocore.exceptions
 from apscheduler.schedulers.background import BackgroundScheduler
-from baseintegration.integration import logger
+from ...baseintegration.integration import logger
 import boto3
-from baseintegration.utils import get_data_migrator, should_time_out_integration_action_from_event, set_custom_formatter, reset_custom_formatter, mark_action_as_failed, mark_action_as_completed, mark_action_as_cancelled
+from ...baseintegration.utils import get_data_migrator, should_time_out_integration_action_from_event, set_custom_formatter, reset_custom_formatter, mark_action_as_failed, mark_action_as_completed, mark_action_as_cancelled
 from paperless.objects.integration_actions import IntegrationAction, ManagedIntegration
 from paperless.objects.integration_heartbeats import IntegrationHeartbeat
 from distutils.util import strtobool

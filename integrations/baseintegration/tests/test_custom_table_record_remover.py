@@ -1,6 +1,6 @@
 from unittest.mock import create_autospec
 from paperless.client import PaperlessClient
-from baseintegration.utils.custom_table_record_remover import CustomTableRecordRemover
+from ...baseintegration.utils.custom_table_record_remover import CustomTableRecordRemover
 from requests import Response
 from django.http import JsonResponse
 

@@ -1,4 +1,4 @@
-from baseintegration.exporter.exceptions import ProcessNotImplementedError
+from ...baseintegration.exporter.exceptions import ProcessNotImplementedError
 
 
 class BaseProcessor:
