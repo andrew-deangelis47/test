@@ -52,7 +52,7 @@ def main():
     # Resolve sys.path.append calls
     resolved_paths = resolve_sys_path_appends(script_name)
     # Build the pyinstaller command
-    pyinstaller_command = ["nuitka"]
+    pyinstaller_command = [sys.executable, "-m", "nuitka"]
     pyinstaller_command.extend(additional_args)
     pyinstaller_command.append(script_name)
     # Print the command for debugging purposes
