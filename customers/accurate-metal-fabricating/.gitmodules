@@ -1,0 +1,3 @@
+[submodule "integrations"]
+	path = integrations
+	url = git@bitbucket.org:paperlessparts/integrations.git

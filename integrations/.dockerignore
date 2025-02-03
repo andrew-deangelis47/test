@@ -1,3 +1,0 @@
-customers/*/*.txt
-**/*secret*
-!secrets.dev.ini
