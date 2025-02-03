@@ -162,7 +162,14 @@ class Integration:
 
     def _get_secrets(self) -> dict:
         print('Reading secrets configuration file')
-        with open(os.path.join(os.path.dirname(__file__), "../../../secrets.ini")) as fp:
+        try:
+            # PyInstaller stores temp path in sys._MEIPASS
+            base_path = sys._MEIPASS  # type: ignore[attr-defined]
+        except AttributeError:
+            # Fallback to the current working directory if not running as a bundled app
+            base_path = os.path.abspath(".")
+
+        with open(os.path.join(base_path, "secrets.ini")) as fp:
             parser = RawConfigParser()
             parser.read_file(fp)
             return parser._sections
