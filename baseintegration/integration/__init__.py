@@ -162,12 +162,11 @@ class Integration:
 
     def _get_secrets(self) -> dict:
         print('Reading secrets configuration file')
-        try:
-            # PyInstaller stores temp path in sys._MEIPASS
-            base_path = sys._MEIPASS  # type: ignore[attr-defined]
-        except AttributeError:
-            # Fallback to the current working directory if not running as a bundled app
-            base_path = os.path.abspath(".")
+        if getattr(sys, 'frozen', False):
+            # If compiled with PyInstaller, sys.executable is the path to the .exe
+            base_path = os.path.dirname(sys.executable)
+        else:
+            base_path = os.path.dirname(os.path.abspath(__file__))
 
         with open(os.path.join(base_path, "secrets.ini")) as fp:
             parser = RawConfigParser()
